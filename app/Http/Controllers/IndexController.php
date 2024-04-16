@@ -6,6 +6,7 @@ use App\Http\Requests\StoreIndexRequest;
 use App\Http\Requests\UpdateIndexRequest;
 use App\Models\Index;
 use App\Models\Message;
+use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {

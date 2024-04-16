@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('url_image')->nullable();
             $table->string('name_image')->nullable();
+            $table->string('color_picker')->nullable();
             $table->boolean('visible')->default(false);
             $table->boolean('status')->default(false);
 
