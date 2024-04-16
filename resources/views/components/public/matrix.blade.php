@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,25 @@
     @yield('css_improtados')
 
     {{-- Swipper --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
 </head>
+
 <body>
     @include('components.public.header')
-    
-    <div class="main bg-slate-100 p-6">
+
+    <div>
         {{-- Aqui va el contenido de cada pagina --}}
         @yield('content')
 
     </div>
 
     @include('components.public.footer')
-    
-    
+
+
     @yield('scripts_improtados')
 
     <script>
@@ -38,18 +40,19 @@
             let formDataArray = $(this).serializeArray();
             //console.log(formDataArray);
             $.ajax({
-            url: '{{ route('guardarContactos') }}',
-            method: 'POST',
-            data: $(this).serialize(),
-            success: function(response) {
-                Swal.fire({
-                title: response.message,
-                icon: "success",
-                });
-            }
+                url: '{{ route('guardarContactos') }}',
+                method: 'POST',
+                data: $(this).serialize(),
+                success: function(response) {
+                    Swal.fire({
+                        title: response.message,
+                        icon: "success",
+                    });
+                }
             });
         })
     </script>
 
 </body>
+
 </html>

@@ -18,6 +18,23 @@ class IndexController extends Controller
         return view('public.index');
     }
 
+    public function blog()
+    {
+        //
+        return view('public.blog');
+    }
+
+    public function publicacion()
+    {
+        //
+        return view('public.publicacion');
+    }
+
+    public function agradecimiento()
+    {
+        //
+        return view('public.agradecimiento');
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -90,8 +107,6 @@ class IndexController extends Controller
         $request->validate($reglasValidacion, $mensajes);
         $formlanding = Message::create($request->all());
         // return redirect()->route('landingaplicativos', $formlanding)->with('mensaje','Mensaje enviado exitoso')->with('name', $request->nombre);
-        return response()->json(['message'=> 'Mensaje enviado con exito']);
+        return response()->json(['message' => 'Mensaje enviado con exito']);
     }
-
-    
 }

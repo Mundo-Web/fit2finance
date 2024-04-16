@@ -1,20 +1,112 @@
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Additional styles */
-@import 'additional-styles/utility-patterns.css';
-@import 'additional-styles/flatpickr.css';
+@import "additional-styles/utility-patterns.css";
+@import "additional-styles/flatpickr.css";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 
-
-@layer components{
-
-    #tabladatos_wrapper .dt-length select{
+@layer components {
+    #tabladatos_wrapper .dt-length select {
         @apply px-5;
     }
-
-     
 }
 
+a,
+button {
+    cursor: pointer;
+}
+
+.menu-list {
+    position: absolute;
+    top: 70px;
+    /* 70px */
+    right: 70px;
+    width: 235px;
+}
+
+.navigation {
+    position: fixed;
+    left: -100%;
+    /* -100% */
+    width: 350px;
+    height: 100%;
+    /* background-color: #3f76bb; */
+    background-color: #505977;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.navigation ul li {
+    color: #fff;
+    text-align: left;
+    text-transform: initial;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    /* border-bottom: 1pt solid #252525; */
+}
+
+.bar {
+    position: fixed;
+}
+
+.hamburger {
+    margin-right: 30%;
+    display: block;
+    /*top: 5%;
+      left: 95%;
+      */
+    width: 50px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+#position {
+    margin-top: 10%;
+    margin-left: 85%;
+}
+
+.bar {
+    top: 3px;
+    background: white;
+    width: 100%;
+    height: 4px;
+    transition: all 0.3s ease-in;
+}
+
+#bar2 {
+    top: 11px;
+}
+
+#bar3 {
+    top: 19px;
+}
+
+.navigation.active {
+    left: 0;
+}
+
+.hamburger.open #bar1 {
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+    background-color: transparent;
+}
+
+.hamburger.open #bar3 {
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
