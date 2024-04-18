@@ -49,7 +49,7 @@
                             </p>
                         </div>
 
-                        <div class="font-normal text-text18 xl:text-text22 text-justify">
+                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
@@ -88,7 +88,7 @@
                             </p>
                         </div>
 
-                        <div class="font-normal text-text18 xl:text-text22 text-justify">
+                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
@@ -127,7 +127,7 @@
                             </p>
                         </div>
 
-                        <div class="font-normal text-text18 xl:text-text22 text-justify">
+                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare

@@ -262,12 +262,12 @@
 
 @section('content')
     <main>
-        <section class="bg-fondomobile2 md:bg-header_principal bg-cover bg-center bg-no-repeat sm:w-full h-full pt-96">
+        <section class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-96">
             <div class="w-11/12 mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
-                            <h2 class="font-normal text-text36 xl:text-text48 text-textWhite">
+                            <h2 class="font-bold text-text36 xl:text-text48 text-textWhite ">
                                 Brindamos soluciones Financieras para negocios decididos a ser
                                 Líderes, Disruptivos y Resilientes
                             </h2>
@@ -298,13 +298,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex justify-end relative">
-
-                        <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner">
-
-
-                    </div>
                 </div>
+            </div>
+            <div class="flex justify-end relative pt-16">
+                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" 
+                class="block md:hidden w-full">
             </div>
         </section>
         <section>
@@ -312,7 +310,7 @@
                 <div class="swiper-wrapper text-textWhite" data-aos="fade-up" data-aos-offset="150">
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72">+150</p>
+                            <p class="font-bold text-[60px] md:text-text72 leading-none">+150</p>
                             <h2 class="font-bold text-[20px] md:text-text24">
                                 Empresas Atendidas
                             </h2>
@@ -323,7 +321,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72">+100</p>
+                            <p class="font-bold text-[60px] md:text-text72 leading-none">+100</p>
                             <h2 class="font-bold text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
@@ -335,7 +333,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] lg:text-text72">%99</p>
+                            <p class="font-bold text-[60px] lg:text-text72 leading-none">%99</p>
                             <h2 class="font-bold text-[20px] lg:text-text24">
                                 Retención de Clientes
                             </h2>
@@ -347,7 +345,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72">+100</p>
+                            <p class="font-bold text-[60px] md:text-text72 leading-none">+100</p>
                             <h2 class="font-bold text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
@@ -366,7 +364,7 @@
         <section class="swiper slider w-11/12 mx-auto my-24" id="servicios">
             <div class="mb-12 flex flex-col gap-5 md:flex-row md:justify-between md:items-center">
                 <div>
-                    <h2 class="fony-bold text-textGray text-text48 xl:text-text56 leading-none md:leading-tight my-5">
+                    <h2 class="font-bold text-textGray text-text48 xl:text-text56 leading-none md:leading-tight my-5">
                         Servicios de Contabilidad Integral para su empresa
                     </h2>
                     <p class="fony-normal text-textGray text-text20 xl:text-text24 text-justify">
@@ -523,7 +521,7 @@
                                     de trabajo.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 ">
                                     Brindamos servicios de:
                                 </p>
 
@@ -978,8 +976,10 @@
                     <div class="row-span-1 2md:col-span-1 order-1 2md:order-3">
                         <div class="flex justify-center items-center w-full h-full">
                             <img src="{{ asset('images/img/acerca de nostros.png') }}" alt="fit2finance"
-                                class="w-full h-full">
+                                class="w-full h-full hidden md:block">
 
+                                <img src="{{ asset('images/img/acerca de nostros_mobile.png') }}" alt="fit2finance"
+                                class="w-full h-full block md:hidden">
                         </div>
                     </div>
                 </div>
@@ -1355,7 +1355,7 @@
 
         <section class="mt-24">
             <div class="grid grid-cols-1 md:grid-cols-2" id="contacto">
-                <div class="relative">
+                <div class="relative ">
                     <img src="{{ asset('images/img/women_1.png') }}" alt="" class="w-full h-full">
 
                 </div>
@@ -1369,9 +1369,7 @@
                         posible.
                     </p>
 
-                    <style>
-
-                    </style>
+                    
                     <form action="#" class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
                         <div>
 

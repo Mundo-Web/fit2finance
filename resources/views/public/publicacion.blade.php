@@ -146,7 +146,7 @@
                             <span>Anterior </span>
                         </div>
                     </a>
-                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block">
+                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>
@@ -162,7 +162,7 @@
                             <img src="{{ asset('images/svg/chevron-right.svg') }}" alt="" />
                         </div>
                     </a>
-                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block">
+                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>

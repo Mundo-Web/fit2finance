@@ -1,4 +1,4 @@
-<footer class="bg-bgOrangeStrong bg__blog-footer py-10 md:py-20">
+<footer class="bg-bgOrangeStrong bg__blog-footer py-10 md:py-20 ">
     <div class="w-11/12 mx-auto relative" data-aos="fade-up" data-aos-offset="150">
         <div class="absolute -top-[75px] md:-top-[115px] -right-[0] rounded-full bg-white p-5 cursor-pointer">
             <a href="#inicio">

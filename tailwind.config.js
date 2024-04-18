@@ -24,6 +24,8 @@ export default {
                     "url('../../public/images/img/header_mobile_1.png')",
                 header_principal:
                     "url('../../public/images/img/header_principal.png')",
+                header_principal_1:
+                    "url('../../public/images/img/header_principal_1.png')",
                 diferenciales_banner:
                     "url('../../public/images/img/diferenciales_banner.png')",
                 banner_3: "url('../../public/images/img/banner_3.png')",
@@ -35,6 +37,8 @@ export default {
                 fondomobile2: "url('../../public/images/img/FondoMobile2.png')",
                 HeaderMobile2:
                     "url('../../public/images/img/HeaderMobile2.png')",
+                HeaderMobile2_1:
+                    "url('../../public/images/img/FondoMobile2_1.png')",
             },
             fontWeight: {
                 medium: "500",
@@ -52,7 +56,8 @@ export default {
                 blue: "2px solid rgba(0, 112, 244, 0.5)",
             },
             fontFamily: {
-                inter: ["Inter", "sans-serif"],
+                corbelregular: "corbelregular",
+                znikomit: ["znikomit", "san-serif"],
             },
             fontSize: {
                 xs: ["0.75rem", { lineHeight: "1.5" }],
