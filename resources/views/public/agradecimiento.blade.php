@@ -21,7 +21,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5">
-                            <h2 class="font-normal text-text36 xl:text-text76 text-textWhite">
+                            <h2 class="font-normal text-text76 text-textWhite leading-none md:leading-tight">
                                 ¡Gracias por tu Interés!
                             </h2>
                             <h2 class="font-normal text-text20 xl:text-text24 text-textWhite">
@@ -31,9 +31,9 @@
                             </h2>
                         </div>
                         <div class="flex flex-col md:flex-row gap-10 w-full">
-                            <a href="#"
+                            <a href="{{route('index')}}"
                                 class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
-                                <span> Cotizar </span>
+                                <span> Volver al inicio </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +45,7 @@
                                 </div>
                             </a>
 
-                            <a href="#servicios"
-                                class="bg-transparent py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
-                                Servicios
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="flex justify-end relative">
