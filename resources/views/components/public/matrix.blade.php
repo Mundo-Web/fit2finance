@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+      name="description"
+      content="Obtén la asesoría financiera y cursos de contabilidad para empresas en Fit 2 Finance. Nuestro equipo de expertos te ayudarán a cumplir tus objetivos."
+    />
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -15,7 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    
+    <title>Boutique financiera - Fit 2 Finance</title>
 </head>
 
 <body>

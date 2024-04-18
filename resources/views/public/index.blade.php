@@ -256,19 +256,23 @@
         .swiper-slide-flex {
             display: flex !important;
         }
+
+
+
+       
     </style>
 @stop
 
 
 @section('content')
     <main >
-        <section class="bg-fondomobile2 md:bg-fondo2 bg-cover bg-center bg-no-repeat sm:w-full h-full  py-12 ">
+        <section class="bg-fondomobile2 md:bg-fondo2 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-24">
             <div class="w-11/12 mx-auto" >
                 <div class="grid grid-cols-1 md:grid-cols-2">
                   <div
                     class="flex flex-col justify-center items-center gap-10 md:py-10"
                   >
-                    <div class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
+                    <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
                       <h2
                         class="font-normal text-text36 xl:text-text48 text-textWhite"
                       >
@@ -1285,7 +1289,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="publicacion.html"
+                                        <a href="{{route('publicacion')}}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1318,7 +1322,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="publicacion.html"
+                                        <a href="{{route('publicacion')}}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1351,7 +1355,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="publicacion.html"
+                                        <a href="{{route('publicacion')}}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1487,6 +1491,7 @@
 
 
 @section('scripts_improtados')
+
     <script>
         const openForm = document.querySelector(".open-modal");
         const closeForm = document.querySelector(".close-modal");

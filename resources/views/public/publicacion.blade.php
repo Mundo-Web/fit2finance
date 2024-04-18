@@ -2,6 +2,17 @@
 
 @section('css_improtados')
     <style>
+.stroke__blog-footer{
+            stroke: #E38533
+        }
+
+        .bg__blog-footer{
+            background-color: #505977;
+        }
+
+        .btn__blog-footer{
+            background-color: #E38533
+        }
 
     </style>
 @stop

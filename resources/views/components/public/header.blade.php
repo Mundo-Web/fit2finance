@@ -41,13 +41,13 @@
   <!-- --- -->
   <header id="inicio">
     <div
-      class="bg-fondo_mobile md:bg-imagen_header bg-cover bg-center bg-no-repeat sm:w-full h-full"
+      class="bg-fondo_mobile md:bg-imagen_header  bg-cover bg-center bg-no-repeat sm:w-full h-full"
     >
       <div
-        class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-12"
-       
+        class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-12" 
+        data-aos="fade-up" data-aos-offset="150"
       >
-        <div>
+        <div data-aos="fade-up" data-aos-offset="150">
           <h1 class="font-bold text-textWhiteWeak text-text28 xl:text-text32">
             Curso de Contabilidad para Emprendedores
           </h1>
@@ -58,7 +58,7 @@
           </p>
         </div>
 
-        <div class="w-full md:w-auto">
+        <div class="w-full md:w-auto" >
           <button
             type="button"
             class="bg-bgGray p-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 hover:bg-bgGrayStrong md:duration-500 w-full justify-center items-center open-modal"
@@ -93,7 +93,7 @@
               <div class="text-center text-textWhite">
                 <div class="flex flex-col md:flex-row">
                   <div
-                    class="bg-imagen_form_fondo bg-cover bg-center bg-no-repeat sm:w-full h-full flex flex-col gap-8 p-10 basis-1/2"
+                    class="bg-imagen_form_fondo  bg-cover bg-center bg-no-repeat sm:w-full h-full flex flex-col gap-8 p-10 basis-1/2"
                   >
                     <div
                       class="flex flex-col items-center md:flex-row justify-between gap-5"
@@ -208,14 +208,13 @@
     </div>
 
     <div
-      class="bg-[#505977] bg-HeaderMobile2 md:bg-header_mobile_5 bg-cover bg-center bg-no-repeat sm:w-full h-full"
+      class="bg-[#505977] bg-HeaderMobile2 md:bg-header_mobile_5  bg-cover bg-center bg-no-repeat sm:w-full h-full"
     >
       <div
         class="w-11/12 mx-auto flex justify-between items-center py-10"
-        data-aos="fade-up"
-        data-aos-offset="150"
+     
       >
-        <a href="index.html">
+        <a href="index.html" data-aos="fade-up" data-aos-offset="150">
           <div>
             <img
             src="{{asset('images/img/logo.png')}}"

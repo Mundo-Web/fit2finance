@@ -6,6 +6,20 @@
             background: #e38533;
             color: white;
         }
+
+        .stroke__blog-footer{
+            stroke: #E38533
+        }
+
+        .bg__blog-footer{
+            background-color: #505977;
+        }
+
+        .btn__blog-footer{
+            background-color: #E38533
+        }
+
+        
     </style>
 @stop
 
@@ -41,7 +55,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="publicacion.html"
+                            <a href="{{route('publicacion')}}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
@@ -80,7 +94,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="publicacion.html"
+                            <a href="{{route('publicacion')}}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
@@ -119,7 +133,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="publicacion.html"
+                            <a href="{{route('publicacion')}}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>

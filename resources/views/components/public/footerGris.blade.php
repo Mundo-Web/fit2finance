@@ -9,8 +9,10 @@
         class="absolute -top-[75px] md:-top-[115px] -right-[0] rounded-full bg-white p-5 cursor-pointer"
       >
         <a href="#inicio"
-          ><img src="./images/svg/fi-rr-arrow-from-bottom.svg" alt="arrow"
-        /></a>
+          >
+          <img src="./images/svg/fi-rr-arrow-from-bottom.svg" alt="arrow"
+        />
+      </a>
       </div>
     </div>
     <!-- --- -->
