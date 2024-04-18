@@ -26,7 +26,7 @@
 <header id="inicio" class="absolute w-full">
     <div
         class="bg-fondo_mobile md:bg-imagen_header  bg-cover bg-center bg-no-repeat sm:w-full h-full bg__agradecimiento-hidden">
-        <div class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-12">
+        <div class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-10">
             <div data-aos="fade-up" data-aos-offset="150">
                 <h1 class="font-bold text-textWhiteWeak text-text28 xl:text-text32">
                     Curso de Contabilidad para Emprendedores

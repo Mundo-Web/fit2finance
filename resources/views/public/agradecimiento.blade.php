@@ -16,9 +16,9 @@
 
 @section('content')
     <main>
-        <section class="bg-fondomobile2 md:bg-header_principal bg-cover bg-center bg-no-repeat sm:w-full h-full pt-44">
+        <section class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-44">
             <div class="w-11/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
-                <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5">
                             <h2 class="font-normal text-text76 text-textWhite leading-none md:leading-tight">
@@ -48,15 +48,13 @@
                             
                         </div>
                     </div>
-                    <div class="flex justify-end relative">
-                        <img src="./images/img/foto-banner.png" alt="banner" />
-                        <div class="fixed bottom-[36px] z-[100]">
-                            <a href="#" class="">
-                                <img src="./images/img/WhatsApp.png" alt="whatsapp" class="" />
-                            </a>
-                        </div>
-                    </div>
+                   
                 </div>
+            </div>
+
+            <div class="flex justify-end relative pt-16">
+                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" 
+                class="block md:hidden w-full">
             </div>
 
 
