@@ -2,7 +2,13 @@
 
 @section('css_improtados')
     <style>
+        .bg__agradecimiento-hidden {
+            display: none
+        }
 
+        .bg__header-agradecimiento {
+            background-color: #505977
+        }
     </style>
 @stop
 
@@ -10,19 +16,18 @@
 
 @section('content')
     <main>
-        <section class="bg-header_mobile md:bg-header_principal bg-cover bg-center bg-no-repeat sm:w-full h-full pt-44">
+        <section class="bg-fondomobile2 md:bg-header_principal bg-cover bg-center bg-no-repeat sm:w-full h-full pt-44">
             <div class="w-11/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5">
-                            <h2 class="font-normal text-text36 xl:text-text48 text-textWhite">
-                                Brindamos soluciones Financieras para negocios decididos a ser
-                                Líderes, Disruptivos y Resilientes
+                            <h2 class="font-normal text-text36 xl:text-text76 text-textWhite">
+                                ¡Gracias por tu Interés!
                             </h2>
                             <h2 class="font-normal text-text20 xl:text-text24 text-textWhite">
-                                Somos Fit 2 Finance y ponemos a tu disposición nuestros
-                                conocimientos y experiencia en <b>servicios contables</b> para
-                                brindarle valor y asegurar la sostenibilidad de tu negocio.
+                                Apreciamos tu interés en nuestros servicios de contabilidad. Nos pondremos en contacto
+                                contigo lo antes posible para discutir tus necesidades y cómo podemos ayudarte a alcanzar
+                                tus objetivos financieros. ¡Gracias por elegirnos como tu socio en contabilidad!
                             </h2>
                         </div>
                         <div class="flex flex-col md:flex-row gap-10 w-full">

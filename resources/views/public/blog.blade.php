@@ -7,25 +7,27 @@
             color: white;
         }
 
-        .stroke__blog-footer{
+        .stroke__blog-footer {
             stroke: #E38533
         }
 
-        .bg__blog-footer{
+        .bg__blog-footer {
             background-color: #505977;
         }
 
-        .btn__blog-footer{
+        .btn__blog-footer {
             background-color: #E38533
         }
 
-        
+        .bg__header-blog {
+            background-color: #505977
+        }
     </style>
 @stop
 
 
 @section('content')
-    <main class="flex flex-col gap-24 w-11/12 mx-auto my-12">
+    <main class="flex flex-col gap-24 w-11/12 mx-auto  pt-[470px] md:pt-96 pb-16">
         <section class="flex flex-col gap-12 md:gap-24">
             <div class="flex flex-col gap-12 md:gap-24 md:flex-row">
                 <div class="basis-8/12 flex flex-col gap-12" data-aos="fade-up" data-aos-offset="150">
@@ -55,7 +57,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="{{route('publicacion')}}"
+                            <a href="{{ route('publicacion') }}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
@@ -94,7 +96,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="{{route('publicacion')}}"
+                            <a href="{{ route('publicacion') }}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
@@ -133,7 +135,7 @@
                             </p>
                         </div>
                         <div>
-                            <a href="{{route('publicacion')}}"
+                            <a href="{{ route('publicacion') }}"
                                 class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>

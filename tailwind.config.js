@@ -114,6 +114,7 @@ export default {
                 text60: "60px",
                 text64: "68px",
                 text72: "72px",
+                text76: "76px",
             },
 
             backgroundColor: {

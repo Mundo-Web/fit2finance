@@ -256,88 +256,58 @@
         .swiper-slide-flex {
             display: flex !important;
         }
-
-
-
-       
     </style>
 @stop
 
 
 @section('content')
-    <main >
-        <section class="bg-fondomobile2 md:bg-fondo2 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-24">
-            <div class="w-11/12 mx-auto" >
+    <main>
+        <section class="bg-fondomobile2 md:bg-header_principal bg-cover bg-center bg-no-repeat sm:w-full h-full pt-96">
+            <div class="w-11/12 mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                  <div
-                    class="flex flex-col justify-center items-center gap-10 md:py-10"
-                  >
-                    <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
-                      <h2
-                        class="font-normal text-text36 xl:text-text48 text-textWhite"
-                      >
-                        Brindamos soluciones Financieras para negocios decididos a ser
-                        Líderes, Disruptivos y Resilientes
-                      </h2>
-                      <h2
-                        class="font-normal text-text20 xl:text-text24 text-textWhite"
-                      >
-                        Somos Fit 2 Finance y ponemos a tu disposición nuestros
-                        conocimientos y experiencia en <b>servicios contables</b> para
-                        brindarle valor y asegurar la sostenibilidad de tu negocio.
-                      </h2>
-                    </div>
-                    <div class="flex flex-col md:flex-row gap-10 w-full" data-aos="fade-up" data-aos-offset="150">
-                      <a
-                        href="#"
-                        class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500"
-                      >
-                        <span> Cotizar </span>
-                        <div>
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
-                              stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
+                    <div class="flex flex-col justify-center items-center gap-10 md:py-10">
+                        <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
+                            <h2 class="font-normal text-text36 xl:text-text48 text-textWhite">
+                                Brindamos soluciones Financieras para negocios decididos a ser
+                                Líderes, Disruptivos y Resilientes
+                            </h2>
+                            <h2 class="font-normal text-text20 xl:text-text24 text-textWhite">
+                                Somos Fit 2 Finance y ponemos a tu disposición nuestros
+                                conocimientos y experiencia en <b>servicios contables</b> para
+                                brindarle valor y asegurar la sostenibilidad de tu negocio.
+                            </h2>
                         </div>
-                      </a>
-        
-                      <a
-                        href="#servicios"
-                        class="bg-transparent py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500"
-                      >
-                        Servicios
-                      </a>
+                        <div class="flex flex-col md:flex-row gap-10 w-full" data-aos="fade-up" data-aos-offset="150">
+                            <a href="#"
+                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
+                                <span> Cotizar </span>
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#servicios"
+                                class="bg-transparent py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
+                                Servicios
+                            </a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="flex justify-end relative">
-              
-                    <img src="{{asset('images/img/foto-banner.png')}}" alt="banner">
-                    
-                    <div class="fixed bottom-[36px] z-[100]">
-                      <a href="#" class=""
-                        ><img
-                            src="{{asset('images/img/WhatsApp.png')}}"
-             
-                          alt="whatsapp"
-                          class="w-20 h-20 md:w-full md:h-full"
-                      /></a>
+                    <div class="flex justify-end relative">
+
+                        <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner">
+
+
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </section>
-        <section >
+        <section>
             <div class="swiper banner bg-bgOrangeStrong">
                 <div class="swiper-wrapper text-textWhite" data-aos="fade-up" data-aos-offset="150">
                     <div class="swiper-slide py-5 px-5 lg:px-16">
@@ -418,8 +388,9 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img  src="{{asset('images/svg/outsourcing_financiero.svg')}}" alt="outsourcing_financiero">
-                                
+                                <img src="{{ asset('images/svg/outsourcing_financiero.svg') }}"
+                                    alt="outsourcing_financiero">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5">
                                 <h2
@@ -477,7 +448,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/servicio_contable_360.svg')}}" alt="servicio contable">
+                                <img src="{{ asset('images/svg/servicio_contable_360.svg') }}" alt="servicio contable">
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -534,8 +505,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/diagnostico.svg')}}" alt="diagnostico">
-                  
+                                <img src="{{ asset('images/svg/diagnostico.svg') }}" alt="diagnostico">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -594,8 +565,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/auditoria.svg')}}" alt="auditoria">
-                              
+                                <img src="{{ asset('images/svg/auditoria.svg') }}" alt="auditoria">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -646,8 +617,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/valuacion.svg')}}" alt="valuacion">
-                                
+                                <img src="{{ asset('images/svg/valuacion.svg') }}" alt="valuacion">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -698,7 +669,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/factibilidad.svg')}}" alt="factibilidad financiera">
+                                <img src="{{ asset('images/svg/factibilidad.svg') }}" alt="factibilidad financiera">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -767,8 +738,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/adviser.svg')}}" alt="adviser">
-                   
+                                <img src="{{ asset('images/svg/adviser.svg') }}" alt="adviser">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -825,8 +796,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/procesos.svg')}}" alt="procesos concursales">
-                                
+                                <img src="{{ asset('images/svg/procesos.svg') }}" alt="procesos concursales">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -877,8 +848,8 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{asset('images/svg/asesoria.svg')}}" alt="asesoria tributaria">
-                               
+                                <img src="{{ asset('images/svg/asesoria.svg') }}" alt="asesoria tributaria">
+
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -1006,8 +977,9 @@
                     </div>
                     <div class="row-span-1 2md:col-span-1 order-1 2md:order-3">
                         <div class="flex justify-center items-center w-full h-full">
-                            <img src="{{asset('images/img/acerca de nostros.png')}}" alt="fit2finance" class="w-full h-full">
-                            
+                            <img src="{{ asset('images/img/acerca de nostros.png') }}" alt="fit2finance"
+                                class="w-full h-full">
+
                         </div>
                     </div>
                 </div>
@@ -1024,42 +996,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/clever.png')}}" alt="clever">
-              
+                            <img src="{{ asset('images/img/clever.png') }}" alt="clever">
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/figuras.png')}}" alt="figuras">
-                
+                            <img src="{{ asset('images/img/figuras.png') }}" alt="figuras">
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/happy_vea.png')}}" alt="happy vea">
-              
+                            <img src="{{ asset('images/img/happy_vea.png') }}" alt="happy vea">
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/implementos_reactivos.png')}}" alt="implementos reactivos">
-               
+                            <img src="{{ asset('images/img/implementos_reactivos.png') }}" alt="implementos reactivos">
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/oddo_carrusel.png')}}" alt="odoo">
-             
+                            <img src="{{ asset('images/img/oddo_carrusel.png') }}" alt="odoo">
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/sany.png')}}" alt="sany" />
+                            <img src="{{ asset('images/img/sany.png') }}" alt="sany" />
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{asset('images/img/implementos_reactivos.png')}}" alt="implementos reactivos">
+                            <img src="{{ asset('images/img/implementos_reactivos.png') }}" alt="implementos reactivos">
                         </div>
                     </div>
                 </div>
@@ -1193,8 +1165,8 @@
                     Alianza Estratégica con Sumatek: Potenciando tu Empresa con Odoo
                 </h2>
                 <div class="flex justify-center items-center">
-                    <img src="{{asset('images/img/odoo.png')}}" alt="odoo">
-          
+                    <img src="{{ asset('images/img/odoo.png') }}" alt="odoo">
+
                 </div>
                 <p class="font-normal text-text18 xl:text-text22">
                     Nos enorgullece ser socios de Somatec, una empresa líder con sello
@@ -1253,7 +1225,7 @@
                     </p>
 
                     <div class="flex">
-                        <a href="{{route('blog')}}"
+                        <a href="{{ route('blog') }}"
                             class="bg-[#03164D] py-4 px-10 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 justify-center items-center">
                             <span> Ver más Artículos </span>
                             <div>
@@ -1275,8 +1247,8 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col gap-5">
                                     <div class="flex justify-center items-center">
-                                        <img src="{{asset('images/img/blog_1.png')}}" alt="" class="w-full">
-                                      
+                                        <img src="{{ asset('images/img/blog_1.png') }}" alt="" class="w-full">
+
                                     </div>
                                     <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesqusse tristique sed ligula quis lacinia.
@@ -1289,7 +1261,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="{{route('publicacion')}}"
+                                        <a href="{{ route('publicacion') }}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1308,8 +1280,8 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col gap-5">
                                     <div class="flex justify-center items-center">
-                                        <img src="{{asset('images/img/blog_2.png')}}" alt="blog" class="w-full">
-                                  
+                                        <img src="{{ asset('images/img/blog_2.png') }}" alt="blog" class="w-full">
+
                                     </div>
                                     <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesque tristique sed ligula quis lacinia.
@@ -1322,7 +1294,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="{{route('publicacion')}}"
+                                        <a href="{{ route('publicacion') }}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1341,8 +1313,8 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col gap-5">
                                     <div class="flex justify-center items-center">
-                                        <img src="{{asset('images/img/blog_3.png')}}" alt="blog" class="w-full">
-                               
+                                        <img src="{{ asset('images/img/blog_3.png') }}" alt="blog" class="w-full">
+
                                     </div>
                                     <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesque tristique sed ligula quis lacinia.
@@ -1355,7 +1327,7 @@
                                     </p>
 
                                     <div>
-                                        <a href="{{route('publicacion')}}"
+                                        <a href="{{ route('publicacion') }}"
                                             class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
@@ -1384,8 +1356,8 @@
         <section class="mt-24">
             <div class="grid grid-cols-1 md:grid-cols-2" id="contacto">
                 <div class="relative">
-                    <img src="{{asset('images/img/women_1.png')}}" alt="" class="w-full h-full">
-        
+                    <img src="{{ asset('images/img/women_1.png') }}" alt="" class="w-full h-full">
+
                 </div>
                 <div class="bg-bgGray text-textWhite flex flex-col gap-10 justify-center p-10">
                     <h3 class="font-bold text-text48 xl:text-text52">
@@ -1398,15 +1370,7 @@
                     </p>
 
                     <style>
-                       /*  [type='text']:focus, [type='tel']:focus, [type="email"]:focus{
-                            box-shadow:none;
-                            border-color: white ; 
-                        }
 
-                        [type='text'], [type='tel'], [type="email"]{
-                            border-width: 0;
-                            border-bottom: 1.5px solid white; 
-                        } */
                     </style>
                     <form action="#" class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
                         <div>
@@ -1416,12 +1380,12 @@
                         </div>
                         <div>
                             <input type="tel" placeholder="Teléfono"
-                            class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
                         </div>
 
                         <div>
                             <input type="email" placeholder="E-mail"
-                            class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
                         </div>
 
                         <div>

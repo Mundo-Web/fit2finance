@@ -6,6 +6,7 @@ use App\Http\Requests\StoreIndexRequest;
 use App\Http\Requests\UpdateIndexRequest;
 use App\Models\Index;
 use App\Models\Message;
+use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
@@ -107,6 +108,8 @@ class IndexController extends Controller
         $request->validate($reglasValidacion, $mensajes);
         $formlanding = Message::create($request->all());
         // return redirect()->route('landingaplicativos', $formlanding)->with('mensaje','Mensaje enviado exitoso')->with('name', $request->nombre);
-        return response()->json(['message' => 'Mensaje enviado con exito']);
+        return response()->json(['message'=> 'Mensaje enviado con exito']);
     }
+
+    
 }

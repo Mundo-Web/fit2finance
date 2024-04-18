@@ -10,8 +10,10 @@ import flatpickr from "flatpickr";
 
 // Import AOS
 import "aos/dist/aos.css";
-import Aos from "aos";
-Aos.init();
+import AOS from "aos";
+window.onload = function () {
+    AOS.init();
+};
 
 // import component from './components/component';
 import dashboardCard01 from "./components/dashboard-card-01";
@@ -138,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
     dashboardCard11();
 });
 
-/* CODIGO PARA hamburguesa */
 const menues = document.querySelectorAll(".onMenu");
 
 menues.forEach((menu) => {

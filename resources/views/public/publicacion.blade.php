@@ -2,24 +2,27 @@
 
 @section('css_improtados')
     <style>
-.stroke__blog-footer{
+        .stroke__blog-footer {
             stroke: #E38533
         }
 
-        .bg__blog-footer{
+        .bg__blog-footer {
             background-color: #505977;
         }
 
-        .btn__blog-footer{
+        .btn__blog-footer {
             background-color: #E38533
         }
 
+        .bg__header-publicacion {
+            background-color: #505977
+        }
     </style>
 @stop
 
 
 @section('content')
-    <main class="flex flex-col gap-12 w-11/12 mx-auto my-12">
+    <main class="flex flex-col gap-12 w-11/12 mx-auto pt-[470px] md:pt-96 pb-20">
         <section class="text-textGray flex flex-col gap-10">
             <div class="flex flex-col gap-4 text-center">
                 <h2 class="font-bold text-text48 xl:text-text52 leading-none md:leading-tight">
