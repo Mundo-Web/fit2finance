@@ -28,18 +28,18 @@
         class="bg-fondo_mobile md:bg-imagen_header  bg-cover bg-center bg-no-repeat sm:w-full h-full bg__agradecimiento-hidden">
         <div class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-10">
             <div data-aos="fade-up" data-aos-offset="150">
-                <h1 class="font-bold text-textWhiteWeak text-text28 xl:text-text32">
+                <h1 class="font-corbel_700 text-textWhiteWeak text-text28 xl:text-text32">
                     Curso de Contabilidad para Emprendedores
                 </h1>
-                <p class="font-normal text-textWhiteWeak text-text18 xl:text-text22">
+                <p class="font-corbel_400 text-textWhiteWeak text-text18 xl:text-text22">
                     Aprende contabilidad fácilmente
                 </p>
             </div>
 
             <div class="w-full md:w-auto">
                 <button type="button"
-                    class="bg-bgGray p-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 hover:bg-bgGrayStrong md:duration-500 w-full justify-center items-center open-modal">
-                    <span> Insribete al curso </span>
+                    class="bg-bgGray p-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 hover:bg-bgGrayStrong md:duration-500 w-full justify-center items-center open-modal">
+                    <span> Inscríbete al curso </span>
                     <div>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +140,7 @@
             </a>
 
             <div data-aos="fade-up" data-aos-offset="150">
-                <nav class="text-white hidden md:flex gap-5 font-bold text-text22">
+                <nav class="text-white hidden md:flex gap-5 font-corbel_700 text-text22">
                     <a href="/" class="py-2 px-5 flex gap-2 justify-center items-center">
                         <img src="{{ asset('images/svg/point_naranja.svg') }}" alt="point" />
                         <span>Inicio</span>

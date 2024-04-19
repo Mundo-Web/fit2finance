@@ -21,10 +21,10 @@
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5">
-                            <h2 class="font-normal text-text76 text-textWhite leading-none md:leading-tight">
+                            <h2 class="font-corbel_400 text-text76 text-textWhite leading-none md:leading-tight">
                                 ¡Gracias por tu Interés!
                             </h2>
-                            <h2 class="font-normal text-text20 xl:text-text24 text-textWhite">
+                            <h2 class="font-corbel_400 text-text20 xl:text-text24 text-textWhite">
                                 Apreciamos tu interés en nuestros servicios de contabilidad. Nos pondremos en contacto
                                 contigo lo antes posible para discutir tus necesidades y cómo podemos ayudarte a alcanzar
                                 tus objetivos financieros. ¡Gracias por elegirnos como tu socio en contabilidad!
@@ -32,7 +32,7 @@
                         </div>
                         <div class="flex flex-col md:flex-row gap-10 w-full">
                             <a href="{{route('index')}}"
-                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
+                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                                 <span> Volver al inicio </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"

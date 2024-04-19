@@ -111,17 +111,46 @@ button {
     transform: rotate(-45deg) translate(6px, -5px);
 }
 
+/* ------- tipografias ----- */
+
 @font-face {
     font-family: "corbelregular";
-    src: url("../../public/fonts/corbel-webfont.woff2") format("woff2"),
-        url("../../public/fonts/corbel-webfont.woff") format("woff");
+    src: url("../fonts/corbel-webfont.woff") format("woff");
     font-weight: normal;
+    font-style: normal;
 }
 
-/* @font-face {
-    font-family: "znikomit";
-    src: url("../../public/fonts/znikomit-webfont.woff2") format("woff2"),
-        url("../../public/fonts/znikomit-webfont.woff") format("woff");
-    font-weight: bolder;
+@font-face {
+    font-family: "corbelbold";
+    src: url("../fonts/corbelb-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
- */
+
+@font-face {
+    font-family: "corbelitalic";
+    src: url("../fonts/corbeli-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "corbellight";
+    src: url("../fonts/corbell-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "corbellight_italic";
+    src: url("../fonts/corbelli-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "corbelbold_italic";
+    src: url("../fonts/corbelz-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

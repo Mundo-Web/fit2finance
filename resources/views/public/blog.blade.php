@@ -31,7 +31,7 @@
         <section class="flex flex-col gap-12 md:gap-24">
             <div class="flex flex-col gap-12 md:gap-24 md:flex-row">
                 <div class="basis-8/12 flex flex-col gap-12" data-aos="fade-up" data-aos-offset="150">
-                    <h2 class="text-[#03164D] font-bold text-text48 xl:text-text52">
+                    <h2 class="text-[#03164D] font-corbel_700 text-text48 xl:text-text52">
                         Blog
                     </h2>
                     <div class="flex flex-col gap-5 border-b-[1.5px] border-[#DDDDDD] pb-12">
@@ -40,16 +40,16 @@
                         </div>
 
                         <div class="flex flex-col gap-2">
-                            <h3 class="font-bold text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-bold text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero </span> <span>|</span> Categoría:
+                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
                                 <span class="text-textOrange">Contabilidad</span>
                             </p>
                         </div>
 
-                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
+                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
@@ -58,7 +58,7 @@
                         </div>
                         <div>
                             <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -79,16 +79,16 @@
                         </div>
 
                         <div class="flex flex-col gap-2">
-                            <h3 class="font-bold text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-bold text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero </span> <span>|</span> Categoría:
+                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
                                 <span class="text-textOrange">Contabilidad</span>
                             </p>
                         </div>
 
-                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
+                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
@@ -97,7 +97,7 @@
                         </div>
                         <div>
                             <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -118,16 +118,16 @@
                         </div>
 
                         <div class="flex flex-col gap-2">
-                            <h3 class="font-bold text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-bold text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero </span> <span>|</span> Categoría:
+                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
                                 <span class="text-textOrange">Contabilidad</span>
                             </p>
                         </div>
 
-                        <div class="font-normal text-textGray text-text18 xl:text-text22 text-justify">
+                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
                             <p>
                                 Class aptent taciti sociosqu ad litora torquent per conubia
                                 nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
@@ -136,7 +136,7 @@
                         </div>
                         <div>
                             <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                 <span>Leer más</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -160,70 +160,70 @@
                     </div>
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
-                        <h3 class="font-bold text-text20 xl:text-text24">Categorías</h3>
+                        <h3 class="font-corbel_700 text-text20 xl:text-text24">Categorías</h3>
                         <a href="#"
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Todos (2)
                         </a>
                         <a href="#"
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Pallentesque (3)
                         </a>
                         <a href=""
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Conubia (2)
                         </a>
                         <a href=""
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Commodo (1)
                         </a>
                         <a href=""
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Tristique (5)
                         </a>
                     </div>
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
-                        <h3 class="font-bold text-text20 xl:text-text24">Archivo</h3>
+                        <h3 class="font-corbel_700 text-text20 xl:text-text24">Archivo</h3>
                         <a href="#"
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Marzo 2024
                         </a>
                         <a href="#"
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Enero 2024
                         </a>
                         <a href=""
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Diciembre 2024
                         </a>
                         <a href=""
-                            class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                             Noviembre 2024
                         </a>
                     </div>
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
-                        <h3 class="font-bold text-text20 xl:text-text24">Etiquetas</h3>
+                        <h3 class="font-corbel_700 text-text20 xl:text-text24">Etiquetas</h3>
                         <div class="flex gap-3">
                             <a href="#"
-                                class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                                 Ligula,
                             </a>
                             <a href="#"
-                                class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                                 Commodo,
                             </a>
                             <a href=""
-                                class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                                 Tristique,
                             </a>
                             <a href=""
-                                class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                                 Conubia,
                             </a>
                             <a href=""
-                                class="font-normal text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
+                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
                                 Pallentesque
                             </a>
                         </div>
@@ -232,19 +232,19 @@
             </div>
 
             <div class="flex items-center gap-2">
-                <p class="text-textGray font-normal text-[16px] xl:text-text20">
+                <p class="text-textGray font-corbel_400 text-[16px] xl:text-text20">
                     Pág.
                 </p>
                 <nav class="flex justify-between" aria-label="Pagination">
                     <div class="flex items-center text-[16px] xl:text-text20 text-textGray">
-                        <a class="rounded-lg px-4 py-2 pagination__blog font-medium bg-pagination" href="#">
+                        <a class="rounded-lg px-4 py-2 pagination__blog font-corbel_700 bg-pagination" href="#">
                             1
                         </a>
                         <p>|</p>
-                        <a class="rounded-lg px-4 py-2 font-medium pagination__blog" href="#">2
+                        <a class="rounded-lg px-4 py-2 font-corbel_700 pagination__blog" href="#">2
                         </a>
                         <p>|</p>
-                        <a class="rounded-lg px-4 py-2 font-medium pagination__blog" href="#">3
+                        <a class="rounded-lg px-4 py-2 font-corbel_700 pagination__blog" href="#">3
                         </a>
                     </div>
                 </nav>

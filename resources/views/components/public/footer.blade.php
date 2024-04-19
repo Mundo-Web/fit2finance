@@ -120,9 +120,9 @@
                     </div>
                 </a>
 
-                <a href="#" class="font-bold text-[16px] xl:text-text20">contacto@fit2-finance.com</a>
+                <a href="#" class="ffont-corbel_700 text-[16px] xl:text-text20">contacto@fit2-finance.com</a>
                 <div class="flex flex-col gap-4">
-                    <p class="font-normal text-[12px] xl:text-text16">Síguenos en:</p>
+                    <p class="font-corbel_400 text-[12px] xl:text-text16">Síguenos en:</p>
                     <div class="flex gap-5 items-center">
                         <a href="#">
                             <img src="{{ asset('images/svg/insta.svg') }}" alt="instagram">
@@ -145,7 +145,7 @@
             </div>
 
             <div class="flex flex-row md:flex-col gap-5 items-start" data-aos="fade-up" data-aos-offset="150">
-                <a href="index.html" class="font-bold text-text18 xl:text-text22 flex gap-2">
+                <a href="index.html" class="ffont-corbel_700 text-text18 xl:text-text22 flex gap-2">
                     <img src="./images/svg/point_blanco.svg" alt="point" />
                     <span>Inicio</span></a>
                 <a href="index.html#servicios" class="text-text18">Servicios</a>
@@ -154,7 +154,7 @@
             </div>
 
             <div class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
-                <p class="font-bold text-text18 xl:text-text22">
+                <p class="ffont-corbel_700 text-text18 xl:text-text22">
                     ¡Suscríbete ahora para no perderte ninguno de nuestros artículos!
                 </p>
                 <div>

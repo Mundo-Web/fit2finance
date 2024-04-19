@@ -267,19 +267,19 @@
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
                         <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
-                            <h2 class="font-bold text-text36 xl:text-text48 text-textWhite ">
+                            <h2 class="font-corbel_700 text-text36 xl:text-text48 text-textWhite ">
                                 Brindamos soluciones Financieras para negocios decididos a ser
                                 Líderes, Disruptivos y Resilientes
                             </h2>
-                            <h2 class="font-normal text-text20 xl:text-text24 text-textWhite">
+                            <h2 class="font-corbel_400 text-text20 xl:text-text24 text-textWhite">
                                 Somos Fit 2 Finance y ponemos a tu disposición nuestros
                                 conocimientos y experiencia en <b>servicios contables</b> para
                                 brindarle valor y asegurar la sostenibilidad de tu negocio.
                             </h2>
                         </div>
-                        <div class="flex flex-col md:flex-row gap-10 w-full" data-aos="fade-up" data-aos-offset="150">
+                        <div class="flex flex-col md:flex-row gap-10 w-full">
                             <a href="#"
-                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
+                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                                 <span> Cotizar </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -293,7 +293,7 @@
                             </a>
 
                             <a href="#servicios"
-                                class="bg-transparent py-3 md:py-2 px-4 font-bold text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
+                                class="bg-transparent py-3 md:py-2 px-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
                                 Servicios
                             </a>
                         </div>
@@ -310,22 +310,22 @@
                 <div class="swiper-wrapper text-textWhite" data-aos="fade-up" data-aos-offset="150">
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72 leading-none">+150</p>
-                            <h2 class="font-bold text-[20px] md:text-text24">
+                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+150</p>
+                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Atendidas
                             </h2>
-                            <p class="font-normal text-[14px] md:text-text18 xl:text-text20">
+                            <p class="font-corbel_400 text-[14px] md:text-text18 xl:text-text20">
                                 Hemos trabajado con más de 150 empresas en Perú.
                             </p>
                         </div>
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72 leading-none">+100</p>
-                            <h2 class="font-bold text-[20px] md:text-text24">
+                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+100</p>
+                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
-                            <p class="font-normal text-[14px] md:text-text18 xl:text-text20">
+                            <p class="font-corbel_400 text-[14px] md:text-text18 xl:text-text20">
                                 Más de 100 empresas confían en nosotros y están satisfechas
                                 con nuestros servicios.
                             </p>
@@ -333,11 +333,11 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] lg:text-text72 leading-none">%99</p>
-                            <h2 class="font-bold text-[20px] lg:text-text24">
+                            <p class="font-corbel_700 text-[60px] lg:text-text72 leading-none">%99</p>
+                            <h2 class="font-corbel_700 text-[20px] lg:text-text24">
                                 Retención de Clientes
                             </h2>
-                            <p class="font-normal text-[14px] md:text-text18 xl:text-text20">
+                            <p class="font-corbel_400 text-[14px] md:text-text18 xl:text-text20">
                                 El 99% de nuestros clientes continúan trabajando con nosotros
                                 cada año.
                             </p>
@@ -345,11 +345,11 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-bold text-[60px] md:text-text72 leading-none">+100</p>
-                            <h2 class="font-bold text-[20px] md:text-text24">
+                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+100</p>
+                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
-                            <p class="font-normal text-[14px] md:text-text18 xl:text-text20">
+                            <p class="font-corbel_400 text-[14px] md:text-text18 xl:text-text20">
                                 Más de 100 empresas confían en nosotros y están satisfechas
                                 con nuestros servicios.
                             </p>
@@ -364,10 +364,10 @@
         <section class="swiper slider w-11/12 mx-auto my-24" id="servicios">
             <div class="mb-12 flex flex-col gap-5 md:flex-row md:justify-between md:items-center">
                 <div>
-                    <h2 class="font-bold text-textGray text-text48 xl:text-text56 leading-none md:leading-tight my-5">
+                    <h2 class="font-corbel_700 text-textGray text-text48 xl:text-text56 leading-none md:leading-tight my-5">
                         Servicios de Contabilidad Integral para su empresa
                     </h2>
-                    <p class="fony-normal text-textGray text-text20 xl:text-text24 text-justify">
+                    <p class="font-corbel_400 text-textGray text-text20 xl:text-text24 text-justify">
                         Descubra cómo nuestros servicios contables pueden impulsar el
                         éxito financiero de su empresa. Desde la gestión completa de la
                         contabilidad hasta auditorías detalladas, estamos aquí para
@@ -392,10 +392,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5">
                                 <h2
-                                    class="font-bold text-text36 md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text36 md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Outsourcing Financiero
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Con el modelo de outsourcing, nuestros clientes pueden
                                     obtener todos los beneficios de nuestros servicios como si
                                     tuviese su propio <b>Departamento de Finanzas</b>. Nuestra
@@ -404,12 +404,12 @@
                                     alcanzar una fuerte posición competitiva.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Análisis e identificación de indicadores clave.</li>
                                         <li>Diseño de estrategias financieras.</li>
                                         <li>Asesoría en inversiones y financiamiento.</li>
@@ -426,7 +426,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -450,10 +450,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Servicio contable 360° Vía ERP ODOO
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Como especialistas en <b>servicios contables</b>, ofrecemos
                                     a nuestros clientes una opción útil, necesaria y sencilla
                                     que les permite enfocarse en su core business. Lograremos
@@ -461,12 +461,12 @@
                                     operación, inversión y financiamiento.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Análisis e identificación de indicadores clave.</li>
                                         <li>Diseño de estrategias financieras.</li>
                                         <li>Control presupuestario.</li>
@@ -483,7 +483,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -508,10 +508,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Diagnóstico e Implementación NIIF/IFRS --- Plenas y PYMES
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Diagnóstico de las Normas Internacional de Información
                                     Financiera - NIIF, (IFRS), emitidas por el IASB
                                     (International Accounting Standards Board) Aplicables en el
@@ -521,12 +521,12 @@
                                     de trabajo.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 ">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 ">
                                     Brindamos servicios de:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Asesorías en la adopción de las NIIF.</li>
                                         <li>Conversión de estados financieros.</li>
                                         <li>Evaluación de moneda funcional.</li>
@@ -543,7 +543,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -568,10 +568,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Auditoria de los Estados Financieros
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Nuestro enfoque de <b>auditoría financiera</b> es el de
                                     focalizarnos en los riesgos de tu negocio, soportado por un
                                     staff de especialistas en contabilidad, impuestos, valuación
@@ -581,7 +581,7 @@
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Gestión de crisis y continuidad del negocio.</li>
                                         <li>Gestión financiera y liquidez.</li>
                                         <li>Identificación de situaciones inusuales.</li>
@@ -595,7 +595,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -620,10 +620,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Valuación Económica
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Nuestros expertos en
                                     <b>servicios de Contabilidad y Finanzas</b> identificarán el
                                     verdadero valor de mercado de los activos de nuestros
@@ -632,12 +632,12 @@
                                     predictivos.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Tipos de valuaciones:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Valuación de empresas.</li>
                                         <li>Valuación de marcas.</li>
                                     </ul>
@@ -647,7 +647,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más</span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -672,10 +672,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Estudios de Factibilidad Financiera
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Como
                                     <b>especialistas en estrategias financieras</b> analizamos y
                                     determinamos la viabilidad económica financiera de un
@@ -683,12 +683,12 @@
                                     liquidez y solvencia.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>
                                             Determinamos e identificamos el nivel de rentabilidad de
                                             un proyecto.
@@ -716,7 +716,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -741,10 +741,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     ADVISER - Financiamiento Bancario
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Nos encargamos de
                                     <b>gestionar el financiamiento bancario</b> óptimo para
                                     cubrir los requerimientos de inversión de nuestros clientes,
@@ -752,12 +752,12 @@
                                     tipo de operaciones.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Variables críticas que identificamos:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Condiciones y rentabilidad exigida al proyecto.</li>
                                         <li>Forma del financiamiento.</li>
                                         <li>Crédito puente.</li>
@@ -773,7 +773,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -799,10 +799,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Procesos concursales
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Acompañamos a nuestros clientes una estrategias de
                                     negociación con los principales acreedores e implementar
                                     todo el proceso de reestructuración que le permita salir
@@ -811,7 +811,7 @@
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>
                                             Fase de Determinación del Plan de Reestructuración.
                                         </li>
@@ -825,7 +825,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -851,10 +851,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-bold text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Asesoría Tributaria
                                 </h2>
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
                                     Somos expertos <b>Planificación Tributaria</b>, vía la
                                     optimización de los escudos tributarios del negocio, sin
                                     dejar de cumplir con las regulaciones establecidas,
@@ -865,12 +865,12 @@
                                     autoridad tributaria - <b>SUNAT</b>.
                                 </p>
 
-                                <p class="font-normal text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-normal text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
                                         <li>Planeamiento tributario integral.</li>
                                         <li>Consultoría tributaria.</li>
                                         <li>
@@ -889,7 +889,7 @@
 
                         <div>
                             <a href="#"
-                                class="text-textOrange font-bold text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
+                                class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                                 <span>Saber más </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -912,10 +912,10 @@
             <div class="2md:w-10/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
                 <div class="grid grid-cols-1 2md:grid-cols-2 mt-0 pb-12 2md:py-20 text-textWhite gap-10">
                     <div class="col-span-1 2md:col-span-2 order-2 2md:order-1 text-left 2md:text-center px-8 2md:px-0">
-                        <h2 class="font-bold text-text48 xl:text-text56 mb-6 leading-none 2md:leading-tight">
+                        <h2 class="font-corbel_700 text-text48 xl:text-text56 mb-6 leading-none 2md:leading-tight">
                             Acerca de Nosotros
                         </h2>
-                        <p class="font-normal text-text20 xl:text-text24 text-justify">
+                        <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                             Fit 2 Finance es una plataforma de
                             <b>servicios financieros</b> compuesta por ejecutivos que
                             cuentan con más de 20 años en el ejercicio de la profesión
@@ -933,12 +933,12 @@
                         <div class="flex flex-col 2md:block gap-4">
                             <div>
                                 <h2
-                                    class="font-bold text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
+                                    class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
                                     Visión
                                 </h2>
                             </div>
 
-                            <p class="font-normal text-text20 xl:text-text24 text-justify">
+                            <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                 Constituirnos como una boutique financiera que brinde
                                 soluciones personalizadas para negocios decididos a ser
                                 líderes, disruptivos y resilientes.
@@ -948,11 +948,11 @@
                         <div class="flex flex-col gap-4 2md:block">
                             <div>
                                 <h2
-                                    class="font-bold text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
+                                    class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
                                     Misión
                                 </h2>
                             </div>
-                            <p class="font-normal text-text20 xl:text-text24 text-justify">
+                            <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                 Maximizar el valor patrimonial de nuestros clientes a través
                                 de una eficiente asesoría y gestión de sus activos económicos
                                 relevantes.
@@ -962,11 +962,11 @@
                         <div class="flex flex-col gap-4 2md:block">
                             <div>
                                 <h2
-                                    class="font-bold text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
+                                    class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
                                     Nuestro Valor Diferencial
                                 </h2>
                             </div>
-                            <p class="font-normal text-text20 xl:text-text24 text-justify">
+                            <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                 Sabemos que toda gran empresa inicia con un propósito, con
                                 nuestra asesoría, tendrás la confianza de tomar las mejores
                                 decisiones financieras para tu negocio.
@@ -988,7 +988,7 @@
 
 
         <section data-aos="fade-up" data-aos-offset="150" class="my-24">
-            <h2 class="font-bold text-text32 xl:text-text40 text-textGray text-center my-12 leading-none md:leading-tight">
+            <h2 class="font-corbel_700 text-text32 xl:text-text40 text-textGray text-center my-12 leading-none md:leading-tight">
                 Nuestros principales clientes
             </h2>
 
@@ -1041,7 +1041,7 @@
 
         <section class="bg-diferenciales_banner bg-cover bg-center bg-no-repeat sm:w-full h-full">
             <div class="w-11/12 mx-auto py-12 md:py-32">
-                <h2 class="font-bold text-text56 xl:text-text60 text-textGray text-center leading-none md:leading-tight">
+                <h2 class="font-corbel_700 text-text56 xl:text-text60 text-textGray text-center leading-none md:leading-tight">
                     Ventajas diferenciales
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 my-32" data-aos="fade-up"
@@ -1063,10 +1063,10 @@
                             </svg>
                         </div>
                         <div class="text-textGray">
-                            <h3 class="font-bold text-text28 xl:text-text32 leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
                                 Experiencia y conocimiento
                             </h3>
-                            <p class="font-normal text-text20 xl:text-text24">
+                            <p class="font-corbel_400 text-text20 xl:text-text24">
                                 Respaldada por un equipo multidisciplinario de profesionales
                                 enfocado en la excelencia de servicio con valor agregado.
                             </p>
@@ -1090,10 +1090,10 @@
                             </svg>
                         </div>
                         <div class="text-textGray">
-                            <h3 class="font-bold text-text28 xl:text-text32 leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
                                 Tiempos óptimos de respuesta
                             </h3>
-                            <p class="font-normal text-text20 xl:text-text24">
+                            <p class="font-corbel_400 text-text20 xl:text-text24">
                                 Lead-Time eficiente y oportuno diseñado a la medida de las
                                 necesidades y exigencias de nuestros clientes.
                             </p>
@@ -1117,10 +1117,10 @@
                             </svg>
                         </div>
                         <div class="text-textGray">
-                            <h3 class="font-bold text-text28 xl:text-text32 leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
                                 Transparencia y compromiso
                             </h3>
-                            <p class="font-normal text-text20 xl:text-text24">
+                            <p class="font-corbel_400 text-text20 xl:text-text24">
                                 Ofrecemos información clara y confiable que sirva como una
                                 adecuada herramienta de decisión, identificándonos e
                                 involucrándonos con las soluciones ofrecidas.
@@ -1145,10 +1145,10 @@
                             </svg>
                         </div>
                         <div class="text-textGray">
-                            <h3 class="font-bold text-text28 xl:text-text32 leading-none md:leading-tight">
+                            <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
                                 Innovación y proactividad
                             </h3>
-                            <p class="font-normal text-text20 xl:text-text24">
+                            <p class="font-corbel_400 text-text20 xl:text-text24">
                                 Modelos puntuales de gestión novedosos, que permiten
                                 anticiparse, identificar y corregir contingencias que
                                 contribuyen al éxito de sus negocios.
@@ -1160,16 +1160,16 @@
         </section>
 
         <section class="w-11/12 mx-auto my-24" data-aos="fade-up" data-aos-offset="150">
-            <div class="text-textGray text-center flex flex-col gap-10">
-                <h2 class="font-bold text-text48 xl:text-text52 leading-none md:leading-tight">
+            <div class="text-textGray text-center flex flex-col gap-10 w-full md:w-6/12 mx-auto">
+                <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
                     Alianza Estratégica con Sumatek: Potenciando tu Empresa con Odoo
                 </h2>
                 <div class="flex justify-center items-center">
                     <img src="{{ asset('images/img/odoo.png') }}" alt="odoo">
 
                 </div>
-                <p class="font-normal text-text18 xl:text-text22">
-                    Nos enorgullece ser socios de Somatec, una empresa líder con sello
+                <p class="font-corbel_400 text-text18 xl:text-text22">
+                    Nos enorgullece ser socios de Sumatek, una empresa líder con sello
                     Odoo, la plataforma de gestión empresarial más avanzada. A través de
                     esta alianza, ofrecemos soluciones integrales que optimizan tus
                     procesos contables y potencian el crecimiento de tu empresa.
@@ -1184,7 +1184,7 @@
                 <div class="w-11/12 mx-auto flex flex-col gap-10 md:flex-row justify-between items-center py-12"
                     data-aos="fade-up" data-aos-offset="150">
                     <div>
-                        <h2 class="font-bold text-textWhiteWeak text-text32 xl:text-text36 leading-none md:leading-tight">
+                        <h2 class="font-corbel_700 text-textWhiteWeak text-text32 xl:text-text36 leading-none md:leading-tight w-full md:w-8/12">
                             ¿Listo para llevar la contabilidad de tu empresa al siguiente
                             nivel?
                         </h2>
@@ -1192,7 +1192,7 @@
 
                     <div class="w-full md:w-auto">
                         <a href="#"
-                            class="bg-bgOrangeStrong py-4 px-10 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 w-full justify-center items-center hover:bg-orange-500 md:duration-500">
+                            class="bg-bgOrangeStrong py-4 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-full justify-center items-center hover:bg-orange-500 md:duration-500">
                             <span> Cotizar </span>
                             <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1212,11 +1212,11 @@
         <section class="w-11/12 mx-auto my-24" id="blog">
             <div class="flex flex-col gap-10" data-aos="fade-up" data-aos-offset="150">
                 <div class="text-[#03164D] flex flex-col gap-10">
-                    <h2 class="font-bold text-text48 xl:text-text52 leading-none md:leading-tight">
+                    <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
                         Bienvenido a nuestro blog de contabilidad y finanzas para pequeñas
                         empresas en Perú
                     </h2>
-                    <p class="font-normal text-text18 xl:text-text22 text-justify">
+                    <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                         Nuestros artículos cuentan con la última información y consejos
                         prácticos sobre contabilidad, finanzas y
                         <b>gestión empresarial</b>. Manténgase actualizado con las últimas
@@ -1226,7 +1226,7 @@
 
                     <div class="flex">
                         <a href="{{ route('blog') }}"
-                            class="bg-[#03164D] py-4 px-10 font-bold text-textWhite text-text18 xl:text-text22 flex gap-2 justify-center items-center">
+                            class="bg-[#505977] py-4 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 justify-center items-center">
                             <span> Ver más Artículos </span>
                             <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1250,10 +1250,10 @@
                                         <img src="{{ asset('images/img/blog_1.png') }}" alt="" class="w-full">
 
                                     </div>
-                                    <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
+                                    <h2 class="font-corbel_700 text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesqusse tristique sed ligula quis lacinia.
                                     </h2>
-                                    <p class="font-normal text-text18 xl:text-text22 text-justify">
+                                    <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                                         Class aptent taciti sociosqu ad litora torquent per
                                         conubia nostra, per inceptos himenaeos. Ut interdum tortor
                                         ac ornare commodo. Pellentesque tristique sed ligula quis
@@ -1262,7 +1262,7 @@
 
                                     <div>
                                         <a href="{{ route('publicacion') }}"
-                                            class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                            class="font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1283,10 +1283,10 @@
                                         <img src="{{ asset('images/img/blog_2.png') }}" alt="blog" class="w-full">
 
                                     </div>
-                                    <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
+                                    <h2 class="font-corbel_700 text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesque tristique sed ligula quis lacinia.
                                     </h2>
-                                    <p class="font-normal text-text18 xl:text-text22 text-justify">
+                                    <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                                         Class aptent taciti sociosqu ad litora torquent per
                                         conubia nostra, per inceptos himenaeos. Ut interdum tortor
                                         ac ornare commodo. Pellentesque tristique sed ligula quis
@@ -1295,7 +1295,7 @@
 
                                     <div>
                                         <a href="{{ route('publicacion') }}"
-                                            class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                            class="font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1316,10 +1316,10 @@
                                         <img src="{{ asset('images/img/blog_3.png') }}" alt="blog" class="w-full">
 
                                     </div>
-                                    <h2 class="font-bold text-text32 xl:text-text36 leading-none md:leading-tight">
+                                    <h2 class="font-corbel_700 text-text32 xl:text-text36 leading-none md:leading-tight">
                                         Pellentesque tristique sed ligula quis lacinia.
                                     </h2>
-                                    <p class="font-normal text-text18 xl:text-text22 text-justify">
+                                    <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                                         Class aptent taciti sociosqu ad litora torquent per
                                         conubia nostra, per inceptos himenaeos. Ut interdum tortor
                                         ac ornare commodo. Pellentesque tristique sed ligula quis
@@ -1328,7 +1328,7 @@
 
                                     <div>
                                         <a href="{{ route('publicacion') }}"
-                                            class="font-bold text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                            class="font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
                                             <span>Leer más</span>
                                             <div>
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1360,10 +1360,10 @@
 
                 </div>
                 <div class="bg-bgGray text-textWhite flex flex-col gap-10 justify-center p-10">
-                    <h3 class="font-bold text-text48 xl:text-text52">
+                    <h3 class="font-corbel_700 text-text48 xl:text-text52">
                         Ponte en Contacto
                     </h3>
-                    <p class="font-normal text-text20 xl:text-text24">
+                    <p class="font-corbel_400 text-text20 xl:text-text24">
                         A continuación, complete el formulario y uno de nuestros
                         representantes se pondrá en contacto con usted lo mas pronto
                         posible.
@@ -1374,27 +1374,27 @@
                         <div>
 
                             <input type="text" placeholder="Nombre completo"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
                         </div>
                         <div>
                             <input type="tel" placeholder="Teléfono"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
                         </div>
 
                         <div>
                             <input type="email" placeholder="E-mail"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-normal text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
                         </div>
 
                         <div>
                             <!-- cmombo -->
                             <div class="dropdown w-full">
-                                <div class="input-box focus:outline-none font-normal text-text18 xl:text-text22"></div>
+                                <div class="input-box focus:outline-none font-corbel_400 text-text18 xl:text-text22"></div>
                                 <div class="list overflow-y-scroll h-[200px] scroll-cursos">
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id11" class="radio" />
                                         <label for="id11"
-                                            class="font-normal text-text18 xl:text-text22 hover:font-bold md:duration-100">
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
                                             Contabilidad 360
                                         </label>
                                     </div>
@@ -1402,7 +1402,7 @@
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id12" class="radio" />
                                         <label for="id12"
-                                            class="font-normal text-text18 xl:text-text22 hover:font-bold md:duration-100">
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
                                             Adopción de Normas Internacionales
                                         </label>
                                     </div>
@@ -1410,7 +1410,7 @@
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id13" class="radio" />
                                         <label for="id13"
-                                            class="font-normal text-text18 xl:text-text22 hover:font-bold md:duration-100">
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
                                             Auditoría para empresas
                                         </label>
                                     </div>
@@ -1418,7 +1418,7 @@
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id14" class="radio" />
                                         <label for="id14"
-                                            class="font-normal text-text18 xl:text-text22 hover:font-bold md:duration-100">
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
                                             Otros
                                         </label>
                                     </div>

@@ -25,7 +25,7 @@
     <title>Boutique financiera - Fit 2 Finance</title>
 </head>
 
-<body class="font-corbelregular">
+<body >
     @include('components.public.header')
 
     <div>

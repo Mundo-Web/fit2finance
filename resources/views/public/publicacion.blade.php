@@ -24,17 +24,17 @@
 @section('content')
     <main class="flex flex-col gap-12 w-11/12 mx-auto pt-[470px] md:pt-96 pb-20">
         <section class="text-textGray flex flex-col gap-10">
-            <div class="flex flex-col gap-4 text-center">
-                <h2 class="font-bold text-text48 xl:text-text52 leading-none md:leading-tight">
+            <div class="flex flex-col gap-4 text-center w-full md:w-8/12 mx-auto">
+                <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
                     Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                 </h2>
-                <p class="font-bold text-[12px] xl:text-text16 text-textGray">
-                    <span>20 de febrero </span> <span>|</span> Categoría:
+                <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                    <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
                     <span class="text-textOrange">Contabilidad</span>
                 </p>
             </div>
 
-            <p class="font-normal text-text18 xl:text-text22 text-justify">
+            <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                 ¿Tu empresa se está ahogando en tareas financieras que consumen tiempo
                 y recursos preciosos? ¿Te encuentras luchando por mantener el control
                 de la contabilidad, la facturación y otras responsabilidades
@@ -45,7 +45,7 @@
                 <img src="{{ asset('images/img/publicacion.png') }}" alt="publicaciones" class="w-full" />
             </div>
 
-            <p class="font-normal text-text18 xl:text-text22 text-justify">
+            <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                 En un entorno empresarial cada vez más competitivo, es crucial
                 optimizar tus recursos y enfocarte en lo que mejor sabes hacer: hacer
                 crecer tu empresa. Es aquí donde el outsourcing financiero puede
@@ -70,7 +70,7 @@
                 ¿Qué es el Outsourcing Financiero?
             </h3>
 
-            <p class="font-normal text-text18 xl:text-text22 text-justify">
+            <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                 El outsourcing financiero, también conocido como tercerización
                 financiera, implica delegar las tareas financieras de tu empresa a un
                 equipo de expertos externos. Desde la gestión de la contabilidad hasta
@@ -79,11 +79,11 @@
                 que puedas concentrarte en tus objetivos estratégicos.
             </p>
 
-            <h3 class="font-normal text-text18 xl:text-text22">
+            <h3 class="font-corbel_400 text-text18 xl:text-text22">
                 Beneficios del Outsourcing Financiero:
             </h3>
 
-            <ol class="list-decimal pl-4 font-normal text-text18 xl:text-text22 text-justify flex flex-col gap-2">
+            <ol class="list-decimal pl-4 font-corbel_400 text-text18 xl:text-text22 text-justify flex flex-col gap-2">
                 <li>
                     Reducción de Costos: Al tercerizar tus tareas financieras, eliminas
                     la necesidad de contratar personal interno y cubrir los costos
@@ -116,7 +116,7 @@
                 ¿Por qué elegirnos para tu Outsourcing Financiero?
             </h3>
 
-            <p class="font-normal text-text18 xl:text-text22 text-justify">
+            <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                 En Fit2Finance, entendemos los desafíos financieros que enfrentan las
                 empresas en la actualidad. Nuestro equipo de profesionales altamente
                 calificados y con experiencia está dedicado a brindar soluciones
@@ -127,9 +127,9 @@
                 tus objetivos financieros.
             </p>
 
-            <p class="font-normal text-[12px] xl:text-text16">
+            <p class="font-corbel_400 text-[12px] xl:text-text16">
                 Etiquetas
-                <span class="text-textOrange font-bold">#Varius #Lacinia #Eget</span>
+                <span class="text-textOrange font-corbel_700">#Varius #Lacinia #Eget</span>
             </p>
         </section>
 
@@ -137,7 +137,7 @@
             <div class="flex justify-between items-center border-t-[1.5px] border-b-[1.5px] border-[#DDDDDD] py-10">
                 <div class="flex flex-col gap-2">
                     <a href="#"
-                        class="text-textOrange flex items-center justify-start gap-2 font-bold text-[12px] xl:text-text16">
+                        class="text-textOrange flex items-center justify-start gap-2 font-corbel_700 text-[12px] xl:text-text16">
                         <div>
                             <img src="{{ asset('images/svg/chevron-left.svg') }}" alt="" />
                         </div>
@@ -146,14 +146,14 @@
                             <span>Anterior </span>
                         </div>
                     </a>
-                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block text-textGray">
+                    <p class="font-corbel_400 text-[14px] xl:text-text18 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <a href="#"
-                        class="text-textOrange flex items-center justify-end gap-2 font-bold text-[12px] xl:text-text16">
+                        class="text-textOrange flex items-center justify-end gap-2 font-corbel_700 text-[12px] xl:text-text16">
                         <div class="after:content-[''] after:block after:w-full after:h-[2px] after:bg-bgOrangeStrong">
                             <span>Próximos </span>
                         </div>
@@ -162,7 +162,7 @@
                             <img src="{{ asset('images/svg/chevron-right.svg') }}" alt="" />
                         </div>
                     </a>
-                    <p class="font-normal text-[14px] xl:text-text18 hidden md:block text-textGray">
+                    <p class="font-corbel_400 text-[14px] xl:text-text18 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>

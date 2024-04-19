@@ -56,8 +56,11 @@ export default {
                 blue: "2px solid rgba(0, 112, 244, 0.5)",
             },
             fontFamily: {
-                corbelregular: "corbelregular",
-                znikomit: ["znikomit", "san-serif"],
+                corbel_400: "corbelregular",
+                corbel_700: "corbelbold",
+                corbel_italic: "corbelitalic",
+                corbel_300: "corbellight",
+                corbel_700_italic: "corbelbold_italic",
             },
             fontSize: {
                 xs: ["0.75rem", { lineHeight: "1.5" }],
