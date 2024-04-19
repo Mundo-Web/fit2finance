@@ -371,7 +371,7 @@
                         Descubra cómo nuestros servicios contables pueden impulsar el
                         éxito financiero de su empresa. Desde la gestión completa de la
                         contabilidad hasta auditorías detalladas, estamos aquí para
-                        ayudarlo a alcanzar sus metas empresariales
+                        ayudarlo a alcanzar sus metas empresariales.
                     </p>
                 </div>
 
@@ -1213,8 +1213,7 @@
             <div class="flex flex-col gap-10" data-aos="fade-up" data-aos-offset="150">
                 <div class="text-[#03164D] flex flex-col gap-10">
                     <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
-                        Bienvenido a nuestro blog de contabilidad y finanzas para pequeñas
-                        empresas en Perú
+                        Bienvenido a nuestro blog de <b> contabilidad y finanzas para MYPES</b> en Perú
                     </h2>
                     <p class="font-corbel_400 text-text18 xl:text-text22 text-justify">
                         Nuestros artículos cuentan con la última información y consejos
