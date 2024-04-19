@@ -120,7 +120,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="ffont-corbel_700 text-[16px] xl:text-text20">contacto@fit2-finance.com</a>
+                <a href="#" class="ffont-corbel_700 text-[16px] xl:text-text20">consultas@fit2finanace.com.pe</a>
                 <div class="flex flex-col gap-4">
                     <p class="font-corbel_400 text-[12px] xl:text-text16">Síguenos en:</p>
                     <div class="flex gap-5 items-center">
