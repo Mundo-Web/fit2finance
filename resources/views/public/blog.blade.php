@@ -22,12 +22,21 @@
         .bg__header-blog {
             background-color: #505977
         }
+
+        [type='text']:focus,
+        input:where(:not([type])):focus,
+        [type='email']:focus,
+        [type='tel']:focus,
+        select:focus {
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            border-color: #505977;
+        }
     </style>
 @stop
 
 
 @section('content')
-    <main class="flex flex-col gap-24 w-11/12 mx-auto  pt-[470px] md:pt-96 pb-16">
+    <main class="flex flex-col gap-24 w-11/12 mx-auto pt-52 pb-16">
         <section class="flex flex-col gap-12 md:gap-24">
             <div class="flex flex-col gap-12 md:gap-24 md:flex-row">
                 <div class="basis-8/12 flex flex-col gap-12" data-aos="fade-up" data-aos-offset="150">

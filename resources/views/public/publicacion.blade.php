@@ -22,7 +22,7 @@
 
 
 @section('content')
-    <main class="flex flex-col gap-12 w-11/12 mx-auto pt-[470px] md:pt-96 pb-20">
+    <main class="flex flex-col gap-12 w-11/12 mx-auto pt-52 pb-20">
         <section class="text-textGray flex flex-col gap-10">
             <div class="flex flex-col gap-4 text-center w-full md:w-8/12 mx-auto">
                 <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
@@ -137,7 +137,7 @@
             <div class="flex justify-between items-center border-t-[1.5px] border-b-[1.5px] border-[#DDDDDD] py-10">
                 <div class="flex flex-col gap-2">
                     <a href="#"
-                        class="text-textOrange flex items-center justify-start gap-2 font-corbel_700 text-[12px] xl:text-text16">
+                        class="text-textOrange flex items-center justify-start gap-2 font-corbel_700 text-text14 xl:text-text18">
                         <div>
                             <img src="{{ asset('images/svg/chevron-left.svg') }}" alt="" />
                         </div>
@@ -146,14 +146,14 @@
                             <span>Anterior </span>
                         </div>
                     </a>
-                    <p class="font-corbel_400 text-[14px] xl:text-text18 hidden md:block text-textGray">
+                    <p class="font-corbel_400 text-text16 xl:text-text20 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <a href="#"
-                        class="text-textOrange flex items-center justify-end gap-2 font-corbel_700 text-[12px] xl:text-text16">
+                        class="text-textOrange flex items-center justify-end gap-2 font-corbel_700 text-text14 xl:text-text18">
                         <div class="after:content-[''] after:block after:w-full after:h-[2px] after:bg-bgOrangeStrong">
                             <span>Próximos </span>
                         </div>
@@ -162,7 +162,7 @@
                             <img src="{{ asset('images/svg/chevron-right.svg') }}" alt="" />
                         </div>
                     </a>
-                    <p class="font-corbel_400 text-[14px] xl:text-text18 hidden md:block text-textGray">
+                    <p class="font-corbel_400 text-text16 xl:text-text20 hidden md:block text-textGray">
                         Nunc vestibulum quam erat, a imperdiet nunc sodales elementum
                     </p>
                 </div>

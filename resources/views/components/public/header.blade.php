@@ -23,7 +23,7 @@
     </nav>
 </div>
 <!-- --- -->
-<header id="inicio" class="absolute w-full">
+<header id="inicio" class=" w-full">
     <div
         class="bg-fondo_mobile md:bg-imagen_header  bg-cover bg-center bg-no-repeat sm:w-full h-full bg__agradecimiento-hidden">
         <div class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-10">
@@ -62,15 +62,15 @@
                                             <img src="{{ asset('images/img/logo_modal_finanace.png') }}"
                                                 alt="fit2finance" />
                                         </div>
-                                        <a href="#" class="font-bold text-text14 xl:text-text18">
+                                        <a href="#" class="font-corbel_700 text-text14 xl:text-text18">
                                             consultas@fit2finanace.com.pe
                                         </a>
                                     </div>
                                     <div class="flex flex-col gap-4">
-                                        <h1 class="font-bold text-[40px] lg:text-[64px] leading-none md:leading-tight">
+                                        <h1 class="font-corbel_700 text-[40px] lg:text-[64px] leading-none md:leading-tight">
                                             Curso: Contabilidad para Emprendedores
                                         </h1>
-                                        <p class="font-normal text-[20px] lg:text-[24px]">
+                                        <p class="font-corbel_400 text-[20px] lg:text-[24px]">
                                             Aprende contabilidad fácilmente.
                                             <span class="text-textOrange">Inscribete aquí</span>
                                         </p>
@@ -79,21 +79,21 @@
                                         <form action="#" class="flex flex-col gap-10 text-text18 xl:text-text22">
                                             <div>
                                                 <input type="text" placeholder="Nombre completo"
-                                                    class="borde-none focus:outline-none w-full bg-transparent py-4 border-b-[1.5px] border-white" />
+                                                    class="focus:outline-none w-full bg-transparent pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                                             </div>
                                             <div>
                                                 <input type="tel" placeholder="Teléfono"
-                                                    class="borde-none focus:outline-none w-full bg-transparent py-4 border-b-[1.5px] border-white" />
+                                                    class="focus:outline-none w-full bg-transparent pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                                             </div>
 
                                             <div>
                                                 <input type="email" placeholder="E-mail"
-                                                    class="borde-none focus:outline-none w-full bg-transparent py-4 border-b-[1.5px] border-white" />
+                                                    class="focus:outline-none w-full bg-transparent pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                                             </div>
 
                                             <div class="">
                                                 <button type="submit"
-                                                    class="bg-bgOrangeStrong w-full flex justify-center items-center py-4 gap-2 font-medium text-[18px] xl:text-text22 hover:bg-orange-500 md:duration-500">
+                                                    class="bg-bgOrangeStrong w-full flex justify-center items-center py-4 gap-2 font-corbel_700 text-[18px] xl:text-text22 hover:bg-orange-500 md:duration-500">
                                                     <span> Inscribirme </span>
                                                     <div>
                                                         <svg width="24" height="24" viewBox="0 0 24 24"
@@ -108,7 +108,7 @@
                                             </div>
                                             <div>
                                                 <button type="button"
-                                                    class="font-medium inline-flex items-center rounded-lg text-[18px] xl:text-text22 px-3 py-2.5 text-center text-textOrange close-modal"
+                                                    class="font-corbel_700 inline-flex items-center rounded-lg text-[18px] xl:text-text22 px-3 py-2.5 text-center text-textOrange close-modal"
                                                     data-modal-toggle="delete-user-modal">
                                                     Cerrar
                                                 </button>
@@ -131,7 +131,7 @@
         </div>
     </div>
 
-    <div class=" bg__header-blog bg__header-publicacion  bg-cover bg-center bg-no-repeat sm:w-full h-full">
+    <div class=" bg__header-blog bg__header-publicacion  bg-cover bg-center bg-no-repeat w-full  absolute">
         <div class="w-11/12 mx-auto flex justify-between items-center py-10">
             <a href="index.html" data-aos="fade-up" data-aos-offset="150">
                 <div>

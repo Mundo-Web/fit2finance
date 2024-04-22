@@ -125,16 +125,16 @@
             height: fit-content;
             box-sizing: border-box;
             position: relative;
-            border-bottom: 1.5px solid white;
-            padding: 16px 0;
+           /*  border-bottom: 1px solid white; */
+            /* padding: 16px 0; */
         }
 
         .input-box {
             width: 100%;
-            height: 40px;
+            /* height: 40px; */
             box-sizing: border-box;
             outline: none;
-            border-radius: 2mm;
+           /*  border-radius: 2mm; */
 
             cursor: pointer;
             display: flex;
@@ -142,6 +142,8 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             position: relative;
+            
+            
         }
 
         .input-box::before {
@@ -160,13 +162,13 @@
             background-image: url(../images/svg/chevron-up.svg);
         }
 
-        .input-box:empty::after {
-            content: "Tipo de servicio";
+        /* .input-box:empty::after {
+            content: ""; 
             color: #96a1a6;
-        }
+        } */
 
         .list {
-            position: absolute;
+            position: relative; /* absolute */
             top: 100%;
             left: 0;
             width: 100%;
@@ -174,7 +176,7 @@
             background: #505977;
             margin-top: 10px;
             border-radius: 2mm;
-            overflow: hidden;
+            /* overflow: hidden; */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -256,17 +258,43 @@
         .swiper-slide-flex {
             display: flex !important;
         }
+
+
+        [type='text'],
+        input:where(:not([type])),
+        [type='email'],
+        [type='tel'],
+        textarea,
+        select {
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 1px;
+            border-left-width: 0px;
+            border-color: white;
+            
+        }
+
+        [type='text']:focus,
+        input:where(:not([type])):focus,
+        [type='email']:focus,
+        [type='tel']:focus,
+        select:focus {
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            border-bottom-color: rgb(255,255,255);
+        }
+
     </style>
 @stop
 
 
 @section('content')
     <main>
-        <section class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-96">
+        <section
+            class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-32 md:pt-96">
             <div class="w-11/12 mx-auto">
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
-                        <div class="flex flex-col gap-5 py-12 " data-aos="fade-up" data-aos-offset="150">
+                        <div class="flex flex-col gap-5 pb-12 " data-aos="fade-up" data-aos-offset="150">
                             <h2 class="font-corbel_700 text-text36 xl:text-text48 text-textWhite ">
                                 Brindamos soluciones Financieras para negocios decididos a ser
                                 Líderes, Disruptivos y Resilientes
@@ -279,7 +307,7 @@
                         </div>
                         <div class="flex flex-col md:flex-row gap-10 w-full">
                             <a href="#"
-                                class="bg-bgOrangeStrong py-3 md:py-2 px-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
+                                class="bg-bgOrangeStrong py-3 md:py-2 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                                 <span> Cotizar </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -293,7 +321,7 @@
                             </a>
 
                             <a href="#servicios"
-                                class="bg-transparent py-3 md:py-2 px-4 font-corbel_700 text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
+                                class="bg-transparent py-3 md:py-2 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 hover:bg-bgGrayStrong md:w-auto border-[1px] border-white text-center w-full md:duration-500">
                                 Servicios
                             </a>
                         </div>
@@ -301,13 +329,12 @@
                 </div>
             </div>
             <div class="flex justify-end relative pt-16">
-                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" 
-                class="block md:hidden w-full">
+                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" class="block md:hidden w-full">
             </div>
         </section>
         <section>
             <div class="swiper banner bg-bgOrangeStrong">
-                <div class="swiper-wrapper text-textWhite" data-aos="fade-up" data-aos-offset="150">
+                <div class="swiper-wrapper text-textWhite py-12" data-aos="fade-up" data-aos-offset="150">
                     <div class="swiper-slide py-5 px-5 lg:px-16">
                         <div class="flex flex-col gap-5 text-center">
                             <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+150</p>
@@ -359,8 +386,6 @@
                 <div class="swiper-pagination-estadisticas h-[40px]"></div>
             </div>
         </section>
-
-
         <section class="swiper slider w-11/12 mx-auto my-24" id="servicios">
             <div class="mb-12 flex flex-col gap-5 md:flex-row md:justify-between md:items-center">
                 <div>
@@ -906,8 +931,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="bg-gradient-to-r from-[#505977] to-[#424962] my-24">
             <div class="2md:w-10/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
                 <div class="grid grid-cols-1 2md:grid-cols-2 mt-0 pb-12 2md:py-20 text-textWhite gap-10">
@@ -978,17 +1001,16 @@
                             <img src="{{ asset('images/img/acerca de nostros.png') }}" alt="fit2finance"
                                 class="w-full h-full hidden md:block">
 
-                                <img src="{{ asset('images/img/acerca de nostros_mobile.png') }}" alt="fit2finance"
+                            <img src="{{ asset('images/img/acerca de nostros_mobile.png') }}" alt="fit2finance"
                                 class="w-full h-full block md:hidden">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
         <section data-aos="fade-up" data-aos-offset="150" class="my-24">
-            <h2 class="font-corbel_700 text-text32 xl:text-text40 text-textGray text-center my-12 leading-none md:leading-tight">
+            <h2
+                class="font-corbel_700 text-text32 xl:text-text40 text-textGray text-center my-12 leading-none md:leading-tight">
                 Nuestros principales clientes
             </h2>
 
@@ -1038,10 +1060,10 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
         <section class="bg-diferenciales_banner bg-cover bg-center bg-no-repeat sm:w-full h-full">
             <div class="w-11/12 mx-auto py-12 md:py-32">
-                <h2 class="font-corbel_700 text-text56 xl:text-text60 text-textGray text-center leading-none md:leading-tight">
+                <h2
+                    class="font-corbel_700 text-text56 xl:text-text60 text-textGray text-center leading-none md:leading-tight">
                     Ventajas diferenciales
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 my-32" data-aos="fade-up"
@@ -1158,7 +1180,6 @@
                 </div>
             </div>
         </section>
-
         <section class="w-11/12 mx-auto my-24" data-aos="fade-up" data-aos-offset="150">
             <div class="text-textGray text-center flex flex-col gap-10 w-full md:w-6/12 mx-auto">
                 <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
@@ -1178,13 +1199,13 @@
                 </p>
             </div>
         </section>
-
         <section class="my-24">
             <div class="bg-banner_3 md:bg-banner_2 bg-cover bg-center bg-no-repeat sm:w-full h-full">
                 <div class="w-11/12 mx-auto flex flex-col gap-10 md:flex-row justify-between items-center py-12"
                     data-aos="fade-up" data-aos-offset="150">
                     <div>
-                        <h2 class="font-corbel_700 text-textWhiteWeak text-text32 xl:text-text36 leading-none md:leading-tight w-full md:w-8/12">
+                        <h2
+                            class="font-corbel_700 text-textWhiteWeak text-text32 xl:text-text36 leading-none md:leading-tight w-full md:w-8/12">
                             ¿Listo para llevar la contabilidad de tu empresa al siguiente
                             nivel?
                         </h2>
@@ -1208,7 +1229,6 @@
                 </div>
             </div>
         </section>
-
         <section class="w-11/12 mx-auto my-24" id="blog">
             <div class="flex flex-col gap-10" data-aos="fade-up" data-aos-offset="150">
                 <div class="text-[#03164D] flex flex-col gap-10">
@@ -1348,10 +1368,7 @@
                 </div>
             </div>
         </section>
-
         <!-- corregir la imagen -->
-
-
         <section class="mt-24">
             <div class="grid grid-cols-1 md:grid-cols-2" id="contacto">
                 <div class="relative ">
@@ -1368,59 +1385,57 @@
                         posible.
                     </p>
 
-                    
+
                     <form action="#" class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
                         <div>
 
                             <input type="text" placeholder="Nombre completo"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                         </div>
                         <div>
                             <input type="tel" placeholder="Teléfono"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                         </div>
 
                         <div>
                             <input type="email" placeholder="E-mail"
-                                class="focus:outline-none w-full bg-bgGray py-4 px-0 font-corbel_400 text-text18 xl:text-text22 text-white" />
+                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                         </div>
 
+                        
                         <div>
                             <!-- cmombo -->
                             <div class="dropdown w-full">
-                                <div class="input-box focus:outline-none font-corbel_400 text-text18 xl:text-text22"></div>
-                                <div class="list overflow-y-scroll h-[200px] scroll-cursos">
+                                <div class="input-box font-corbel_400 text-text18 xl:text-text22 pt-4 pl-4 pb-4 border-b-[1px] border-white  text-white">
+                                    <span class="opacity-35 span-opacity">Tipo de servicios</span>
+                                </div>
+                                <div class="list overflow-y-scroll scroll-cursos">
+                                    <div class="w-full">
+                                        <input type="radio" name="drop1" id="id10" class="radio" />
+                                        <label for="id10"
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Tipo de servicios</label>
+                                    </div>
+
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id11" class="radio" />
                                         <label for="id11"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
-                                            Contabilidad 360
-                                        </label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Contabilidad 360 </label>
                                     </div>
 
-                                    <div class="w-full">
-                                        <input type="radio" name="drop1" id="id12" class="radio" />
-                                        <label for="id12"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
-                                            Adopción de Normas Internacionales
-                                        </label>
-                                    </div>
-
+                                    
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id13" class="radio" />
                                         <label for="id13"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
-                                            Auditoría para empresas
-                                        </label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Auditoría para empresas</label>
                                     </div>
 
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id14" class="radio" />
                                         <label for="id14"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">
-                                            Otros
-                                        </label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Otros</label>
                                     </div>
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1566,6 +1581,7 @@
         });
 
         var input = document.querySelector(".input-box");
+        
 
         input.onclick = function() {
             this.classList.toggle("open");
@@ -1574,16 +1590,24 @@
                 list.style.maxHeight = null;
                 list.style.boxShadow = null;
             } else {
-                list.style.maxHeight = list.scrollHeight + "px";
+                list.style.maxHeight = 200 + "px"; 
+                /*list.style.maxHeight = 200 + "px";  Especificamos tamaño del dropdown */
                 list.style.boxShadow =
                     "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
             }
         };
 
         var rad = document.querySelectorAll(".radio");
+        var span = document.querySelector('.span-opacity');
         rad.forEach((item) => {
             item.addEventListener("change", () => {
-                input.innerHTML = item.nextElementSibling.innerHTML;
+                span.textContent = item.nextElementSibling.textContent;
+                if(span.textContent.trim() === 'Tipo de servicios'){
+                    span.classList.add('opacity-35');
+                }else{
+                    span.classList.remove('opacity-35');
+                }
+               
                 input.click();
             });
         });
