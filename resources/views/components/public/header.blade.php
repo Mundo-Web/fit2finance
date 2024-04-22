@@ -1,7 +1,7 @@
 <!-- hamburguesa -->
 <div class="navigation z-[800]">
     <button aria-label="hamburguer" type="button" class="hamburger onMenu" id="position">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 2L2 18M18 18L2 2" stroke="white" stroke-width="2.66667" stroke-linecap="round" />
         </svg>
     </button>

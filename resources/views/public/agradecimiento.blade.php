@@ -15,7 +15,7 @@
 
 @section('content')
     <main>
-        <section class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full pt-72">
+        <section class="bg-HeaderMobile2_1 md:bg-header_principal_1 bg-cover bg-center bg-no-repeat sm:w-full h-full   pt-40 md:pt-72">
             <div class="w-11/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
@@ -31,7 +31,7 @@
                         </div>
                         <div class="flex flex-col md:flex-row gap-10 w-full">
                             <a href="{{route('index')}}"
-                                class="bg-bgOrangeStrong py-5 md:py-2 px-5 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
+                                class="bg-bgOrangeStrong py-5 md:py-3 px-5 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                                 <span> Volver al inicio </span>
                                 <div>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
