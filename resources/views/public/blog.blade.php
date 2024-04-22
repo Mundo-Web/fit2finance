@@ -23,13 +23,31 @@
             background-color: #505977
         }
 
+        [type='text'],
+        input:where(:not([type])),
+        [type='email'],
+        [type='tel'],
+        textarea,
+        select {
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 1px;
+            border-left-width: 0px;
+            border-color: white;
+            
+        }
+
         [type='text']:focus,
         input:where(:not([type])):focus,
         [type='email']:focus,
         [type='tel']:focus,
         select:focus {
             --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            border-bottom-color: rgb(255,255,255);
+        }
+        [type='text'].buscar{
             border-color: #505977;
+            border-width: 1px; 
         }
     </style>
 @stop
@@ -164,7 +182,7 @@
                 <div class="basis-4/12 flex flex-col gap-5 md:pt-5" data-aos="fade-up" data-aos-offset="150">
                     <div class="w-full">
                         <input type="text"
-                            class="w-full focus:outline-none text-textGray py-4 px-10 border-[1px] border-[#505977] xl:text-text20"
+                            class="buscar w-full focus:outline-none text-textGray py-4 px-10 border-[1px] border-[#505977] xl:text-text20"
                             placeholder="Buscar un tema" />
                     </div>
 
