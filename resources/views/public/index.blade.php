@@ -1474,7 +1474,6 @@
         const modal = document.getElementById("modelConfirm");
 
         openForm.addEventListener("click", () => {
-            console.log("open-modal")
             modal.style.display = "block";
             document.getElementsByTagName("body")[0].classList.add("overflow-y-hidden");
         });

@@ -161,7 +161,7 @@
                     <style>
                         /* corrregir */
                     </style>
-                    <form action="#" class="flex w-full items-center">
+                    <form action="#" class="flex w-full items-center h-full">
                         <div class="w-full h-full">
                             <input type="email" id="email"
                                 class="border-none focus:outline-none h-full w-full bg-white py-4 px-10 text-textGray text-text18 xl:text-text22"
