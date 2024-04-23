@@ -23,46 +23,36 @@
     <title>Boutique financiera - Fit 2 Finance</title>
 
     <style>
+
         @font-face {
             font-family: "corbelregular";
-            src: url("../fonts/corbel-webfont.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
+            src: url({{ asset('fonts/corbel-webfont.woff') }}) format("woff");
         }
 
         @font-face {
             font-family: "corbelbold";
             src: url({{ asset('fonts/corbelb-webfont.woff') }}) format("woff");
-            font-weight: normal;
-            font-style: normal;
+           
         }
 
         @font-face {
             font-family: "corbelitalic";
             src: url({{ asset('fonts/corbeli-webfont.woff') }}) format("woff");
-            font-weight: normal;
-            font-style: normal;
         }
 
         @font-face {
             font-family: "corbellight";
             src: url({{ asset('fonts/corbell-webfont.woff') }}) format("woff");
-            font-weight: normal;
-            font-style: normal;
         }
 
         @font-face {
             font-family: "corbellight_italic";
             src: url({{ asset('fonts/corbelli-webfont.woff') }}) format("woff");
-            font-weight: normal;
-            font-style: normal;
         }
 
         @font-face {
             font-family: "corbelbold_italic";
             src: url({{ asset('fonts/corbelz-webfont.woff') }}) format("woff");
-            font-weight: normal;
-            font-style: normal;
         }
     </style>
 </head>
