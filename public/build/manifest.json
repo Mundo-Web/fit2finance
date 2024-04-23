@@ -1,0 +1,47 @@
+{
+  "public/images/img/FondoMobile2_1.png": {
+    "file": "assets/FondoMobile2_1-qK5AEAAE.png",
+    "src": "public/images/img/FondoMobile2_1.png"
+  },
+  "public/images/img/banner_2.png": {
+    "file": "assets/banner_2-r7e6iqT7.png",
+    "src": "public/images/img/banner_2.png"
+  },
+  "public/images/img/banner_3.png": {
+    "file": "assets/banner_3-QEmo41Ow.png",
+    "src": "public/images/img/banner_3.png"
+  },
+  "public/images/img/diferenciales_banner.png": {
+    "file": "assets/diferenciales_banner-TwSgRZv0.png",
+    "src": "public/images/img/diferenciales_banner.png"
+  },
+  "public/images/img/fondo_mobile.png": {
+    "file": "assets/fondo_mobile-hfTPuvdC.png",
+    "src": "public/images/img/fondo_mobile.png"
+  },
+  "public/images/img/header_principal_1.png": {
+    "file": "assets/header_principal_1-lTbKfxgr.png",
+    "src": "public/images/img/header_principal_1.png"
+  },
+  "public/images/img/imagen_form_fondo.png": {
+    "file": "assets/imagen_form_fondo-SegQsoPM.png",
+    "src": "public/images/img/imagen_form_fondo.png"
+  },
+  "public/images/img/imagen_header.png": {
+    "file": "assets/imagen_header-jw40j6_R.png",
+    "src": "public/images/img/imagen_header.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-hpTBxtHK.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-dGvTjJ5y.css"
+    ],
+    "file": "assets/app-EC3LqEp8.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
