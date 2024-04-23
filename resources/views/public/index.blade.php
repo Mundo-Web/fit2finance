@@ -1462,9 +1462,6 @@
     </main>
 
 
-    </main>
-
-
 
 @section('scripts_improtados')
 
