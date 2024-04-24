@@ -15,10 +15,6 @@
     "file": "assets/diferenciales_banner-TwSgRZv0.png",
     "src": "public/images/img/diferenciales_banner.png"
   },
-  "public/images/img/fondo_mobile.png": {
-    "file": "assets/fondo_mobile-hfTPuvdC.png",
-    "src": "public/images/img/fondo_mobile.png"
-  },
   "public/images/img/header_principal_1.png": {
     "file": "assets/header_principal_1-lTbKfxgr.png",
     "src": "public/images/img/header_principal_1.png"
@@ -27,12 +23,8 @@
     "file": "assets/imagen_form_fondo-SegQsoPM.png",
     "src": "public/images/img/imagen_form_fondo.png"
   },
-  "public/images/img/imagen_header.png": {
-    "file": "assets/imagen_header-jw40j6_R.png",
-    "src": "public/images/img/imagen_header.png"
-  },
   "resources/css/app.css": {
-    "file": "assets/app-hpTBxtHK.css",
+    "file": "assets/app-5_2M2W6l.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -43,5 +35,9 @@
     "file": "assets/app-EC3LqEp8.js",
     "isEntry": true,
     "src": "resources/js/app.js"
+  },
+  "storage/app/public/images/img_fit/img/fondo_mobile.png": {
+    "file": "assets/fondo_mobile-hfTPuvdC.png",
+    "src": "storage/app/public/images/img_fit/img/fondo_mobile.png"
   }
 }
