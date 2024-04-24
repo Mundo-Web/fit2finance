@@ -16,9 +16,9 @@ export default {
         extend: {
             backgroundImage: {
                 fondo_mobile:
-                    "url('../../../../../public/images/img/fondo_mobile.png')",
+                    "url('https://fit2finance.mundoweb.pe/build/assets/fondo_mobile-hfTPuvdC.png')",
                 imagen_header:
-                    "url('../../../../../public/images/img/imagen_header.png')",
+                    "url('../../../../../public/storage/images/img_fit/img/imagen_header.png')",
                 imagen_form_fondo:
                     "url('../../public/images/img/imagen_form_fondo.png')",
                 header_mobile:
