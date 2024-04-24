@@ -355,7 +355,7 @@
                 </div>
             </div>
             <div class="flex justify-end relative pt-16">
-                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" class="block md:hidden w-full">
+                <img src="{{ asset('images/img/foto-banner.png') }}" alt="fit2finance" class="block md:hidden w-full">
             </div>
         </section>
         <section>
@@ -1297,7 +1297,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col gap-5">
                                     <div class="flex justify-center items-center">
-                                        <img src="{{ asset('images/img/blog_1.png') }}" alt="" class="w-full">
+                                        <img src="{{ asset('images/img/blog_1.png') }}" alt="blog" class="w-full">
 
                                     </div>
                                     <h2 class="font-corbel_700 text-text32 xl:text-text36 leading-none md:leading-tight">
@@ -1401,92 +1401,97 @@
         </section>
         <!-- corregir la imagen -->
         <section class="mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-2" id="contacto">
-                <div class="relative ">
-                    <img src="{{ asset('images/img/women_1.png') }}" alt="" class="w-full h-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2" id="contacto">
+                <div class="relative bg-[#505977]">
+                    {{-- <img src="{{ asset('images/img/women_1.png') }}" alt="fit2finance" class="w-full h-full hidden md:block"> --}}
 
+                    <img src="{{ asset('images/img/wome_3.png') }}" alt="fit2finance" class="w-full h-full hidden lg:block">
+                    <img src="{{ asset('images/img/wome_2.png') }}" alt="fit2finance" class="w-full h-full block lg:hidden">
                 </div>
-                <div class="bg-bgGray text-textWhite flex flex-col gap-10 justify-center p-5 md:p-10">
-                    <h3 class="font-corbel_700 text-text40 xl:text-text52 leading-none md:leading-tight">
-                        Ponte en Contacto
-                    </h3>
-                    <p class="font-corbel_400 text-text20 xl:text-text24">
-                        A continuación, complete el formulario y uno de nuestros
-                        representantes se pondrá en contacto con usted lo mas pronto
-                        posible.
-                    </p>
-
-
-                    <form action="#" class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
-                        <div>
-
-                            <input type="text" placeholder="Nombre completo"
-                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
-                        </div>
-                        <div>
-                            <input type="tel" placeholder="Teléfono"
-                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
-                        </div>
-
-                        <div>
-                            <input type="email" placeholder="E-mail"
-                                class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
-                        </div>
-
-                        
-                        <div>
-                            <!-- cmombo -->
-                            <div class="dropdown w-full">
-                                <div class="input-box font-corbel_400 text-text18 xl:text-text22 pt-4 pl-4 pb-4 border-b-[1px] border-white  text-white">
-                                    <span class="opacity-35 span-opacity">Tipo de servicios</span>
-                                </div>
-                                <div class="list overflow-y-scroll scroll-cursos">
-                                    <div class="w-full">
-                                        <input type="radio" name="drop1" id="id10" class="radio" />
-                                        <label for="id10"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Tipo de servicios</label>
+                <div class="bg-bgGray text-textWhite flex flex-col justify-center lg:py-10">
+                    <div class="w-11/12 mx-auto lg:mx-0 py-12 lg:pt-0 pl-10 lg:w-[70%] flex flex-col gap-10 justify-center ">
+                        <h3 class="font-corbel_700 text-text40 xl:text-text52 leading-none md:leading-tight">
+                            Ponte en Contacto
+                        </h3>
+                        <p class="font-corbel_400 text-text20 xl:text-text24">
+                            A continuación, complete el formulario y uno de nuestros
+                            representantes se pondrá en contacto con usted lo mas pronto
+                            posible.
+                        </p>
+    
+    
+                        <form action="#" class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
+                            <div>
+    
+                                <input type="text" placeholder="Nombre completo"
+                                    class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Teléfono"
+                                    class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
+                            </div>
+    
+                            <div>
+                                <input type="email" placeholder="E-mail"
+                                    class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
+                            </div>
+    
+                            
+                            <div>
+                                <!-- cmombo -->
+                                <div class="dropdown w-full">
+                                    <div class="input-box font-corbel_400 text-text18 xl:text-text22 pt-4 pl-4 pb-4 border-b-[1px] border-white  text-white">
+                                        <span class="opacity-35 span-opacity">Tipo de servicios</span>
                                     </div>
-
-                                    <div class="w-full">
-                                        <input type="radio" name="drop1" id="id11" class="radio" />
-                                        <label for="id11"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Contabilidad 360 </label>
+                                    <div class="list overflow-y-scroll scroll-cursos">
+                                        <div class="w-full">
+                                            <input type="radio" name="drop1" id="id10" class="radio" />
+                                            <label for="id10"
+                                                class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Tipo de servicios</label>
+                                        </div>
+    
+                                        <div class="w-full">
+                                            <input type="radio" name="drop1" id="id11" class="radio" />
+                                            <label for="id11"
+                                                class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Contabilidad 360 </label>
+                                        </div>
+    
+                                        
+                                        <div class="w-full">
+                                            <input type="radio" name="drop1" id="id13" class="radio" />
+                                            <label for="id13"
+                                                class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Auditoría para empresas</label>
+                                        </div>
+    
+                                        <div class="w-full">
+                                            <input type="radio" name="drop1" id="id14" class="radio" />
+                                            <label for="id14"
+                                                class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Otros</label>
+                                        </div>
+    
+                                        
                                     </div>
-
-                                    
-                                    <div class="w-full">
-                                        <input type="radio" name="drop1" id="id13" class="radio" />
-                                        <label for="id13"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Auditoría para empresas</label>
-                                    </div>
-
-                                    <div class="w-full">
-                                        <input type="radio" name="drop1" id="id14" class="radio" />
-                                        <label for="id14"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Otros</label>
-                                    </div>
-
-                                    
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="my-12">
-                            <button type="submit"
-                                class="bg-bgOrangeStrong w-full flex justify-center items-center py-4 gap-2 font-medium text-[18px] xl:text-text22 hover:bg-orange-500 md:duration-500">
-                                <span> Enviar solicitud </span>
-                                <div>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
-                                            stroke="white" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
-                    </form>
+    
+                            <div class="my-12">
+                                <button type="submit"
+                                    class="bg-bgOrangeStrong w-full flex justify-center items-center py-4 gap-2 font-medium text-[18px] xl:text-text22 hover:bg-orange-500 md:duration-500">
+                                    <span> Enviar solicitud </span>
+                                    <div>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </section>
