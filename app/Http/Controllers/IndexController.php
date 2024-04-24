@@ -48,6 +48,28 @@ class IndexController extends Controller
 
     return view('public.index', compact('productos', 'destacados', 'descuentos', 'generales', 'benefit', 'faqs', 'testimonie', 'slider', 'categorias', 'category', 'service'));
   }
+  public function blog()
+  {
+    //
+    $generales = General::all()->first();
+    return view('public.blog', compact('generales'));
+  }
+  public function publicacion()
+    {
+        //
+        $generales = General::all()->first();
+        return view('public.publicacion', compact('generales'));
+    }
+
+    public function agradecimiento()
+    {
+        //
+        $generales = General::all()->first();
+        return view('public.agradecimiento', compact('generales'));
+    }
+    /**
+     * Show the form for creating a new resource.
+     */
 
   public function catalogo($filtro, Request $request)
   {
@@ -136,11 +158,7 @@ class IndexController extends Controller
     return view('public.checkout_pago', compact('url_env'));
   }
 
-  public function agradecimiento()
-  {
-    //
-    return view('public.checkout_agradecimiento');
-  }
+  
 
   public function micuenta()
   {
@@ -188,8 +206,8 @@ class IndexController extends Controller
     $atributos = Attributes::where("status", "=", true)->get();
     $valorAtributo = AttributesValues::where("status", "=", true)->get();
     $url_env = $_ENV['APP_URL'];
-    
-    
+
+
 
     return view('public.product', compact('productos', 'atributos', 'valorAtributo', 'ProdComplementarios', 'productosConGalerias', 'especificaciones', 'url_env'));
   }
