@@ -3,7 +3,7 @@
 
     <section class="py-4 border-b border-slate-100 dark:border-slate-700">
       <a href="{{ route('logos.create') }}"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-sm">Agregar Logo</a>
+        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-sm">Agregar logo</a>
     </section>
 
 

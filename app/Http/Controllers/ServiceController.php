@@ -72,30 +72,10 @@ class ServiceController extends Controller
 
             $img =  $manager->read($request->file('imagen'));
 
-            //seteamos el tamaño de que deben de tener las imagenes que se suban
-            $qwidth = 808;
-            $qheight = 445;
-
-            // Obtener las dimensiones de la imagen que se esta subiendo
-            $width = $img->width();
-            $height = $img->height();
-
-            if ($width > $height) {
-                //dd('Horizontal');
-                //si es horizontal igualamos el alto de la imagen a alto que queremos
-                $img->resize(height: 445)->crop(808, 445);
-            } else {
-                //dd('Vertical');
-                //En caso sea vertical la imagen
-                //igualamos el ancho y cropeamos
-                $img->resize(width: 808)->crop(808, 445);
-            }
+            
 
 
             $ruta = 'storage/images/servicios/';
-
-           
-
             
             if (!file_exists($ruta)) {
                 mkdir($ruta, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
@@ -147,50 +127,35 @@ class ServiceController extends Controller
         $service = Service::findOrfail($id);
         $service->title = $request->title;
         $service->description = $request->description;
-
+        $service->link = $request->link;
+       
 
         if ($request->hasFile("imagen")) {
 
             $manager = new ImageManager(new Driver());
 
 
-            $ruta = storage_path() . '/app/public/images/servicios/' . $service->name_image;
+            $ruta = 'storage/images/servicios/';
 
             // dd($ruta);
             if (File::exists($ruta)) {
                 File::delete($ruta);
             }
 
-            $rutanueva = storage_path() . 'storage/images/servicios/';
+            
             $nombreImagen = Str::random(10) . '_' . $request->file('imagen')->getClientOriginalName();
 
             $img =  $manager->read($request->file('imagen'));
 
-            $width = $img->width();
-            $height = $img->height();
-
-            $qwidth = 808;
-            $qheight = 445;
-
-            if ($width > $height) {
-                //dd('Horizontal');
-                //si es horizontal igualamos el alto de la imagen a alto que queremos
-                $img->resize(height: 445)->crop(808, 445);
-            } else {
-                //dd('Vertical');
-                //En caso sea vertical la imagen
-                //igualamos el ancho y cropeamos
-                $img->resize(width: 808)->crop(808, 445);
+            
+            if (!file_exists($ruta)) {
+                mkdir($ruta, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
             }
             
-            if (!file_exists($rutanueva)) {
-                mkdir($rutanueva, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
-            }
-            
-            $img->save($rutanueva . $nombreImagen);
+            $img->save($ruta . $nombreImagen);
 
 
-            $service->url_image = $rutanueva;
+            $service->url_image = $ruta;
             $service->name_image = $nombreImagen;
         }
 

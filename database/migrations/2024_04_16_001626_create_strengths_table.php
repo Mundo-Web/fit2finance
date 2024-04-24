@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('strengths', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
+            $table->string('descripcionshort')->nullable();
             $table->text('descripcion')->nullable();
             $table->string('icono')->nullable();
             $table->string('imagen')->nullable();

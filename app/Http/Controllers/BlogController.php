@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Blog;
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 
@@ -32,8 +33,9 @@ class BlogController extends Controller
   public function create()
   {
     $categories = Category::all();
-
-    return view('pages.blog.create', compact('categories'));
+    $tags = Tag::all();
+    
+    return view('pages.blog.create', compact('categories', 'tags'));
   }
 
   /**
@@ -41,6 +43,8 @@ class BlogController extends Controller
    */
   public function store(Request $request)
   {
+
+    
     $request->validate([
       'title' => 'required',
     ]);

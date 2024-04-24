@@ -6,6 +6,12 @@ use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\File;
+use Intervention\Image\Drivers\Gd\Driver;
+use Intervention\Image\ImageManager;
+use Illuminate\Support\Str;
+
 
 class CategoryController extends Controller
 {
@@ -15,9 +21,10 @@ class CategoryController extends Controller
     public function index()
     {
         $category = Category::where("status", "=", true)->get();
-
+       
         return view('pages.categories.index', compact('category'));
 
+        
     }
 
     /**
@@ -35,8 +42,55 @@ class CategoryController extends Controller
     {
         $category = new Category(); 
 
+        if ($request->hasFile("imagen")) {
+
+            $manager = new ImageManager(new Driver());
+
+            $nombreImagen = Str::random(10) . '_' . $request->file('imagen')->getClientOriginalName();
+
+            $img =  $manager->read($request->file('imagen'));
+
+        
+            // Obtener las dimensiones de la imagen que se esta subiendo
+            $width = $img->width();
+            $height = $img->height();
+
+            // $img->crop(1216, 392);
+
+            // if ($width > $height) {
+            //     //dd('Horizontal');
+            //     //si es horizontal igualamos el alto de la imagen a alto que queremos
+            //     $img->resize(height: 808)->crop(1440, 808);
+            // } else {
+            //     //dd('Vertical');
+            //     //En caso sea vertical la imagen
+            //     //igualamos el ancho y cropeamos
+            //     $img->resize(width: 1440)->crop(1440, 808);
+            // }
+
+            $ruta = 'storage/images/categories/';
+
+            if (!file_exists($ruta)) {
+                mkdir($ruta, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
+            }
+            
+            $img->save($ruta.$nombreImagen);
+
+            $category ->url_image = $ruta;
+            $category ->name_image = $nombreImagen;
+        }
+
+        $slug = strtolower(str_replace(' ', '-', $request->name));
+
+        if (Category::where('slug', $slug)->exists()) {
+            // Si el slug existe, agregar un número aleatorio al final
+            $slug .= '-' . rand(1, 1000); // Puedes ajustar el rango según tu necesidad
+        }
+
+        
         $category->name = $request->name;
         $category->description = $request->description;
+        $category->slug = $slug;
         $category->status = 1;
         $category->visible = 1;
 
@@ -70,8 +124,63 @@ class CategoryController extends Controller
     {
         $category = Category::findOrfail($id); 
 
-        $category->update($request->all());
+        if ($request->hasFile("imagen")) {
 
+            $manager = new ImageManager(new Driver());
+
+
+            $ruta = storage_path() . '/app/public/images/categories/' . $category->name_image;
+
+            // dd($ruta);
+            if (File::exists($ruta)) {
+                File::delete($ruta);
+            }
+
+            $rutanueva = 'storage/images/categories/';
+            $nombreImagen = Str::random(10) . '_' . $request->file('imagen')->getClientOriginalName();
+
+            $img =  $manager->read($request->file('imagen'));
+
+            $width = $img->width();
+            $height = $img->height();
+
+
+            // $img->crop(1216, 392);
+
+            // if ($width > $height) {
+            //     //dd('Horizontal');
+            //     //si es horizontal igualamos el alto de la imagen a alto que queremos
+            //     $img->resize(height: 808)->crop(1440, 808);
+            // } else {
+            //     //dd('Vertical');
+            //     //En caso sea vertical la imagen
+            //     //igualamos el ancho y cropeamos
+            //     $img->resize(width: 1440)->crop(1440, 808);
+            // }
+            
+            if (!file_exists($rutanueva)) {
+                mkdir($rutanueva, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
+            }
+            
+            $img->save($rutanueva . $nombreImagen);
+
+
+            $category->url_image = $rutanueva;
+            $category->name_image = $nombreImagen;
+        }
+
+        $slug = strtolower(str_replace(' ', '-', $request->name));
+
+        if (Category::where('slug', $slug)->exists()) {
+            // Si el slug existe, agregar un número aleatorio al final
+            $slug .= '-' . rand(1, 1000); // Puedes ajustar el rango según tu necesidad
+        }
+
+
+        $category->name = $request->name;
+        $category->description = $request->description;
+        $category->slug = $slug;
+        
         $category->save();
 
         return redirect()->route('categorias.index')->with('success', 'Categoria modificada');
@@ -104,20 +213,41 @@ class CategoryController extends Controller
     public function updateVisible(Request $request)
     {
         // Lógica para manejar la solicitud AJAX
-       
+        $cantidad = $this->contarCategoriasDestacadas();
+
+
+        if($cantidad >= 4 && $request->status == 1){
+            return response()->json(['message' => 'Solo puedes destacar 4 categorias'], 409 );
+        }
+
+
         $id = $request->id;
 
         $field = $request->field;
 
         $status = $request->status;
 
+        // Actualizar el estado de la categoría
         $category = Category::findOrFail($id);
-        
+
         $category->$field = $status;
 
         $category->save();
+    
+        $cantidad = $this->contarCategoriasDestacadas();
 
-         return response()->json(['message' => 'Categoría modificada']);
+        
+        return response()->json(['message' => 'Categoría modificada',  'cantidad' => $cantidad]);
     
     }
+
+
+    public function contarCategoriasDestacadas(){
+
+        $cantidad = Category::where('destacar', '=', 1)->count();
+   
+        return  $cantidad;
+    }
+
+
 }

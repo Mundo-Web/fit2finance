@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\AttributesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataFeedController;
 use App\Http\Controllers\DashboardController;
@@ -19,11 +20,20 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\FaqsController;
+use App\Http\Controllers\FooterController;
+use App\Http\Controllers\GalerieController;
 use App\Http\Controllers\LogosClientController;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StrengthController;
+use App\Http\Controllers\ValoresAtributosController;
+
+use App\Http\Controllers\TagController;
 use App\Models\AboutUs;
 
 /*
@@ -72,6 +82,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::resource('/categorias', CategoryController::class);
         Route::post('/categorias/deleteCategory', [CategoryController::class, 'deleteCategory'] )->name('categorias.deleteCategory');
         Route::post('/categorias/updateVisible', [CategoryController::class, 'updateVisible'] )->name('categorias.updateVisible');
+        Route::get('/categorias/contarCategorias', [CategoryController::class, 'contarCategoriasDestacadas'] )->name('categorias.contarCategoriasDestacadas');
+
 
 
         //Servicios
@@ -95,13 +107,47 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::resource('/strength', StrengthController::class);
         Route::post('/strength/updateVisible', [StrengthController::class, 'updateVisible'])->name('strength.updateVisible');
         Route::post('/strength/borrar', [StrengthController::class, 'borrar'])->name('strength.borrar');
-        //
+      
+        //Atributes
 
         Route::resource('/aboutus', AboutUsController::class);
         Route::post('/aboutus/updateVisible', [AboutUsController::class, 'updateVisible'])->name('aboutus.updateVisible');
         Route::post('/aboutus/borrar', [AboutUsController::class, 'borrar'])->name('aboutus.borrar');
 
+        Route::resource('/attributes', AttributesController::class);
+        Route::post('/attributes/updateVisible', [AttributesController::class, 'updateVisible'])->name('attributes.updateVisible');
+        Route::post('/attributes/borrar', [AttributesController::class, 'borrar'])->name('attributes.borrar');
 
+        //valores atributes
+        Route::resource('/valoresattributes', ValoresAtributosController::class);
+        Route::post('/valoresattributes/borrar', [ValoresAtributosController::class, 'borrar'])->name('valoresattributes.borrar');
+        Route::post('/valoresattributes/updateVisible', [ValoresAtributosController::class, 'updateVisible'])->name('valoresattributes.updateVisible');
+
+
+        //Etiquetas
+        Route::resource('/tags', TagController::class);
+        Route::post('/tags/deleteTags', [TagController::class, 'deleteTags'])->name('tags.deleteTags');
+
+        Route::resource('/products', ProductsController::class);
+        Route::post('/products/updateVisible', [ProductsController::class, 'updateVisible'])->name('products.updateVisible');
+        Route::post('/products/borrar', [ProductsController::class, 'borrar'])->name('products.borrar');
+
+        Route::resource('/faqs', FaqsController::class);
+        Route::post('/faqs/updateVisible', [FaqsController::class, 'updateVisible'])->name('faqs.updateVisible');
+        Route::post('/faqs/borrar', [FaqsController::class, 'borrar'])->name('faqs.borrar');
+
+               
+        Route::resource('/slider', SliderController::class);
+        Route::post('/slider/updateVisible', [SliderController::class, 'updateVisible'])->name('slider.updateVisible');
+        Route::post('/slider/deleteSlider', [SliderController::class, 'deleteSlider'])->name('slider.deleteSlider');
+
+        Route::resource('/galerie', GalerieController::class);
+        Route::post('/galerie/updateVisible', [GalerieController::class, 'updateVisible'])->name('galerie.updateVisible');
+        Route::post('/galerie/borrar', [GalerieController::class, 'borrar'])->name('galerie.borrar');
+
+
+
+        
         Route::fallback(function() {
             return view('pages/utility/404');
         });

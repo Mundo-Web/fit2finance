@@ -22,7 +22,9 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Descripción</th>
+                                <th>Destacar</th>
                                 <th>Visible</th>
+                               
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -32,6 +34,22 @@
                                 <tr>
                                     <td>{{$item->name}}</td>
                                     <td>{{$item->description}}</td>
+                                    <td>
+                                        <form method="POST" action="">
+                                          @csrf
+                                            <input type="checkbox" id="hs-basic-usage" class="check_d btn_swithc relative w-[3.25rem] h-7 p-px bg-gray-100 border-transparent text-transparent 
+                                            rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-transparent disabled:opacity-50 disabled:pointer-events-none 
+                                            checked:bg-none checked:text-blue-600 checked:border-blue-600 focus:checked:border-blue-600 dark:bg-gray-800 dark:border-gray-700 
+                                            dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-600 before:inline-block before:size-6
+                                            before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow 
+                                            before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"
+                                            id='{{'d_'.$item->id}}' data-field='destacar' data-idService='{{$item->id}}' data-titleService='{{$item->name}}' {{$item->destacar == 1 ? 'checked' : ''}}>
+                                            <label for="{{'v_'.$item->id}}"></label>
+                                         </form>
+
+                                       
+
+                                    </td>
                                     <td>
                                         <form method="POST" action="">
                                           @csrf
@@ -67,6 +85,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Descripción</th>
+                                <th>Destacar</th>
                                 <th>Visible</th>
                                 <th>Acciones</th>
                             </tr>
@@ -132,16 +151,19 @@
 
             });
 
+            // $('.check_d:not(:checked)').prop('disabled', true);
 
             $( ".btn_swithc" ).on( "change", function() {
                 
                 var status = 0;
                 var id = $(this).attr('data-idService');
+                let contenedor = $(this);
                 var titleService = $(this).attr('data-titleService');
                 var field = $(this).attr('data-field');
                
                 if( $(this).is(':checked') ){
                     status = 1;
+                   
                 }else{
                     status = 0;
                  }
@@ -156,24 +178,60 @@
                         status: status,
                         id: id,
                         field: field,
+                    },
+                    success: function(response) {
+                            Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: titleService +" a sido modificado",
+                            showConfirmButton: false,
+                            timer: 1500
+
+                        }); 
+
+                        if (response.cantidad >= 4) {
+                            
+
+                            Swal.fire({
+                            position: "top-center",
+                            icon: "success",
+                            title: "Ya no puedes destacar más",
+                            showConfirmButton: false,
+                            timer: 2000
+
+                            }); 
+
+                            // Deshabilitar todos los checkboxes con la clase .check_d
+                            $('.check_d:not(:checked)').prop('disabled', true);
+
+                        
+
+                        } else {
+
+                            // Habilitar todos los checkboxes con la clase .check_d
+                            $('.check_d').prop('disabled', false);
+                        }
+
+                    },
+                    error: function(response) {
+
+                        Swal.close();
+                        Swal.fire({
+                        title: response.responseJSON.message,
+                        icon: "error",
+                        });
+                        
+                        contenedor[0].checked = !contenedor[0].checked;
+                       
                     }
-                }).done(function(res){
-                   
-                    Swal.fire({
-                        position: "top-end",
-                        icon: "success",
-                        title: titleService +" a sido modificado",
-                        showConfirmButton: false,
-                        timer: 1500
-
-                    }); 
-
-                })     
+                })
+                
+                
+                  
             });
-
-
-
         })
     </script>
 
+
+    
 </x-app-layout>

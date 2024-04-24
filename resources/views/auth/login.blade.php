@@ -1,54 +1,75 @@
 <x-authentication-layout>
-    <h1 class="text-3xl text-slate-800 dark:text-slate-100 font-bold mb-6">{{ __('Hola de vuelta!') }} ✨</h1>
-    @if (session('status'))
-        <div class="mb-4 font-medium text-sm text-green-600">
-            {{ session('status') }}
-        </div>
-    @endif   
-    <!-- Form -->
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
-        <div class="space-y-4">
-            <div>
-                <x-label for="email" value="{{ __('Correo') }}" />
-                <x-input id="email" type="email" name="email" :value="old('email')" required autofocus />                
-            </div>
-            <div>
-                <x-label for="password" value="{{ __('Contraseña') }}" />
-                <x-input id="password" type="password" name="password" required autocomplete="current-password" />                
+   
+    <div class="flex h-screen">
+        <!-- Primer div -->
+        <div class="bg-blue-500 basis-1/2 hidden md:block font-poppins">
+            <!-- Imagen ocupando toda la altura y sin desbordar -->
+            <div style="background-image: url('{{ asset('images/img/login_decotab.png') }}')" class="bg-cover bg-center bg-no-repeat w-full h-full">
+                <h1 class="font-medium text-[24px] py-10 bg-black bg-opacity-25 text-center text-white">
+                    Deco Tab
+                </h1>
             </div>
         </div>
-        <div class="flex items-center justify-between mt-6">
-            @if (Route::has('password.request'))
-                <div class="mr-1">
-                    <a class="text-sm underline hover:no-underline" href="{{ route('password.request') }}">
-                        {{ __('Olvidaste tu contraseña?') }}
-                    </a>
+    
+        <!-- Segundo div -->
+        <div class="w-full md:basis-1/2 text-[#151515] flex justify-center items-center font-poppins">
+            <div class="w-full md:w-4/6 flex flex-col gap-5">
+                <div class="px-4 flex flex-col gap-5 text-center md:text-left">
+                    @if (session('status'))
+                        <div class="mb-4 font-medium text-sm text-green-600">
+                            {{ session('status') }}
+                        </div>
+                    @endif   
+                    <h1 class="font-semibold text-[40px]">Iniciar Sesión</h1>
+                    <p class="font-normal text-[16px]">
+                        ¿Aún no tienes una cuenta?
+                        <a href="{{ route('register') }}" class="font-bold text-[16px] text-[#EB5D2C]">Crea una</a>
+                    </p>
                 </div>
-            @endif            
-            <x-button class="ml-3">
-                {{ __('Ingresar') }}
-            </x-button>            
-        </div>
-    </form>
-    <x-validation-errors class="mt-4" />   
-    <!-- Footer -->
-    <div class="pt-5 mt-6 border-t border-slate-200 dark:border-slate-700">
-        <div class="text-sm">
-            {{ __('¿No tienes una cuenta?') }} <a class="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="{{ route('register') }}">{{ __('Regístrate') }}</a>
-        </div>
-        <!-- Warning -->
-        <!-- 
-        <div class="mt-5">
-            <div class="bg-amber-100 dark:bg-amber-400/30 text-amber-600 dark:text-amber-400 px-3 py-2 rounded">
-                <svg class="inline w-3 h-3 shrink-0 fill-current" viewBox="0 0 12 12">
-                    <path d="M10.28 1.28L3.989 7.575 1.695 5.28A1 1 0 00.28 6.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 1.28z" />
-                </svg>
-                <span class="text-sm">
-                    Para brindarle asistencia durante la pandemia, las funciones súper profesionales son gratuitas hasta el 31 de marzo.
-                </span>
+                <div class="">
+                    <form method="POST" action="{{ route('login') }}" class="flex flex-col gap-5">
+                        @csrf
+                        <div>
+                            <input type="text" placeholder="Tu nombre de usuario o correo electrónico"
+                             name="email"  id="email" type="email" 
+                             :value="old('email')" required autofocus
+                             class="w-full py-5 px-4 focus:outline-none placeholder-gray-400 font-normal text-[16px] border-b-[1.5px] border-gray-200" />
+                        </div>
+    
+                        <div class="relative w-full">
+                            <!-- Input -->
+                            <input type="password" placeholder="Contraseña" 
+                                id="password" name="password" required autocomplete="current-password"
+                                class="w-full py-5 pl-4 pr-12 focus:outline-none placeholder-gray-400 font-normal text-[16px] border-b-[1.5px] border-gray-200" />
+                            <!-- Imagen -->
+                            <img src="./images/svg/pass_eyes.svg" alt="password"
+                                class="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer" />
+                        </div>
+    
+                        <div class="flex gap-3 px-4 justify-between">
+                            <div>
+                                <input type="checkbox" id="acepto_terminos" class="w-4" />
+                                <label for="acepto_terminos" class="font-normal text-[16px]">Recuerdame
+                                </label>
+                            </div>
+                            
+                            @if (Route::has('password.request'))
+                            <div>
+                                <a href="{{ route('password.request') }}"
+                                    class="font-semibold text-[16px] text-[#EB5D2C]">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            @endif   
+                          
+                        </div>
+    
+                        <div class="px-4">
+                            <input type="submit" value="Iniciar Sesión"
+                                class="text-white bg-[#74A68D] w-full py-4 rounded-3xl cursor-pointer" />
+                        </div>
+                    </form>
+                    <x-validation-errors class="mt-4" />   
+                </div>
             </div>
         </div>
-        -->
     </div>
 </x-authentication-layout>

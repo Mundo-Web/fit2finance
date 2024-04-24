@@ -73,6 +73,7 @@ class StrengthController extends Controller
 			}
 	
 			$fortaleza->titulo = $request->titulo;
+			$fortaleza->descripcionshort = $request->descripcionshort;
 			$fortaleza->descripcion = $request->descripcion;
 			$fortaleza->save();
 
@@ -142,6 +143,7 @@ class StrengthController extends Controller
 			}
 	
 			$fortaleza->titulo = $request->titulo;
+			$fortaleza->descripcionshort = $request->descripcionshort;
 			$fortaleza->descripcion = $request->descripcion;
 			$fortaleza->save();
 

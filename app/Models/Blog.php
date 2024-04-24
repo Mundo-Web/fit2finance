@@ -17,5 +17,19 @@ class Blog extends Model
         return $this->belongsTo(Category::class, 'category_id');
     }
 
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::deleted(function ($article) {
+            $article->tags()->detach();
+        });
+    }
+
+    public function tags(): \Illuminate\Database\Eloquent\Relations\MorphToMany
+    {
+        return $this->morphToMany(Tag::class, 'taggable');
+    }
 }
 
