@@ -70,9 +70,9 @@
                             <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
                                 <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange">Contabilidad</span>
+                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
                             </p>
                         </div>
 
@@ -109,9 +109,9 @@
                             <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
                                 <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange">Contabilidad</span>
+                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
                             </p>
                         </div>
 
@@ -148,9 +148,9 @@
                             <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
                                 Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                             </h3>
-                            <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
                                 <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange">Contabilidad</span>
+                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
                             </p>
                         </div>
 

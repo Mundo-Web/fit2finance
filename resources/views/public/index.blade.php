@@ -422,7 +422,7 @@
                         Descubra cómo nuestros servicios contables pueden impulsar el
                         éxito financiero de su empresa. Desde la gestión completa de la
                         contabilidad hasta auditorías detalladas, estamos aquí para
-                        ayudarlo a alcanzar sus metas empresariales.
+                        ayudarte a cumplir tus metas empresariales.
                     </p>
                 </div>
 
@@ -450,9 +450,7 @@
                                     Con el modelo de outsourcing, nuestros clientes pueden
                                     obtener todos los beneficios de nuestros servicios como si
                                     tuviese su propio <b>Departamento de Finanzas</b>. Nuestra
-                                    <b>asesoría financiera para empresas</b> te permitirá
-                                    encontrar oportunidades de inversión y financiamiento para
-                                    alcanzar una fuerte posición competitiva.
+                                    <b>asesoría financiera para empresas</b> te ayudará a mirar hacia el futuro y encontrar oportunidades de inversión y financiamiento para alcanzar una fuerte posición competitiva
                                 </p>
 
                                 <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
@@ -509,7 +507,7 @@
                                     a nuestros clientes una opción útil, necesaria y sencilla
                                     que les permite enfocarse en su core business. Lograremos
                                     que tu compañía planifique mejor sus actividades de
-                                    operación, inversión y financiamiento.
+                                    operación, inversión y financiamiento ara alcanzar el éxito.
                                 </p>
 
                                 <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
@@ -521,10 +519,10 @@
                                         <li>Análisis e identificación de indicadores clave.</li>
                                         <li>Diseño de estrategias financieras.</li>
                                         <li>Control presupuestario.</li>
-                                        <li>Benchmarking sectorial.</li>
-                                        <li>Control presupuestario.</li>
+                                        <li>Control Tributario.</li>
+                                        <li>Control Contable.</li>
                                         <li>
-                                            Seguimiento de resultados y análisis de tendencias y
+                                            Seguimiento de resultados mensuales y análisis de tendencias y
                                             desvíos.
                                         </li>
                                     </ul>
@@ -566,7 +564,11 @@
                                     Diagnóstico de las Normas Internacional de Información
                                     Financiera - NIIF, (IFRS), emitidas por el IASB
                                     (International Accounting Standards Board) Aplicables en el
-                                    Perú y a nivel internacional. Nuestros expertos en
+                                    Perú y a nivel internacional. 
+                                </p>
+
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                    Nuestros expertos en
                                     <b>asesorías contables</b> evaluarán el estatus de la
                                     información financiera de tu compañía y te brindarán un plan
                                     de trabajo.
@@ -578,7 +580,7 @@
 
                                 <div class="mx-6">
                                     <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
-                                        <li>Asesorías en la adopción de las NIIF.</li>
+                                        <li>Asesoría en la adopción de las NIIF.</li>
                                         <li>Conversión de estados financieros.</li>
                                         <li>Evaluación de moneda funcional.</li>
                                         <li>
@@ -626,7 +628,11 @@
                                     Nuestro enfoque de <b>auditoría financiera</b> es el de
                                     focalizarnos en los riesgos de tu negocio, soportado por un
                                     staff de especialistas en contabilidad, impuestos, valuación
-                                    y tecnología. Ayudaremos a tu negocio a crear confianza y
+                                    y tecnología. 
+                                </p>
+
+                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                    Ayudaremos a tu negocio a crear confianza y
                                     seguridad a través de la transparencia, claridad y
                                     congruencias de tus Estados Financieros.
                                 </p>
@@ -636,7 +642,7 @@
                                         <li>Gestión de crisis y continuidad del negocio.</li>
                                         <li>Gestión financiera y liquidez.</li>
                                         <li>Identificación de situaciones inusuales.</li>
-                                        <li>Gestión de la cadena de suministro .</li>
+                                        <li>Gestión de la cadena de suministro.</li>
                                         <li>Optimización de procesos.</li>
                                         <li>Planeamiento estratégico.</li>
                                     </ul>
@@ -1220,8 +1226,7 @@
                     Odoo, la plataforma de gestión empresarial más avanzada. A través de
                     esta alianza, ofrecemos soluciones integrales que optimizan tus
                     procesos contables y potencian el crecimiento de tu empresa.
-                    Descubre cómo nuestra asociación con Somatec puede llevar tu negocio
-                    al siguiente nivel.
+                    Descubre cómo nuestra asociación con Sumatek yudará a tu compañía a conseguir el éxito que esperas.
                 </p>
             </div>
         </section>

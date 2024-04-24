@@ -145,14 +145,15 @@
                         <img src="{{ asset('images/svg/point_naranja.svg') }}" alt="point" />
                         <span>Inicio</span>
                     </a>
-                    <a href="#" class="py-2 px-5 flex justify-center items-center gap-3">
+                    <a href="{{route('index') . '#servicios'}}" class="py-2 px-5 flex justify-center items-center gap-3">
                         <span>Servicios</span>
                     </a>
                     <a href="{{ route('blog') }}"
                         class="rounded-full hover:bg-colorBackgroundHeader md:duration-300 py-2 px-5">Blog
                     </a>
-                    <a href="#contacto"
-                        class="rounded-full hover:bg-colorBackgroundHeader md:duration-300 py-2 px-5">Contacto
+                    <a href="{{route('index') . '#contacto'}}"
+                        class="rounded-full hover:bg-colorBackgroundHeader md:duration-300 py-2 px-5">
+                        Contacto
                     </a>
                 </nav>
             </div>

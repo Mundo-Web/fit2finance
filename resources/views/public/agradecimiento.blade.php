@@ -25,7 +25,7 @@
                             </h2>
                             <h2 class="font-corbel_400 text-text20 xl:text-text24 text-textWhite">
                                 Apreciamos tu interés en nuestros servicios de contabilidad. Nos pondremos en contacto
-                                contigo lo antes posible para discutir tus necesidades y cómo podemos ayudarte a alcanzar
+                                contigo lo más antes posible para discutir tus necesidades y cómo podemos ayudarte a alcanzar
                                 tus objetivos financieros. ¡Gracias por elegirnos como tu socio en contabilidad!
                             </h2>
                         </div>

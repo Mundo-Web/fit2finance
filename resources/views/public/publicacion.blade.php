@@ -55,9 +55,9 @@
                 <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
                     Maximiza el Potencial de tu Empresa con Outsourcing Financiero
                 </h2>
-                <p class="font-corbel_700 text-[12px] xl:text-text16 text-textGray">
+                <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
                     <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                    <span class="text-textOrange">Contabilidad</span>
+                    <span class="text-textOrange font-corbel_700">Contabilidad</span>
                 </p>
             </div>
 

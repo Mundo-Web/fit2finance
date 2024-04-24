@@ -11,7 +11,7 @@
     <div class="w-11/12 mx-auto py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 text-textWhite gap-10 md:gap-0">
             <div class="flex flex-col gap-5 items-start" data-aos="fade-up" data-aos-offset="150">
-                <a href="index.html">
+                <a href="{{route('index')}}">
                     <div>
                         <svg width="229" height="64" viewBox="0 0 229 64" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -147,9 +147,9 @@
                 <a href="{{route('index')}}" class="ffont-corbel_700 text-text18 xl:text-text22 flex gap-2">
                     <img src="./images/svg/point_blanco.svg" alt="point" />
                     <span>Inicio</span></a>
-                <a href="index.html#servicios" class="text-text18">Servicios</a>
-                <a href="blog.html" class="text-text18">Blog</a>
-                <a href="index.html#contacto" class="text-text18">Contacto</a>
+                <a href="{{route('index') . '#servicios'}}" class="text-text18">Servicios</a>
+                <a href="{{route('blog')}}" class="text-text18">Blog</a>
+                <a href="{{route('index') . '#contacto'}}" class="text-text18">Contacto</a>
             </div>
 
             <div class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
