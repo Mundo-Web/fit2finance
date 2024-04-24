@@ -240,7 +240,7 @@
 
 
         .swiper-wrapper-height {
-            height: 1000px !important;
+            height: 1200px !important;
         }
 
         @media (min-width: 768px) {
@@ -363,7 +363,7 @@
                 <div class="swiper-wrapper text-textWhite pt-5 md:py-12" data-aos="fade-up" data-aos-offset="150">
                     <div class="swiper-slide py-5 px-5 lg:px-10">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+150</p>
+                            <p class="font-corbel_700 text-text72 leading-none">+150</p>
                             <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Atendidas
                             </h2>
@@ -374,7 +374,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-10">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+100</p>
+                            <p class="font-corbel_700 text-text72 leading-none">+100</p>
                             <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
@@ -386,7 +386,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-10">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-[60px] lg:text-text72 leading-none">%99</p>
+                            <p class="font-corbel_700 text-text72 leading-none">%99</p>
                             <h2 class="font-corbel_700 text-[20px] lg:text-text24">
                                 Retención de Clientes
                             </h2>
@@ -398,7 +398,7 @@
                     </div>
                     <div class="swiper-slide py-5 px-5 lg:px-10">
                         <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-[60px] md:text-text72 leading-none">+100</p>
+                            <p class="font-corbel_700 text-text72 leading-none">+100</p>
                             <h2 class="font-corbel_700 text-[20px] md:text-text24">
                                 Empresas Felices
                             </h2>
@@ -415,7 +415,7 @@
         <section class="swiper slider w-11/12 mx-auto my-16" id="servicios">
             <div class="mb-12 flex flex-col gap-5 md:flex-row md:justify-between md:items-center">
                 <div>
-                    <h2 class="font-corbel_700 text-textGray text-text48 xl:text-text56 leading-none md:leading-tight my-5">
+                    <h2 class="font-corbel_700 text-textGray text-text44 xl:text-text56 leading-none md:leading-tight my-5">
                         Servicios de Contabilidad Integral para su empresa
                     </h2>
                     <p class="font-corbel_400 text-textGray text-text20 xl:text-text24 text-justify">
@@ -443,22 +443,22 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5">
                                 <h2
-                                    class="font-corbel_700 text-text36 md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Outsourcing Financiero
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Con el modelo de outsourcing, nuestros clientes pueden
                                     obtener todos los beneficios de nuestros servicios como si
                                     tuviese su propio <b>Departamento de Finanzas</b>. Nuestra
                                     <b>asesoría financiera para empresas</b> te ayudará a mirar hacia el futuro y encontrar oportunidades de inversión y financiamiento para alcanzar una fuerte posición competitiva
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Análisis e identificación de indicadores clave.</li>
                                         <li>Diseño de estrategias financieras.</li>
                                         <li>Asesoría en inversiones y financiamiento.</li>
@@ -499,10 +499,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Servicio contable 360° Vía ERP ODOO
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Como especialistas en <b>servicios contables</b>, ofrecemos
                                     a nuestros clientes una opción útil, necesaria y sencilla
                                     que les permite enfocarse en su core business. Lograremos
@@ -510,12 +510,12 @@
                                     operación, inversión y financiamiento ara alcanzar el éxito.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Análisis e identificación de indicadores clave.</li>
                                         <li>Diseño de estrategias financieras.</li>
                                         <li>Control presupuestario.</li>
@@ -557,29 +557,29 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Diagnóstico e Implementación NIIF/IFRS --- Plenas y PYMES
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Diagnóstico de las Normas Internacional de Información
                                     Financiera - NIIF, (IFRS), emitidas por el IASB
                                     (International Accounting Standards Board) Aplicables en el
                                     Perú y a nivel internacional. 
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Nuestros expertos en
                                     <b>asesorías contables</b> evaluarán el estatus de la
                                     información financiera de tu compañía y te brindarán un plan
                                     de trabajo.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 ">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 ">
                                     Brindamos servicios de:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Asesoría en la adopción de las NIIF.</li>
                                         <li>Conversión de estados financieros.</li>
                                         <li>Evaluación de moneda funcional.</li>
@@ -621,24 +621,24 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Auditoria de los Estados Financieros
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Nuestro enfoque de <b>auditoría financiera</b> es el de
                                     focalizarnos en los riesgos de tu negocio, soportado por un
                                     staff de especialistas en contabilidad, impuestos, valuación
                                     y tecnología. 
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Ayudaremos a tu negocio a crear confianza y
                                     seguridad a través de la transparencia, claridad y
                                     congruencias de tus Estados Financieros.
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Gestión de crisis y continuidad del negocio.</li>
                                         <li>Gestión financiera y liquidez.</li>
                                         <li>Identificación de situaciones inusuales.</li>
@@ -677,10 +677,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Valuación Económica
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Nuestros expertos en
                                     <b>servicios de Contabilidad y Finanzas</b> identificarán el
                                     verdadero valor de mercado de los activos de nuestros
@@ -689,12 +689,12 @@
                                     predictivos.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Tipos de valuaciones:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Valuación de empresas.</li>
                                         <li>Valuación de marcas.</li>
                                     </ul>
@@ -729,10 +729,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Estudios de Factibilidad Financiera
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Como
                                     <b>especialistas en estrategias financieras</b> analizamos y
                                     determinamos la viabilidad económica financiera de un
@@ -740,12 +740,12 @@
                                     liquidez y solvencia.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>
                                             Determinamos e identificamos el nivel de rentabilidad de
                                             un proyecto.
@@ -798,10 +798,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     ADVISER - Financiamiento Bancario
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Nos encargamos de
                                     <b>gestionar el financiamiento bancario</b> óptimo para
                                     cubrir los requerimientos de inversión de nuestros clientes,
@@ -809,12 +809,12 @@
                                     tipo de operaciones.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Variables críticas que identificamos:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Condiciones y rentabilidad exigida al proyecto.</li>
                                         <li>Forma del financiamiento.</li>
                                         <li>Crédito puente.</li>
@@ -856,10 +856,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Procesos concursales
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Acompañamos a nuestros clientes una estrategias de
                                     negociación con los principales acreedores e implementar
                                     todo el proceso de reestructuración que le permita salir
@@ -868,7 +868,7 @@
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>
                                             Fase de Determinación del Plan de Reestructuración.
                                         </li>
@@ -908,10 +908,10 @@
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
-                                    class="font-corbel_700 text-[36px] md:text-text40 xl:text-text44 leading-none md:leading-tight">
+                                    class="font-corbel_700 text-text40 xl:text-text44 leading-none md:leading-tight">
                                     Asesoría Tributaria
                                 </h2>
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 text-justify">
+                                <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
                                     Somos expertos <b>Planificación Tributaria</b>, vía la
                                     optimización de los escudos tributarios del negocio, sin
                                     dejar de cumplir con las regulaciones establecidas,
@@ -922,12 +922,12 @@
                                     autoridad tributaria - <b>SUNAT</b>.
                                 </p>
 
-                                <p class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24">
+                                <p class="font-corbel_400 text-text20 xl:text-text24">
                                     Propuesta de valor:
                                 </p>
 
                                 <div class="mx-6">
-                                    <ul class="font-corbel_400 text-[16px] md:text-text20 xl:text-text24 list-disc">
+                                    <ul class="font-corbel_400 text-text20 xl:text-text24 list-disc">
                                         <li>Planeamiento tributario integral.</li>
                                         <li>Consultoría tributaria.</li>
                                         <li>
@@ -1214,7 +1214,7 @@
         </section>
         <section class="w-11/12 mx-auto my-24" data-aos="fade-up" data-aos-offset="150">
             <div class="text-textGray text-center flex flex-col gap-10 w-full md:w-7/12 mx-auto">
-                <h2 class="font-corbel_700 text-text48 xl:text-text52 leading-none md:leading-tight">
+                <h2 class="font-corbel_700 text-text40 xl:text-text52 leading-none md:leading-tight">
                     Alianza Estratégica con Sumatek: Potenciando tu Empresa con Odoo
                 </h2>
                 <div class="flex justify-center items-center">
@@ -1406,8 +1406,8 @@
                     <img src="{{ asset('images/img/women_1.png') }}" alt="" class="w-full h-full">
 
                 </div>
-                <div class="bg-bgGray text-textWhite flex flex-col gap-10 justify-center p-10">
-                    <h3 class="font-corbel_700 text-text48 xl:text-text52">
+                <div class="bg-bgGray text-textWhite flex flex-col gap-10 justify-center p-5 md:p-10">
+                    <h3 class="font-corbel_700 text-text40 xl:text-text52 leading-none md:leading-tight">
                         Ponte en Contacto
                     </h3>
                     <p class="font-corbel_400 text-text20 xl:text-text24">
