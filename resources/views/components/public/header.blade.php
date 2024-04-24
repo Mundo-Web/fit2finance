@@ -59,7 +59,7 @@
                                     class="bg-imagen_form_fondo  bg-cover bg-center bg-no-repeat sm:w-full h-full flex flex-col gap-8 p-10 basis-1/2">
                                     <div class="flex flex-col items-center md:flex-row justify-between gap-5">
                                         <div>
-                                            <img src="{{ asset('images/img/logo_modal_finanace.png') }}"
+                                            <img src="{{ asset('storage/images/img_fit/img/logo_modal_finanace.png') }}"
                                                 alt="fit2finance" />
                                         </div>
                                         <a href="#" class="font-corbel_700 text-text14 xl:text-text18">
