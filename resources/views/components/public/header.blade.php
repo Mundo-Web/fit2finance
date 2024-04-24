@@ -5,19 +5,19 @@
             <path d="M18 2L2 18M18 18L2 2" stroke="white" stroke-width="2.66667" stroke-linecap="round" />
         </svg>
     </button>
-    <nav class="menu-list">
+    <nav class="menu-list font-corbel_700">
         <ul>
             <li>
                 <a href="{{ route('index') }}" class="">Inicio</a>
             </li>
             <li>
-                <a href="#" class="">Servicios</a>
+                <a href="{{route('index') . '#servicios'}}" class="">Servicios</a>
             </li>
             <li>
                 <a href="{{ route('blog') }}" class="">Blog</a>
             </li>
             <li>
-                <a href="#contacto" class="">Contacto</a>
+                <a href="{{route('index') . '#contacto'}}" class="">Contacto</a>
             </li>
         </ul>
     </nav>
