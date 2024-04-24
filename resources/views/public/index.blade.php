@@ -125,7 +125,7 @@
             height: fit-content;
             box-sizing: border-box;
             position: relative;
-            /*  border-bottom: 1px solid white; */
+           /*  border-bottom: 1px solid white; */
             /* padding: 16px 0; */
         }
 
@@ -134,7 +134,7 @@
             /* height: 40px; */
             box-sizing: border-box;
             outline: none;
-            /*  border-radius: 2mm; */
+           /*  border-radius: 2mm; */
 
             cursor: pointer;
             display: flex;
@@ -142,8 +142,8 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             position: relative;
-
-
+            
+            
         }
 
         .input-box::before {
@@ -163,13 +163,12 @@
         }
 
         /* .input-box:empty::after {
-                content: "";
-                color: #96a1a6;
-            } */
+            content: ""; 
+            color: #96a1a6;
+        } */
 
         .list {
-            position: relative;
-            /* absolute */
+            position: relative; /* absolute */
             top: 100%;
             left: 0;
             width: 100%;
@@ -272,7 +271,7 @@
             border-bottom-width: 1px;
             border-left-width: 0px;
             border-color: white;
-
+            
         }
 
         [type='text']:focus,
@@ -281,44 +280,43 @@
         [type='tel']:focus,
         select:focus {
             --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-            border-bottom-color: rgb(255, 255, 255);
+            border-bottom-color: rgb(255,255,255);
         }
 
         .bg__main {
-            background-image: url({{ asset('storage/images/img_fit/img/FondoMobile2_1.png') }});
+            background-image: url({{ asset('/images/img/FondoMobile2_1.png') }});
         }
 
-        .bg__diferenciales-banner {
-            background-image: url({{ asset('storage/images/img_fit/img/bg__diferenicales-mobile.png') }});
+        .bg__diferenciales-banner{
+            background-image: url({{ asset('images/img/bg__diferenicales-mobile.png') }});
         }
 
-        .bg__listos-banner {
-            background-image: url({{ asset('storage/images/img_fit/img/banner_3.png') }});
+        .bg__listos-banner{
+            background-image: url({{ asset('images/img/banner_3.png') }});
         }
 
-
-
-        @media (min-width:768px) {
+        @media (min-width:768px){
             .bg__main {
-                background-image: url({{ asset('storage/images/img_fit/img/header_principal_1.png') }});
-                
+                background-image: url({{ asset('/images/img/header_principal_1.png') }});;
             }
 
-            .bg__diferenciales-banner {
-                background-image: url({{ asset('storage/images/img_fit/img/diferenciales_banner.png') }});
+            .bg__diferenciales-banner{
+            background-image: url({{ asset('images/img/diferenciales_banner.png') }});
             }
 
-            .bg__listos-banner {
-                background-image: url({{ asset('storage/images/img_fit/img/banner_2.png') }});
-            }
+            .bg__listos-banner{
+            background-image: url({{ asset('images/img/banner_2.png') }});
         }
+        }
+
     </style>
 @stop
 
 
 @section('content')
     <main>
-        <section class="bg__main bg-cover bg-center bg-no-repeat sm:w-full h-full pt-32 md:pt-96">
+        <section
+            class="bg__main bg-cover bg-center bg-no-repeat sm:w-full h-full pt-32 md:pt-96">
             <div class="w-11/12 mx-auto">
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
@@ -357,7 +355,7 @@
                 </div>
             </div>
             <div class="flex justify-end relative pt-16">
-                <img src="{{ asset('images/img/foto-banner.png') }}" alt="fit2finance" class="block md:hidden w-full">
+                <img src="{{ asset('images/img/foto-banner.png') }}" alt="banner" class="block md:hidden w-full">
             </div>
         </section>
         <section>
@@ -439,7 +437,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/outsourcing_financiero.png') }}"
+                                <img src="{{ asset('images/svg/outsourcing_financiero.svg') }}"
                                     alt="outsourcing_financiero">
 
                             </div>
@@ -499,7 +497,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/servicio_contable_360.png') }}" alt="servicio contable">
+                                <img src="{{ asset('images/svg/servicio_contable_360.svg') }}" alt="servicio contable">
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
                                 <h2
@@ -556,7 +554,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/diagnostico.png') }}" alt="diagnostico">
+                                <img src="{{ asset('images/svg/diagnostico.svg') }}" alt="diagnostico">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -616,7 +614,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/auditoria.png') }}" alt="auditoria">
+                                <img src="{{ asset('images/svg/auditoria.svg') }}" alt="auditoria">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -668,7 +666,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/valuacion.png') }}" alt="valuacion">
+                                <img src="{{ asset('images/svg/valuacion.svg') }}" alt="valuacion">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -720,7 +718,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/factibilidad.png') }}" alt="factibilidad financiera">
+                                <img src="{{ asset('images/svg/factibilidad.svg') }}" alt="factibilidad financiera">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -789,7 +787,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/adviser.png') }}" alt="adviser">
+                                <img src="{{ asset('images/svg/adviser.svg') }}" alt="adviser">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -847,7 +845,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/procesos.png') }}" alt="procesos concursales">
+                                <img src="{{ asset('images/svg/procesos.svg') }}" alt="procesos concursales">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -899,7 +897,7 @@
                     <div class="flex flex-col justify-between">
                         <div>
                             <div class="my-8">
-                                <img src="{{ asset('storage/images/img_fit/img/asesoria.png') }}" alt="asesoria tributaria">
+                                <img src="{{ asset('images/svg/asesoria.svg') }}" alt="asesoria tributaria">
 
                             </div>
                             <div class="text-textGray flex flex-col gap-5 w-full">
@@ -1026,11 +1024,11 @@
                     </div>
                     <div class="row-span-1 2md:col-span-1 order-1 2md:order-3">
                         <div class="flex justify-center items-center w-full h-full">
-                            <img src="{{ asset('storage/images/img_fit/img/acerca_nosotros.png') }}" alt="fit2finance"
+                            <img src="{{ asset('images/img/acerca_nosotros.png') }}" alt="fit2finance"
                                 class="w-full h-full hidden md:block">
 
-                            <img src="{{ asset('storage/images/img_fit/img/acerca_nosotros_mobile.png') }}"
-                                alt="fit2finance" class="w-full h-full block md:hidden">
+                            <img src="{{ asset('images/img/acerca_nosotros_mobile.png') }}" alt="fit2finance"
+                                class="w-full h-full block md:hidden">
                         </div>
                     </div>
                 </div>
@@ -1046,44 +1044,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/clever.png') }}" alt="clever">
+                            <img src="{{ asset('images/img/clever.png') }}" alt="clever">
 
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/figuras.png') }}" alt="figuras">
+                            <img src="{{ asset('images/img/figuras.png') }}" alt="figuras">
 
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/happy_vea.png') }}" alt="happy vea">
+                            <img src="{{ asset('images/img/happy_vea.png') }}" alt="happy vea">
 
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/implementos_reactivos.png') }}"
-                                alt="implementos reactivos">
+                            <img src="{{ asset('images/img/implementos_reactivos.png') }}" alt="implementos reactivos">
 
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/oddo_carrusel.png') }}" alt="odoo">
+                            <img src="{{ asset('images/img/oddo_carrusel.png') }}" alt="odoo">
 
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/sany.png') }}" alt="sany" />
+                            <img src="{{ asset('images/img/sany.png') }}" alt="sany" />
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
-                            <img src="{{ asset('storage/images/img_fit/img/implementos_reactivos.png') }}"
-                                alt="implementos reactivos">
+                            <img src="{{ asset('images/img/implementos_reactivos.png') }}" alt="implementos reactivos">
                         </div>
                     </div>
                 </div>
@@ -1432,35 +1428,31 @@
                                 class="focus:outline-none w-full bg-bgGray pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                         </div>
 
-
+                        
                         <div>
                             <!-- cmombo -->
                             <div class="dropdown w-full">
-                                <div
-                                    class="input-box font-corbel_400 text-text18 xl:text-text22 pt-4 pl-4 pb-4 border-b-[1px] border-white  text-white">
+                                <div class="input-box font-corbel_400 text-text18 xl:text-text22 pt-4 pl-4 pb-4 border-b-[1px] border-white  text-white">
                                     <span class="opacity-35 span-opacity">Tipo de servicios</span>
                                 </div>
                                 <div class="list overflow-y-scroll scroll-cursos">
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id10" class="radio" />
                                         <label for="id10"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Tipo
-                                            de servicios</label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Tipo de servicios</label>
                                     </div>
 
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id11" class="radio" />
                                         <label for="id11"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Contabilidad
-                                            360 </label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Contabilidad 360 </label>
                                     </div>
 
-
+                                    
                                     <div class="w-full">
                                         <input type="radio" name="drop1" id="id13" class="radio" />
                                         <label for="id13"
-                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Auditoría
-                                            para empresas</label>
+                                            class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Auditoría para empresas</label>
                                     </div>
 
                                     <div class="w-full">
@@ -1469,7 +1461,7 @@
                                             class="font-corbel_400 text-text18 xl:text-text22 hover:font-corbel_700 md:duration-100">Otros</label>
                                     </div>
 
-
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1611,7 +1603,7 @@
         });
 
         var input = document.querySelector(".input-box");
-
+        
 
         input.onclick = function() {
             this.classList.toggle("open");
@@ -1620,7 +1612,7 @@
                 list.style.maxHeight = null;
                 list.style.boxShadow = null;
             } else {
-                list.style.maxHeight = 200 + "px";
+                list.style.maxHeight = 200 + "px"; 
                 /*list.style.maxHeight = 200 + "px";  Especificamos tamaño del dropdown */
                 list.style.boxShadow =
                     "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
@@ -1632,12 +1624,12 @@
         rad.forEach((item) => {
             item.addEventListener("change", () => {
                 span.textContent = item.nextElementSibling.textContent;
-                if (span.textContent.trim() === 'Tipo de servicios') {
+                if(span.textContent.trim() === 'Tipo de servicios'){
                     span.classList.add('opacity-35');
-                } else {
+                }else{
                     span.classList.remove('opacity-35');
                 }
-
+               
                 input.click();
             });
         });
