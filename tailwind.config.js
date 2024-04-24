@@ -15,9 +15,10 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                fondo_mobile: "url('../../public/images/img/fondo_mobile.png')",
+                fondo_mobile:
+                    "url('../../public/storage/images/img_fit/img/fondo_mobile.png')",
                 imagen_header:
-                    "url('../../public/build/assets/imagen_header-jw40j6_R.png')",
+                    "url('../public/build/assets/imagen_header-jw40j6_R.png')",
                 imagen_form_fondo:
                     "url('../../public/images/img/imagen_form_fondo.png')",
                 header_mobile:

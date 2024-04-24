@@ -138,7 +138,6 @@
                         </a>
                         <a href="#">
                             <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="whatsapp">
-
                         </a>
                     </div>
                 </div>
