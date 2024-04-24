@@ -6,6 +6,7 @@ use App\Http\Requests\StoreIndexRequest;
 use App\Http\Requests\UpdateIndexRequest;
 use App\Models\Index;
 use App\Models\Message;
+use App\Models\General;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -16,25 +17,29 @@ class IndexController extends Controller
     public function index()
     {
         //
-        return view('public.index');
+        $generales = General::all()->first();
+        return view('public.index', compact('generales'));
     }
 
     public function blog()
     {
         //
-        return view('public.blog');
+        $generales = General::all()->first();
+        return view('public.blog', compact('generales'));
     }
 
     public function publicacion()
     {
         //
-        return view('public.publicacion');
+        $generales = General::all()->first();
+        return view('public.publicacion', compact('generales'));
     }
 
     public function agradecimiento()
     {
         //
-        return view('public.agradecimiento');
+        $generales = General::all()->first();
+        return view('public.agradecimiento', compact('generales'));
     }
     /**
      * Show the form for creating a new resource.

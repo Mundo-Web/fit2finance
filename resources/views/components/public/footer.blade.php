@@ -1,7 +1,7 @@
 <footer class="bg-bgOrangeStrong bg__blog-footer py-10 md:py-20 ">
     <div class="w-11/12 mx-auto relative" data-aos="fade-up" data-aos-offset="150">
         <div class="absolute -top-[75px] md:-top-[115px] -right-[0] rounded-full bg-white p-5 cursor-pointer">
-            <a href="#inicio">
+            <a href="{{route('index')}}">
                 <img src="{{ asset('images/svg/fi-rr-arrow-from-bottom.svg') }}" alt="">
             </a>
         </div>
@@ -120,15 +120,15 @@
                     </div>
                 </a>
 
-                <a href="#" class="ffont-corbel_700 text-[16px] xl:text-text20">consultas@fit2finanace.com.pe</a>
+                <p class="font-corbel_700 text-[16px] xl:text-text20">consultas@fit2finanace.com.pe</p>
                 <div class="flex flex-col gap-4">
                     <p class="font-corbel_400 text-[12px] xl:text-text16">Síguenos en:</p>
                     <div class="flex gap-5 items-center">
-                        <a href="#">
+                        <a href="https://{{$generales->instagram}}">
                             <img src="{{ asset('images/svg/insta.svg') }}" alt="instagram">
 
                         </a>
-                        <a href="#">
+                        <a href="https://{{$generales->facebook}}">
                             <img src="{{ asset('images/svg/face.svg') }}" alt="facebook">
 
                         </a>
@@ -136,7 +136,7 @@
                             <img src="{{ asset('images/svg/linkedin.svg') }}" alt="linkedin">
 
                         </a>
-                        <a href="#">
+                        <a href="https://api.whatsapp.com/send?phone={{$generales->whatsapp}}&text={{$generales->mensaje_whatsapp}}">
                             <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="whatsapp">
                         </a>
                     </div>
@@ -144,7 +144,7 @@
             </div>
 
             <div class="flex flex-row md:flex-col gap-5 items-start" data-aos="fade-up" data-aos-offset="150">
-                <a href="{{route('index')}}" class="ffont-corbel_700 text-text18 xl:text-text22 flex gap-2">
+                <a href="{{route('index')}}" class="font-corbel_700 text-text18 xl:text-text22 flex gap-2">
                     <img src="./images/svg/point_blanco.svg" alt="point" />
                     <span>Inicio</span></a>
                 <a href="{{route('index') . '#servicios'}}" class="text-text18">Servicios</a>
@@ -153,7 +153,7 @@
             </div>
 
             <div class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
-                <p class="ffont-corbel_700 text-text18 xl:text-text22">
+                <p class="font-corbel_700 text-text18 xl:text-text22">
                     ¡Suscríbete ahora para no perderte ninguno de nuestros artículos!
                 </p>
                 <div>

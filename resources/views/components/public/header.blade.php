@@ -62,9 +62,9 @@
                                             <img src="{{ asset('storage/images/img_fit/img/logo_modal_finanace.png') }}"
                                                 alt="fit2finance" />
                                         </div>
-                                        <a href="#" class="font-corbel_700 text-text14 xl:text-text18">
+                                        <p href="#" class="font-corbel_700 text-text14 xl:text-text18">
                                             consultas@fit2finanace.com.pe
-                                        </a>
+                                        </p>
                                     </div>
                                     <div class="flex flex-col gap-4">
                                         <h1 class="font-corbel_700 text-[40px] lg:text-[64px] leading-none md:leading-tight">
@@ -141,7 +141,7 @@
 
             <div data-aos="fade-up" data-aos-offset="150">
                 <nav class="text-white hidden md:flex gap-5 font-corbel_700 text-text22">
-                    <a href="/" class="py-2 px-5 flex gap-2 justify-center items-center">
+                    <a href="{{route('index')}}" class="py-2 px-5 flex gap-2 justify-center items-center">
                         <img src="{{ asset('images/svg/point_naranja.svg') }}" alt="point" />
                         <span>Inicio</span>
                     </a>
@@ -169,8 +169,12 @@
         <div class="flex justify-end relative">
 
             <div class="fixed bottom-[40px] right-[40px] z-[100]">
-                <a href="#" class=""><img src="{{ asset('images/img/WhatsApp.png') }}" alt="whatsapp"
-                        class="w-20 h-20 md:w-full md:h-full" /></a>
+                <a href="https://api.whatsapp.com/send?phone={{$generales->whatsapp}}&text={{$generales->mensaje_whatsapp}}" class="">
+                    
+                    <img src="{{ asset('images/img/WhatsApp.png') }}" alt="whatsapp"
+                        class="w-20 h-20 md:w-full md:h-full" />
+                        
+                    </a>
             </div>
         </div>
 
