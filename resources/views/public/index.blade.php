@@ -163,9 +163,9 @@
     }
 
     /* .input-box:empty::after {
-                        content: "";
-                        color: #96a1a6;
-                    } */
+                          content: "";
+                          color: #96a1a6;
+                      } */
 
     .list {
       position: relative;
