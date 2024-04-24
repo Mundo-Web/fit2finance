@@ -133,7 +133,7 @@
 
     <div class=" bg__header-blog bg__header-publicacion  bg-cover bg-center bg-no-repeat w-full  absolute">
         <div class="w-11/12 mx-auto flex justify-between items-center py-10">
-            <a href="index.html" data-aos="fade-up" data-aos-offset="150">
+            <a href="{{route('index')}}" data-aos="fade-up" data-aos-offset="150">
                 <div>
                     <img src="{{ asset('images/img/logo.png') }}" alt="logo fit2finance" class="w-56 md:w-full" />
                 </div>

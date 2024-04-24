@@ -144,7 +144,7 @@
             </div>
 
             <div class="flex flex-row md:flex-col gap-5 items-start" data-aos="fade-up" data-aos-offset="150">
-                <a href="index.html" class="ffont-corbel_700 text-text18 xl:text-text22 flex gap-2">
+                <a href="{{route('index')}}" class="ffont-corbel_700 text-text18 xl:text-text22 flex gap-2">
                     <img src="./images/svg/point_blanco.svg" alt="point" />
                     <span>Inicio</span></a>
                 <a href="index.html#servicios" class="text-text18">Servicios</a>
