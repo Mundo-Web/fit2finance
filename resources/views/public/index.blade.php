@@ -1047,7 +1047,7 @@
             </h2>
 
             <div class="swiper logosClientes">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper">               
                     <div class="swiper-slide">
                         <div class="flex justify-center items-center">
                             <img src="{{ asset('images/img/clever.png') }}" alt="clever">

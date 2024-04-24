@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateIndexRequest;
 use App\Models\Index;
 use App\Models\Message;
 use App\Models\General;
+use App\Models\ClientLogos;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -17,8 +18,9 @@ class IndexController extends Controller
     public function index()
     {
         //
+        $logos = ClientLogos::all();
         $generales = General::all()->first();
-        return view('public.index', compact('generales'));
+        return view('public.index', compact('generales', 'logos'));
     }
 
     public function blog()
