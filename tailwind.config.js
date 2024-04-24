@@ -15,10 +15,9 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                fondo_mobile:
-                    "url('../../public/storage/images/img_fit/img/acerca de nostros.png')",
+                fondo_mobile: "url('../../public/images/img/fondo_mobile.png')",
                 imagen_header:
-                    "url('../../../../../public/storage/images/img_fit/img/imagen_header.png')",
+                    "url('../../public/images/img/imagen_header.png')",
                 imagen_form_fondo:
                     "url('../../public/images/img/imagen_form_fondo.png')",
                 header_mobile:

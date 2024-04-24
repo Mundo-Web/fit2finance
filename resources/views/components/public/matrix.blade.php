@@ -54,6 +54,18 @@
             font-family: "corbelbold_italic";
             src: url({{ asset('fonts/corbelz-webfont.woff') }}) format("woff");
         }
+
+        .bg__header-fondoMobile {
+            background-image: url({{ asset('images/img/fondo_mobile.png') }});;
+        }
+
+        @media (min-width:768px){
+            .bg__header-fondoMobile {
+                background-image: url({{ asset('images/img/imagen_header.png') }});;
+            }
+        }
+
+
     </style>
 </head>
 
