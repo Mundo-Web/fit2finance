@@ -25,7 +25,7 @@
 <!-- --- -->
 <header id="inicio" class=" w-full">
     <div
-        class="bg__header-fondoMobile bg-cover bg-center bg-no-repeat sm:w-full h-full bg__agradecimiento-hidden">
+        class="bg__header-fondo bg-cover bg-center bg-no-repeat sm:w-full h-full bg__agradecimiento-hidden">
         <div class="w-11/12 mx-auto flex flex-col gap-5 md:flex-row justify-between items-center py-10">
             <div data-aos="fade-up" data-aos-offset="150">
                 <h1 class="font-corbel_700 text-textWhiteWeak text-text28 xl:text-text32">
@@ -56,7 +56,7 @@
                         <div class="text-center text-textWhite">
                             <div class="flex flex-col md:flex-row">
                                 <div
-                                    class="bg-imagen_form_fondo  bg-cover bg-center bg-no-repeat sm:w-full h-full flex flex-col gap-8 p-10 basis-1/2">
+                                    class="bg__header-imagen_form_fondo  bg-cover bg-center bg-no-repeat sm:w-full h-full flex flex-col gap-8 p-10 basis-1/2">
                                     <div class="flex flex-col items-center md:flex-row justify-between gap-5">
                                         <div>
                                             <img src="{{ asset('storage/images/img_fit/img/logo_modal_finanace.png') }}"

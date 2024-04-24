@@ -55,16 +55,19 @@
             src: url({{ asset('fonts/corbelz-webfont.woff') }}) format("woff");
         }
 
-        .bg__header-fondoMobile {
-            background-image: url({{ asset('images/img/fondo_mobile.png') }});;
+        .bg__header-fondo {
+            background-image: url({{ asset('storage/images/img_fit/img/fondo_mobile.png') }});;
+        }
+
+        .bg__header-imagen_form_fondo {
+            background-image: url({{ asset('storage/images/img_fit/img/imagen_form_fondo.png') }});;
         }
 
         @media (min-width:768px){
-            .bg__header-fondoMobile {
-                background-image: url({{ asset('images/img/imagen_header.png') }});;
+            .bg__header-fondo {
+                background-image: url({{ asset('storage/images/img_fit/img/imagen_header.png') }});;
             }
         }
-
 
     </style>
 </head>
