@@ -1409,7 +1409,7 @@
                     <img src="{{ asset('images/img/wome_2.png') }}" alt="fit2finance" class="w-full h-full block lg:hidden">
                 </div>
                 <div class="bg-bgGray text-textWhite flex flex-col justify-center lg:py-10">
-                    <div class="w-11/12 mx-auto lg:mx-0 py-12 lg:pt-0 pl-10 lg:w-[70%] flex flex-col gap-10 justify-center ">
+                    <div class="w-11/12 mx-auto lg:mx-0 py-12 lg:pt-0 lg:pl-10 lg:w-[70%] flex flex-col gap-10 justify-center ">
                         <h3 class="font-corbel_700 text-text40 xl:text-text52 leading-none md:leading-tight">
                             Ponte en Contacto
                         </h3>
