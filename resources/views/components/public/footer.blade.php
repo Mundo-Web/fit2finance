@@ -129,7 +129,7 @@
 
                         </a>
                         <a href="#">
-                            <img src="{{ asset('images/svg/Facebook.svg') }}" alt="facebook">
+                            <img src="{{ asset('images/svg/face.svg') }}" alt="facebook">
 
                         </a>
                         <a href="#">
