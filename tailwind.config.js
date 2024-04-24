@@ -16,7 +16,7 @@ export default {
         extend: {
             backgroundImage: {
                 fondo_mobile:
-                    "url('./public/build/assets/fondo_mobile-hfTPuvdC.png')",
+                    "url('../../storage/app/public/images/img_fit/img/fondo_mobile.png')",
                 imagen_header:
                     "url('../../../../../public/storage/images/img_fit/img/imagen_header.png')",
                 imagen_form_fondo:
