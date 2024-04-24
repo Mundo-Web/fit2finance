@@ -1,14 +1,6 @@
 {
-  "public/images/img/FondoMobile2_1.png": {
-    "file": "assets/FondoMobile2_1-qK5AEAAE.png",
-    "src": "public/images/img/FondoMobile2_1.png"
-  },
-  "public/images/img/header_principal_1.png": {
-    "file": "assets/header_principal_1-lTbKfxgr.png",
-    "src": "public/images/img/header_principal_1.png"
-  },
   "resources/css/app.css": {
-    "file": "assets/app-4lCDdAKv.css",
+    "file": "assets/app-gTY8zx-4.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
