@@ -78,14 +78,14 @@
 
             </tbody>
             <tfoot>
-              <tr>
+              {{-- <tr>
                 <th>Titulo </th>
                 <th>Descripcion</th>
                 <th>Icono</th>
                 <th>Imagen</th>
                 <th>Visible</th>
                 <th>Acciones</th>
-              </tr>
+              </tr> --}}
             </tfoot>
           </table>
 
