@@ -107,9 +107,12 @@ class LogosClientController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
         //
+        $logos = ClientLogos::find($id);
+
+        return view('pages.logos.edit', compact('logos'));
     }
 
     /**
@@ -118,6 +121,45 @@ class LogosClientController extends Controller
     public function update(Request $request, string $id)
     {
         //
+
+        $logo = ClientLogos::findOrfail($id);
+        $logo->title = $request->title;
+        $logo->description = $request->description;
+
+        if ($request->hasFile("imagen")) {
+
+            $manager = new ImageManager(new Driver());
+
+
+            $ruta = 'storage/images/logos/';
+
+            // dd($ruta);
+            if (File::exists($ruta)) {
+                File::delete($ruta);
+            }
+
+            
+            $nombreImagen = Str::random(10) . '_' . $request->file('imagen')->getClientOriginalName();
+
+            $img =  $manager->read($request->file('imagen'));
+
+            
+            if (!file_exists($ruta)) {
+                mkdir($ruta, 0777, true); // Se crea la ruta con permisos de lectura, escritura y ejecución
+            }
+            
+            $img->save($ruta . $nombreImagen);
+
+
+            $logo->url_image = $ruta . $nombreImagen;
+           /*  $logo->name_image = $nombreImagen; */
+        }
+
+
+
+        $logo->update();
+
+        return redirect()->route('logos.index')->with('success', 'Logo actualizado exitosamente.');
     }
 
     /**

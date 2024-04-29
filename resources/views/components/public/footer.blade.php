@@ -208,7 +208,20 @@
                         </div>
                     </form>
                 </div>
+
+                <p class="font-corbel_700 text-text18 xl:text-text22">
+                    {{$generales->address}} - {{$generales->inside}} - {{$generales->district}}
+                </p>
+                <p class="font-corbel_700 text-text18 xl:text-text22">
+                    {{$generales->city}} - {{$generales->country}}
+                </p>
+                <p class="font-corbel_700 text-text18 xl:text-text22">
+                    Teléfono: {{$generales->cellphone}}
+                </p>
             </div>
+
+
+            
         </div>
     </div>
 </footer>
