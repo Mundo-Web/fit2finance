@@ -7,9 +7,18 @@
             color: white;
         }
 
+
+
         .stroke__blog-footer {
-            stroke: #E38533;
-            fill: #E38533;
+            stroke: #fff;
+            fill: #fff;
+        }
+
+        @media(min-width:768px) {
+            .stroke__blog-footer {
+                stroke: #E38533;
+                fill: #E38533;
+            }
         }
 
         .bg__blog-footer {
