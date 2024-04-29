@@ -465,7 +465,7 @@
 
                 @foreach ($service as $item)
                     <div class="swiper-slide swiper-slide-flex p-5" style="background-color:{{$item->color}} ">
-                        <div class="flex flex-col justify-between w-full">
+                        <div class="flex flex-col justify-between w-full gap-10">
                             <div>
                                 <div class="my-8">
                                     <img src="{{ asset($item->url_image . '/' . $item->name_image) }}"
