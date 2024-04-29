@@ -526,7 +526,7 @@
                         </p>
                     </div>
                     <div
-                        class="col-span-1 2md:col-span-1 order-3 2md:order-2 flex flex-col justify-between gap-10 px-8 2md:px-0">
+                        class="col-span-1 2md:col-span-1 order-3 2md:order-2 flex flex-col justify-between gap-10 px-5 2md:px-0">
 
                         @foreach ($abouts as $about)
                             <div class="flex flex-col 2md:block gap-4">
