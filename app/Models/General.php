@@ -9,6 +9,6 @@ class General extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['address', 'inside', 'district', 'city', 'country', 'cellphone','office_phone', 'email', 'facebook', 'instagram','youtube', 'twitter', 'whatsapp',  'form_email', 'business_hours', 'schedule', 'mensaje_whatsapp'];
+    protected $fillable = ['address', 'inside', 'district', 'city', 'country', 'cellphone','office_phone', 'email', 'facebook', 'instagram','youtube', 'twitter', 'linkedin', 'whatsapp',  'form_email', 'business_hours', 'schedule', 'mensaje_whatsapp'];
 
 }

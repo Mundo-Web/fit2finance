@@ -9,7 +9,7 @@ class Blog extends Model
 {
     use HasFactory;
 
-    protected $fillable = [ 'category_id', 'title', 'description', 'url_image', 'name_image', 'status', 'visible'];
+    protected $fillable = [ 'category_id', 'title', 'extracto', 'description', 'url_image', 'name_image', 'status', 'visible'];
 
     
     public function categories()
@@ -32,4 +32,3 @@ class Blog extends Model
         return $this->morphToMany(Tag::class, 'taggable');
     }
 }
-

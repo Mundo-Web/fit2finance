@@ -27,8 +27,9 @@ class GeneralSeeder extends Seeder
             'instagram' => 'www.instagram.com',
             'youtube' => 'www.youtube.com',
             'twitter' => 'www.twitter.com',
-            'whatsapp' => '555-555-123' ,
-            'form_email' => 'usuario@mundoweb.pe',
+            'linkedin' => 'www.linkedin.com',
+            'whatsapp' => '944164162' ,
+            'form_email' => 'contacto@fit2-finance.com',
             'business_hours' => 'horas',
             'mensaje_whatsapp' => 'Hola estamos atentos a lo que ud desee'
 

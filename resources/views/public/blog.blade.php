@@ -8,7 +8,8 @@
         }
 
         .stroke__blog-footer {
-            stroke: #E38533
+            stroke: #E38533;
+            fill: #E38533;
         }
 
         .bg__blog-footer {
@@ -34,7 +35,7 @@
             border-bottom-width: 1px;
             border-left-width: 0px;
             border-color: white;
-            
+
         }
 
         [type='text']:focus,
@@ -43,11 +44,12 @@
         [type='tel']:focus,
         select:focus {
             --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-            border-bottom-color: rgb(255,255,255);
+            border-bottom-color: rgb(255, 255, 255);
         }
-        [type='text'].buscar{
+
+        [type='text'].buscar {
             border-color: #505977;
-            border-width: 1px; 
+            border-width: 1px;
         }
     </style>
 @stop
@@ -61,221 +63,117 @@
                     <h2 class="text-[#03164D] font-corbel_700 text-text48 xl:text-text52">
                         Blog
                     </h2>
-                    <div class="flex flex-col gap-5 border-b-[1.5px] border-[#DDDDDD] pb-12">
-                        <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
-                            <img src="{{ asset('images/img/blog_1.png') }}" alt="blog" class="w-full h-auto" />
-                        </div>
+                    <div id="blog-results">
+                        <div id="blog-result">
+                            @foreach ($blogs as $blog)
+                                <div class="flex flex-col gap-5 mb-12 border-b-[1.5px] border-[#DDDDDD] pb-12">
+                                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
+                                        <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}" alt="blog"
+                                            class="w-full h-auto" />
+                                    </div>
 
-                        <div class="flex flex-col gap-2">
-                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
-                                Maximiza el Potencial de tu Empresa con Outsourcing Financiero
-                            </h3>
-                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
-                            </p>
-                        </div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3
+                                            class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
+                                            {{ $blog->title }}
+                                        </h3>
+                                        <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray flex gap-5">
+                                            <span>{{ \Carbon\Carbon::parse($blog->created_at)->locale('es')->isoFormat('DD [de] MMMM, YYYY') }}</span>
 
-                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia
-                                nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
-                                commodo. Pellentesque tristique sed ligula quis lacinia.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
-                                <span>Leer más</span>
-                                <div>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
-                                            stroke="#505977" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
+                                            <span>|</span>
+                                            <span class="font-corbel_400">Categoría:
+                                                <span
+                                                    class="text-textOrange font-corbel_700">{{ $blog->categories->name }}</span>
+
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
+                                        <p>
+                                            {{ $blog->extracto }}
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="{{ route('publicacion', $blog->id) }}"
+                                            class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
+                                            <span>Leer más</span>
+                                            <div>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
+                                                        stroke="#505977" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col gap-5 border-b-[1.5px] border-[#DDDDDD] pb-12">
-                        <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
-                            <img src="{{ asset('images/img/blog_6.png') }}" alt="blog" class="w-full h-auto" />
+                            @endforeach
                         </div>
 
-                        <div class="flex flex-col gap-2">
-                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
-                                Maximiza el Potencial de tu Empresa con Outsourcing Financiero
-                            </h3>
-                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
-                            </p>
-                        </div>
+                        <div class="flex items-center gap-2">
+                            @if (count($blogs) !== 0)
+                                <div class="flex items-center gap-2">
+                                    @if (count($blogs) > 6)
+                                        <p class="text-textGray font-corbel_400 text-[16px]  xl:text-text20">
+                                            Pág.
+                                        </p>
+                                    @endif
 
-                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia
-                                nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
-                                commodo. Pellentesque tristique sed ligula quis lacinia.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
-                                <span>Leer más</span>
-                                <div>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
-                                            stroke="#505977" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
+
+                                    <nav class="flex justify-between" aria-label="Pagination">
+                                        <div class="flex items-center gap-2 text-[16px] xl:text-text20 text-textGray">
+                                            {{ $blogs->appends(['fecha' => request('fecha')])->links() }}
+                                        </div>
+                                    </nav>
+
                                 </div>
-                            </a>
-                        </div>
-                    </div>
+                            @else
+                                <p class="font-corbel_700 text-text18 text-[#505977]">No hay blog disponibles</p>
+                            @endif
 
-                    <div class="flex flex-col gap-5 border-b-[1.5px] border-[#DDDDDD] pb-12">
-                        <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
-                            <img src="{{ asset('images/img/blog_10.png') }}" alt="blog" class="w-full h-auto" />
                         </div>
 
-                        <div class="flex flex-col gap-2">
-                            <h3 class="font-corbel_700 text-text32 xl:text-text36 text-textGray leading-none md:leading-tight">
-                                Maximiza el Potencial de tu Empresa con Outsourcing Financiero
-                            </h3>
-                            <p class="font-corbel_400 text-[12px] xl:text-text16 text-textGray">
-                                <span>20 de febrero, 2024 </span> <span>|</span> Categoría:
-                                <span class="text-textOrange font-corbel_700">Contabilidad</span>
-                            </p>
-                        </div>
 
-                        <div class="font-corbel_400 text-textGray text-text18 xl:text-text22 text-justify">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia
-                                nostra, per inceptos himenaeos. Ut interdum tortor ac ornare
-                                commodo. Pellentesque tristique sed ligula quis lacinia.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="{{ route('publicacion') }}"
-                                class="text-textGray font-corbel_700 text-text18 xl:text-text22 flex justify-start items-center gap-2 underline">
-                                <span>Leer más</span>
-                                <div>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.40039 16.7992L7.77639 11.63L12.3844 16.0608L21.6004 7.19922M21.6004 7.19922H14.6884M21.6004 7.19922V13.8454"
-                                            stroke="#505977" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
 
-                <div class="basis-4/12 flex flex-col gap-5 md:pt-5" data-aos="fade-up" data-aos-offset="150">
-                    <div class="w-full">
-                        <input type="text"
-                            class="buscar w-full focus:outline-none text-textGray py-4 px-10 border-[1px] border-[#505977] xl:text-text20"
-                            placeholder="Buscar un tema" />
-                    </div>
+                <div class="basis-4/12 flex flex-col gap-5 md:pt-5 " data-aos="fade-up" data-aos-offset="150">
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
                         <h3 class="font-corbel_700 text-text20 xl:text-text24">Categorías</h3>
-                        <a href="#"
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Todos (2)
-                        </a>
-                        <a href="#"
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Pallentesque (3)
-                        </a>
-                        <a href=""
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Conubia (2)
-                        </a>
-                        <a href=""
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Commodo (1)
-                        </a>
-                        <a href=""
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Tristique (5)
-                        </a>
+                        @foreach ($categorias as $category)
+                            <a href="/blog/{{ $category->id }}"
+                                class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                                    @if ($id == 0 || $id == 1) {{ in_array($category->id, [0, 1]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}
+                                    @else
+                                        {{ $category->id == $categoria->id ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }} @endif">
+                                {{ $category->name }}
+                            </a>
+                        @endforeach
                     </div>
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
                         <h3 class="font-corbel_700 text-text20 xl:text-text24">Archivo</h3>
-                        <a href="#"
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Marzo 2024
-                        </a>
-                        <a href="#"
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Enero 2024
-                        </a>
-                        <a href=""
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Diciembre 2024
-                        </a>
-                        <a href=""
-                            class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                            Noviembre 2024
-                        </a>
-                    </div>
 
-                    <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
-                        <h3 class="font-corbel_700 text-text20 xl:text-text24">Etiquetas</h3>
-                        <div class="flex gap-3">
-                            <a href="#"
-                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                                Ligula,
+                        @foreach ($blogCategorias as $blogC)
+                            <a href="/blog/{{ $id }}?fecha={{ date('m', strtotime($blogC->mes)) }}-{{ $blogC->year }}"
+                                class="text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                            @if (date('n', strtotime($blogC->mes)) == $mesActual && $blogC->year == $anioActual) {{ 'font-corbel_700 text-text14 md:text-text18 text-textOrange' }}
+                            @else
+                            {{ 'font-corbel_400' }} @endif ">
+                                {{ \Carbon\Carbon::parse($blogC->year . '-' . $blogC->mes)->locale('es')->isoFormat('MMMM YYYY') }}
+
+
                             </a>
-                            <a href="#"
-                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                                Commodo,
-                            </a>
-                            <a href=""
-                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                                Tristique,
-                            </a>
-                            <a href=""
-                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                                Conubia,
-                            </a>
-                            <a href=""
-                                class="font-corbel_400 text-[14px] xl:text-text18 hover:text-textOrange md:duration-500">
-                                Pallentesque
-                            </a>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
 
-            <div class="flex items-center gap-2">
-                <p class="text-textGray font-corbel_400 text-[16px] xl:text-text20">
-                    Pág.
-                </p>
-                <nav class="flex justify-between" aria-label="Pagination">
-                    <div class="flex items-center text-[16px] xl:text-text20 text-textGray">
-                        <a class="rounded-lg px-4 py-2 pagination__blog font-corbel_700 bg-pagination" href="#">
-                            1
-                        </a>
-                        <p>|</p>
-                        <a class="rounded-lg px-4 py-2 font-corbel_700 pagination__blog" href="#">2
-                        </a>
-                        <p>|</p>
-                        <a class="rounded-lg px-4 py-2 font-corbel_700 pagination__blog" href="#">3
-                        </a>
-                    </div>
-                </nav>
-            </div>
         </section>
     </main>
 
@@ -296,21 +194,6 @@
             document
                 .getElementsByTagName("body")[0]
                 .classList.remove("overflow-y-hidden");
-        });
-
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const paginations = document.querySelectorAll(".pagination__blog");
-            paginations.forEach((item, index) => {
-                item.addEventListener("click", (e) => {
-                    item.classList.add("bg-pagination");
-                    paginations.forEach((pag) => {
-                        if (e.target !== pag) {
-                            pag.classList.remove("bg-pagination");
-                        }
-                    });
-                });
-            });
         });
     </script>
 @stop

@@ -64,6 +64,16 @@
                 </div>
               </div>
 
+              <div class="md:col-span-1">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" value="{{ $servicios->color }}"
+                  class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              </div>
+              <div class="md:col-span-1 mt-8 ">
+                <div id="colorPicker">
+                </div>
+              </div>
+
 
 
               <div class="md:col-span-5 text-right mt-6 flex justify-between">
@@ -104,6 +114,32 @@
       });
 
     })
-  </script>
+</script>
+
+<script>
+  const pickr = Pickr.create({
+    el: '#colorPicker', // Selector CSS del input
+    theme: 'classic', // Tema de Pickr
+    default: '#000000', // Color por defecto
+    swatches: [ // Colores de muestra
+      '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF'
+    ],
+    components: {
+      preview: true, // Mostrar vista previa
+      opacity: true, // Habilitar control de opacidad
+      hue: true, // Habilitar control de matiz
+      interaction: {
+        input: true, // Permitir entrada manual
+        hex: true,
+        save: true // Permitir guardar
+      }
+    }
+  });
+  pickr.on('save', (color, instance) => {
+
+    document.getElementById('color').value = color.toHEXA().toString();
+
+  })
+</script>
 
 </x-app-layout>

@@ -68,6 +68,7 @@
                                     </td>
                                     <td class="flex flex-row justify-end items-center gap-5">
                                   
+                                        @if ($item->id != 1)
                                         <a href="{{ route('categorias.edit', $item->id) }}" class="bg-yellow-400 px-3 py-2 rounded text-white  "><i class="fa-regular fa-pen-to-square"></i></a>
                                         {{-- {{  route('servicios.destroy', $item->id) }} --}}
                                         <form action=" " method="POST">
@@ -75,6 +76,8 @@
                                             <a data-idService='{{$item->id}}' class="btn_delete bg-red-600 px-3 py-2 rounded text-white cursor-pointer"><i class="fa-regular fa-trash-can"></i></a>
                                             <!-- <a href="" class="bg-red-600 p-2 rounded text-white"><i class="fa-regular fa-trash-can"></i></a> -->
                                         </form>
+                                        @endif
+                                        
                                         
                                     </td>
                                 </tr>    

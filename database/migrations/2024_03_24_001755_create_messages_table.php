@@ -23,6 +23,7 @@ return new class extends Migration
             $table->boolean('status')->default(true);
             $table->boolean('is_read')->default(false);
             $table->string('comunication')->nullable();
+            $table->string('tipo_message')->nullable();
             
             $table->timestamps();
         });

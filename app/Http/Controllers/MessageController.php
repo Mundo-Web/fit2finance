@@ -16,7 +16,7 @@ class MessageController extends Controller
     public function index()
     {
         //
-        $mensajes = Message::all();
+        $mensajes = Message::where('status', '=', 1)->get();
         return view('pages.message.index', compact('mensajes'));
     
         
@@ -28,6 +28,22 @@ class MessageController extends Controller
     public function create()
     {
         //
+    }
+
+    public function deleteMensajes(Request $request) {
+        //Recupero el id mandado mediante ajax
+        
+        $id = $request->id;
+        //Busco el servicio con id como parametro
+        $message = Message::findOrfail($id);
+        //Modifico el status a false
+        $message->status = false;
+        //Guardo 
+        $message->save();
+
+        // Devuelvo una respuesta JSON u otra respuesta según necesites
+        return response()->json(['message' => 'Mensaje eliminado.']);
+    
     }
 
     /**
@@ -42,6 +58,7 @@ class MessageController extends Controller
         $mensaje = new Message();
 
         $mensaje->full_name = $request-> nombre; 
+        $mensaje->tipo_message = $request-> tipo_message; 
         $mensaje->email = $request-> email; 
         $mensaje->phone = $request-> telefono; 
         $mensaje->source = $request-> textoSeleccionado; 

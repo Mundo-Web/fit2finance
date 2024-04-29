@@ -49,8 +49,11 @@ use App\Models\AboutUs;
 
 /* Las rutas publicas */
 Route::get('/', [IndexController::class, 'index'] )->name('index');
-Route::get('/blog', [IndexController::class, 'blog'] )->name('blog');
-Route::get('/publicacion', [IndexController::class, 'publicacion'] )->name('publicacion');
+Route::get('/blog', function () {
+    return redirect()->route('blog', ['id' => 0]);
+});
+Route::get('/blog/{id}', [IndexController::class, 'blog'] )->name('blog');
+Route::get('/publicacion/{id}', [IndexController::class, 'publicacion'] )->name('publicacion');
 Route::get('/agradecimiento', [IndexController::class, 'agradecimiento'] )->name('agradecimiento');
 
 Route::get('/nosotros', [IndexController::class, 'index'] )->name('nosotros');
@@ -69,6 +72,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
         //messages
         Route::resource('/mensajes', MessageController::class);
+        Route::post('/mensajes/deleteMensajes', [MessageController::class, 'deleteMensajes'] )->name('message.deleteMensaje');
 
         //Datos Generales
         Route::resource('/datosgenerales', GeneralController::class);
