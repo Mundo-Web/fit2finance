@@ -508,8 +508,8 @@
         <section class="bg-gradient-to-r from-[#505977] to-[#424962] my-24">
             <div class="2md:w-10/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
                 <div class="grid grid-cols-1 2md:grid-cols-2 mt-0 pb-12 2md:py-20 text-textWhite gap-10">
-                    <div class="col-span-1 2md:col-span-2 order-2 2md:order-1 text-left 2md:text-center px-8 2md:px-0">
-                        <h2 class="font-corbel_700 text-text48 xl:text-text56 mb-6 leading-none 2md:leading-tight">
+                    <div class="col-span-1 2md:col-span-2 order-2 2md:order-1 text-left 2md:text-center px-5 2md:px-0">
+                        <h2 class="font-corbel_700 text-text40 xl:text-text56 mb-6 leading-none 2md:leading-tight">
                             Acerca de Nosotros
                         </h2>
                         <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
@@ -533,57 +533,15 @@
                                 <div>
                                     <h2
                                         class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
-                                        {{-- Visión --}} {{ $about->titulo }}
+                                        {{ $about->titulo }}
                                     </h2>
                                 </div>
 
                                 <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
-                                    {{--  Constituirnos como una boutique financiera que brinde
-                  soluciones personalizadas para negocios decididos a ser
-                  líderes, disruptivos y resilientes. --}} {{ $about->descripcion }}
+                                    {{ $about->descripcion }}
                                 </p>
                             </div>
                         @endforeach
-
-                        {{-- <div class="flex flex-col 2md:block gap-4">
-              <div>
-                <h2 class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
-                  Visión
-                </h2>
-              </div>
-
-              <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
-                Constituirnos como una boutique financiera que brinde
-                soluciones personalizadas para negocios decididos a ser
-                líderes, disruptivos y resilientes.
-              </p>
-            </div>
-
-            <div class="flex flex-col gap-4 2md:block">
-              <div>
-                <h2 class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
-                  Misión
-                </h2>
-              </div>
-              <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
-                Maximizar el valor patrimonial de nuestros clientes a través
-                de una eficiente asesoría y gestión de sus activos económicos
-                relevantes.
-              </p>
-            </div>
-
-            <div class="flex flex-col gap-4 2md:block">
-              <div>
-                <h2 class="font-corbel_700 text-text32 xl:text-text36 border-b-2 border-borderOrange inline-block">
-                  Nuestro Valor Diferencial
-                </h2>
-              </div>
-              <p class="font-corbel_400 text-text20 xl:text-text24 text-justify">
-                Sabemos que toda gran empresa inicia con un propósito, con
-                nuestra asesoría, tendrás la confianza de tomar las mejores
-                decisiones financieras para tu negocio.
-              </p>
-            </div> --}}
                     </div>
                     <div class="row-span-1 2md:col-span-1 order-1 2md:order-3">
                         <div class="flex justify-center items-center w-full h-full">
