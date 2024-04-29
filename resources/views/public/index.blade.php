@@ -637,9 +637,12 @@
                                 <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
                                     {{ $item->titulo }}
                                 </h3>
-                                <p class="font-corbel_400 text-text20 xl:text-text24">
+                                <div class="font-corbel_400 text-text20 xl:text-text24">
                                     {!! $item->descripcion !!}
-                                </p>
+                                </div>
+                                {{-- <p class="font-corbel_400 text-text20 xl:text-text24">
+                                    {!! $item->descripcion !!}
+                                </p> --}}
                             </div>
                         </div>
                     @endforeach
