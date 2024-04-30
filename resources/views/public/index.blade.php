@@ -348,7 +348,7 @@
             <div class="w-11/12 mx-auto">
                 <div class="w-full md:w-1/2">
                     <div class="flex flex-col justify-center items-center gap-10 md:py-10">
-                        <div class="flex flex-col gap-5 pb-12 " data-aos="fade-up" data-aos-offset="150">
+                        <div class="flex flex-col gap-5 pb-5 md:pb-12 " data-aos="fade-up" data-aos-offset="150">
                             <h2 class="font-corbel_700 text-text36 xl:text-text48 text-textWhite ">
                                 Brindamos soluciones Financieras para negocios decididos a ser
                                 Líderes, Disruptivos y Resilientes
@@ -359,7 +359,7 @@
                                 brindarle valor y asegurar la sostenibilidad de tu negocio.
                             </h2>
                         </div>
-                        <div class="flex flex-col md:flex-row gap-10 w-full">
+                        <div class="flex flex-col md:flex-row gap-5 w-full">
                             <a href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
                                 class="bg-bgOrangeStrong py-3 md:py-2 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                                 <span> Cotizar </span>

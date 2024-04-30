@@ -146,7 +146,7 @@
                     </div>
                 </div>
 
-                <div class="basis-4/12 flex flex-col gap-5 md:pt-5 " data-aos="fade-up" data-aos-offset="150">
+                <div class="basis-4/12 hidden  md:flex flex-col gap-5 md:pt-5 " data-aos="fade-up" data-aos-offset="150">
                    
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
                         <h3 class="font-corbel_700 text-text20 xl:text-text24">Categorías</h3>
