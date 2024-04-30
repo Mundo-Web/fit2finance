@@ -217,7 +217,7 @@
                     {{$generales->city}} - {{$generales->country}}
                 </p>
                 <p class="font-corbel_700 text-text18 xl:text-text22">
-                    Teléfono: {{$generales->cellphone}}
+                    Teléfono: {{$generales->office_phone}}
                 </p>
             </div>
 
