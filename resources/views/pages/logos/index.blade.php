@@ -33,8 +33,11 @@
                 <tr>
                   <td>{{ $logo->title }}</td>
                   <td class="truncate w-10">{{ $logo->description }}</td>
+          
 
-                  <td>{{ $logo->url_image }}</td>
+                  <td> <img src="{{asset($logo->url_image)}}" alt=""></td>
+
+
                   <td class="flex flex-row justify-end items-center gap-5">
                     <a href="{{ route('logos.edit', $logo->id) }}" class="bg-yellow-400 px-3 py-2 rounded text-white  "><i class="fa-regular fa-pen-to-square"></i></a>
                     <form action=" " method="POST">

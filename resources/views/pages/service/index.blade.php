@@ -43,10 +43,7 @@
                                             before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"
                                             id='{{'v_'.$item->id}}' data-field='visible' data-idService='{{$item->id}}' data-titleService='{{$item->title}}' {{$item->visible == 1 ? 'checked' : ''}}>
                                             <label for="{{'v_'.$item->id}}"></label>
-                                         </form>
-
-                                       
-
+                                         </form>                                 
                                     </td>
                                     <td class="flex flex-row justify-end items-center gap-5">
                                   

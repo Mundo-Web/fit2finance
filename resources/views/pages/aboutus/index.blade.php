@@ -80,7 +80,7 @@
               <tr>
                 <th>Titulo </th>
                 <th>Descripcion</th>
-                <th>Imagen</th>
+                <!-- <th>Imagen</th> -->
                 <th>Status</th>
                 <th>Acciones</th>
               </tr>

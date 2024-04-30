@@ -568,7 +568,7 @@
                         <div class="swiper-slide">
                             <div class="flex justify-center items-center">
                                 {{--  <img src="{{ asset('images/img/clever.png') }}" alt="clever"> --}}
-                                <img src="{{ asset($logo->url_image . '/' . $logo->name_image) }}" alt="clever">
+                                <img src="{{ asset($logo->url_image . '/' . $logo->name_image) }}" alt="">
                             </div>
                         </div>
                     @endforeach

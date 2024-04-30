@@ -22,7 +22,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Descripción</th>
-                                <th>Destacar</th>
+                                <!-- <th>Destacar</th> -->
                                 <th>Visible</th>
                                
                                 <th>Acciones</th>
@@ -35,7 +35,7 @@
                             <tr>
                                 <td>{{$item->name}}</td>
                                 <td>{{$item->description}}</td>
-                                <td>
+                                <!-- <td>
                                     <form method="POST" action="">
                                       @csrf
                                         <input type="checkbox" id="hs-basic-usage" class="check_d btn_swithc relative w-[3.25rem] h-7 p-px bg-gray-100 border-transparent text-transparent 
@@ -47,10 +47,7 @@
                                         id='{{'d_'.$item->id}}' data-field='destacar' data-idService='{{$item->id}}' data-titleService='{{$item->name}}' {{$item->destacar == 1 ? 'checked' : ''}}>
                                         <label for="{{'v_'.$item->id}}"></label>
                                      </form>
-
-                                   
-
-                                </td>
+                                </td> -->
                                 <td>
                                     <form method="POST" action="">
                                       @csrf
@@ -91,7 +88,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Descripción</th>
-                                <th>Destacar</th>
+                                <!-- <th>Destacar</th> -->
                                 <th>Visible</th>
                                 <th>Acciones</th>
                             </tr>

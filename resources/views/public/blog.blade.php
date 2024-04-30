@@ -227,8 +227,9 @@
                             Todos
                         </a>
 
+                        
                         @foreach ($categorias as $category)  
-                            @if ($category->blogs->count() != 0)
+                            @if ($category->blogs->where('visible', true)->count() != 0)
                                 <a href="/blog/{{ $category->id }}"
                                     class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
                                         @if ($id == 0) {{ in_array($category->id, [0]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}

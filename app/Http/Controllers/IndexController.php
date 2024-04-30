@@ -45,7 +45,7 @@ class IndexController extends Controller
         $slider = Slider::where('status', '=', 1)->where('visible', '=', 1)->get();
         $category = Category::where('status', '=', 1)->where('destacar', '=', 1)->get();
 
-        $abouts = AboutUs::all();
+        $abouts = AboutUs::where('status', 1)->get();
         $logos = ClientLogos::all();
         $blogs = Blog::where('status', '=', true)->where('visible', '=', 1)->get();
 
