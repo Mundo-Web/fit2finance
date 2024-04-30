@@ -182,6 +182,7 @@
                     <form id="footerFormulario" class="flex w-full items-center h-full">
                         @csrf
                         <div class="w-full h-full">
+                            
                             <input type="email" id="emailFooter" placeholder="Dejanos tu email" required
                                 name="email"
                                 class="border-none focus:outline-none h-full w-full bg-white py-4 px-10 text-textGray text-text18 xl:text-text22" />

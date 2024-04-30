@@ -221,9 +221,14 @@
                             $url = $_SERVER['REQUEST_URI'];
                             $parts = explode('/', $url);
                             $filtro = end($parts);
+                            
+                            $primer_digito = '';
+                            if (preg_match('/\d/', $filtro, $matches)) {
+                                $primer_digito = $matches[0];
+                            }
                         @endphp
                         <a href="/blog/0" class="font-corbel_400 text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
-                            {{$filtro == 0 ? 'font-corbel_700 text-textOrange' : ''}}">
+                            {{$primer_digito == 0 ? 'font-corbel_700 text-textOrange' : ''}}">
                             Todos
                         </a>
 
