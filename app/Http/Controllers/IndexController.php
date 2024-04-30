@@ -60,11 +60,15 @@ class IndexController extends Controller
 
             // Datos generales
             $generales = General::all()->first();
-            $categorias = Category::where('status', 1)->where('visible', 1)->select('id', 'name')->get();
+
+            $categorias = Category::where('status', 1)->where('visible', 1)->select('id', 'name')->with('blogs')->get();
+
+
             $categoria = Category::where('status', 1)->where('visible', 1)->select('id', 'name')->get();
+
             $blogCategorias = Blog::where('status', 1)->where('visible', 1)->selectRaw('MONTHNAME(created_at) AS mes, YEAR(created_at) AS year, MIN(created_at) AS created_at')->groupBy(DB::raw('YEAR(created_at), MONTH(created_at), MONTHNAME(created_at)'))->orderByRaw('YEAR(created_at) DESC, MONTH(created_at) DESC')->get();
 
-            if ($id == 1 || $id == 0) {
+            if ($id == 0) {
                 if ($filtroFecha) {
                     $fechaSeparada = explode('-', $filtroFecha);
                     $mesActual = $fechaSeparada[0]; // Obtener el mes
@@ -81,6 +85,7 @@ class IndexController extends Controller
                         ->where('visible', 1)
                         ->orderBy('created_at', 'desc')
                         ->paginate(6);
+
                     $mesActual = '00';
                     $anioActual = '00';
                 }
@@ -88,7 +93,7 @@ class IndexController extends Controller
                 return view('public.blog', compact('generales', 'blogs', 'categorias', 'categoria', 'id', 'blogCategorias', 'mesActual', 'anioActual'));
             } else {
                 $categoria = Category::where('status', '=', 1)->where('visible', 1)->findOrFail($id);
-                $blogCategorias = Blog::where('status', 1)->where('visible', 1)->selectRaw('MONTHNAME(created_at) AS mes, YEAR(created_at) AS year, MIN(created_at) AS created_at')->groupBy(DB::raw('YEAR(created_at), MONTH(created_at), MONTHNAME(created_at)'))->orderByRaw('YEAR(created_at) DESC, MONTH(created_at) DESC')->where('category_id', $id)->get();
+                $blogCategorias = Blog::where('status', 1)->where('visible', 1)->selectRaw('MONTHNAME(created_at) AS mes, YEAR(created_at) AS year, MIN(created_at) AS created_at')->groupBy(DB::raw('YEAR(created_at), MONTH(created_at), MONTHNAME(created_at)'))->orderByRaw('YEAR(created_at) DESC, MONTH(created_at) DESC')->get();
 
                 if ($filtroFecha) {
                     $fechaSeparada = explode('-', $filtroFecha);

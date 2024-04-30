@@ -387,56 +387,56 @@
             </div>
         </section>
         <section>
-            <div class="swiper banner bg-bgOrangeStrong">
+            <div class="swiper banner bg-bgOrangeStrong" >
                 <div class="swiper-wrapper text-textWhite pt-5 md:py-12" data-aos="fade-up" data-aos-offset="150">
-                    <div class="swiper-slide py-5 px-5 lg:px-10">
-                        <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-text72 leading-none">+150</p>
-                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
-                                Empresas Atendidas
-                            </h2>
-                            <p class="font-corbel_400 text-text18 xl:text-text20">
-                                Hemos trabajado con más de 150 empresas en Perú.
-                            </p>
+                        <div class="swiper-slide py-5 px-5 lg:px-10" >
+                            <div class="flex flex-col gap-3 text-center">
+                                <p class="font-corbel_700 text-text72 leading-none">+150</p>
+                                <h2 class="font-corbel_700 text-[20px] md:text-text24">
+                                    Empresas Atendidas
+                                </h2>
+                                <p class="font-corbel_400 text-text18 xl:text-text20">
+                                    Hemos trabajado con más de 150 empresas en Perú.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide py-5 px-5 lg:px-10">
+                            <div class="flex flex-col gap-3 text-center">
+                                <p class="font-corbel_700 text-text72 leading-none">+100</p>
+                                <h2 class="font-corbel_700 text-[20px] md:text-text24">
+                                    Empresas Felices
+                                </h2>
+                                <p class="font-corbel_400 text-text18 xl:text-text20">
+                                    Más de 100 empresas confían en nosotros y están satisfechas
+                                    con nuestros servicios.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide py-5 px-5 lg:px-10">
+                            <div class="flex flex-col gap-3 text-center">
+                                <p class="font-corbel_700 text-text72 leading-none">%99</p>
+                                <h2 class="font-corbel_700 text-[20px] lg:text-text24">
+                                    Retención de Clientes
+                                </h2>
+                                <p class="font-corbel_400 text-text18 xl:text-text20">
+                                    El 99% de nuestros clientes continúan trabajando con nosotros
+                                    cada año.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide py-5 px-5 lg:px-10">
+                            <div class="flex flex-col gap-3 text-center">
+                                <p class="font-corbel_700 text-text72 leading-none">+100</p>
+                                <h2 class="font-corbel_700 text-[20px] md:text-text24">
+                                    Empresas Felices
+                                </h2>
+                                <p class="font-corbel_400 text-text18 xl:text-text20">
+                                    Más de 100 empresas confían en nosotros y están satisfechas
+                                    con nuestros servicios.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide py-5 px-5 lg:px-10">
-                        <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-text72 leading-none">+100</p>
-                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
-                                Empresas Felices
-                            </h2>
-                            <p class="font-corbel_400 text-text18 xl:text-text20">
-                                Más de 100 empresas confían en nosotros y están satisfechas
-                                con nuestros servicios.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide py-5 px-5 lg:px-10">
-                        <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-text72 leading-none">%99</p>
-                            <h2 class="font-corbel_700 text-[20px] lg:text-text24">
-                                Retención de Clientes
-                            </h2>
-                            <p class="font-corbel_400 text-text18 xl:text-text20">
-                                El 99% de nuestros clientes continúan trabajando con nosotros
-                                cada año.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide py-5 px-5 lg:px-10">
-                        <div class="flex flex-col gap-5 text-center">
-                            <p class="font-corbel_700 text-text72 leading-none">+100</p>
-                            <h2 class="font-corbel_700 text-[20px] md:text-text24">
-                                Empresas Felices
-                            </h2>
-                            <p class="font-corbel_400 text-text18 xl:text-text20">
-                                Más de 100 empresas confían en nosotros y están satisfechas
-                                con nuestros servicios.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div class="swiper-pagination-estadisticas h-[80px]"></div>
             </div>
         </section>
@@ -460,7 +460,7 @@
                 </div>
             </div>
 
-            <div class="swiper-wrapper" data-aos="fade-up" data-aos-offset="150">
+            <div class="swiper-wrapper"  data-aos="fade-up" data-aos-offset="150">
                 <!-- 1 -->
 
                 @foreach ($service as $item)

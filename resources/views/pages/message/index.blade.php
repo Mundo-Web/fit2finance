@@ -17,6 +17,7 @@
                                 <th>Correo</th>
                                 <th>Teléfono</th>
                                 <th>Tipo</th>
+                                <th>Servicio</th>
                                 <th>Acción</th>
                             </tr>
                         </thead>
@@ -35,6 +36,7 @@
                                     <td>{{$item->email}}</td>
                                     <td>{{$item->phone}}</td>
                                     <td>{{$item->tipo_message}}</td>
+                                    <td>{{$item->service_product}}</td>
                                     <td>
                                         <form action=" " method="POST">
                                             @csrf

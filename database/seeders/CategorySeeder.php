@@ -14,7 +14,7 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        /* //
         $cat = ['Todos'];
         for ($i = 0; $i < 1; $i++) {
             Category::create([
@@ -23,6 +23,6 @@ class CategorySeeder extends Seeder
                 'status' => 1,
                 'visible' => 1,
             ]);
-        }
+        } */
     }
 }

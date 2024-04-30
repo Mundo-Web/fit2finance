@@ -130,14 +130,11 @@
                                             Pág.
                                         </p>
                                     @endif
-
-
                                     <nav class="flex justify-between" aria-label="Pagination">
                                         <div class="flex items-center gap-2 text-[16px] xl:text-text20 text-textGray">
                                             {{ $blogs->appends(['fecha' => request('fecha')])->links() }}
                                         </div>
                                     </nav>
-
                                 </div>
                             @else
                                 <p class="font-corbel_700 text-text18 text-[#505977]">No hay blog disponibles</p>
@@ -150,10 +147,10 @@
                 </div>
 
                 <div class="basis-4/12 flex flex-col gap-5 md:pt-5 " data-aos="fade-up" data-aos-offset="150">
-
+                   
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
                         <h3 class="font-corbel_700 text-text20 xl:text-text24">Categorías</h3>
-                        @foreach ($categorias as $category)
+                        {{-- @foreach ($categorias as $category)          
                             <a href="/blog/{{ $category->id }}"
                                 class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
                                     @if ($id == 0 || $id == 1) {{ in_array($category->id, [0, 1]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}
@@ -161,21 +158,112 @@
                                         {{ $category->id == $categoria->id ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }} @endif">
                                 {{ $category->name }}
                             </a>
+                        @endforeach --}}
+
+                        @php
+                            $isCategoria = [];
+                        @endphp
+                       
+                       {{-- <a href="/blog/{{ $blog->categories->id }}"
+                        class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                            @if ($id == 0 || $id == 1) {{ in_array($blog->categories->id, [0, 1]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}
+                            @else
+                                {{ $blog->categories->id == $categoria->id ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }} @endif">
+                            {{ $blog->categories->name }}
+                        </a> --}}
+                        {{-- @php
+                            $url = $_SERVER['REQUEST_URI'];
+                            $parts = explode('/', $url);
+                            $termino_despues_del_slash = end($parts);
+                            
+                        @endphp 
+
+
+                        @if ($termino_despues_del_slash == 0)
+                        <a href="/blog/0"
+                            class="font-corbel_700 text-textOrange  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize ">
+                            Todos
+                        </a>
+                        @else
+                        <a href="/blog/0"
+                            class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize ">
+                                Todos
+                        </a>
+                        @endif --}}
+
+                       {{-- @foreach ($blogs as $key => $blog)
+                                @if (!in_array($blog->categories->name, $isCategoria)) 
+                                    <a href="/blog/{{ $blog->categories->id }}"
+                                    class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                                        @if ($id == 0 || $id == 1) {{ in_array($blog->categories->id, [0, 1]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}
+                                        @else
+                                            {{ $blog->categories->id == $categoria->id ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }} @endif">
+                                        {{ $blog->categories->name }}
+                                    </a>
+                                    @php
+                                        $isCategoria[] = $blog->categories->name;
+                                    @endphp
+                                    
+                                
+                                @endif
+                               
+                        @endforeach --}}
+
+                        {{-- @foreach ($categorias as $category)
+                        @if ($category->blogs->count() != 0)
+                            <p>{{$category->name}} - {{$category->id}}</p>
+                        
+                        @endif
+                    
+                        @endforeach --}}
+
+                        @php
+                            $url = $_SERVER['REQUEST_URI'];
+                            $parts = explode('/', $url);
+                            $filtro = end($parts);
+                        @endphp
+                        <a href="/blog/0" class="font-corbel_400 text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                            {{$filtro == 0 ? 'font-corbel_700 text-textOrange' : ''}}">
+                            Todos
+                        </a>
+
+                        @foreach ($categorias as $category)  
+                            @if ($category->blogs->count() != 0)
+                                <a href="/blog/{{ $category->id }}"
+                                    class="font-corbel_400  text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                                        @if ($id == 0) {{ in_array($category->id, [0]) ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }}
+                                        @else
+                                            {{ $category->id == $categoria->id ? 'font-corbel_700 text-text14 md:text-text18 text-textOrange' : '' }} @endif">
+                                    {{ $category->name }}
+                                </a>
+                            @endif
                         @endforeach
+
+
+
+
                     </div>
 
                     <div class="flex flex-col gap-3 text-[#03164D] border-b-[1.5px] border-[#DDDDDD] pb-5">
                         <h3 class="font-corbel_700 text-text20 xl:text-text24">Archivo</h3>
 
-                        @foreach ($blogCategorias as $blogC)
+                        {{-- @foreach ($blogCategorias as $blogC)
                             <a href="/blog/{{ $id }}?fecha={{ date('m', strtotime($blogC->mes)) }}-{{ $blogC->year }}"
                                 class="text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
                             @if (date('n', strtotime($blogC->mes)) == $mesActual && $blogC->year == $anioActual) {{ 'font-corbel_700 text-text14 md:text-text18 text-textOrange' }}
                             @else
                             {{ 'font-corbel_400' }} @endif ">
                                 {{ \Carbon\Carbon::parse($blogC->year . '-' . $blogC->mes)->locale('es')->isoFormat('MMMM YYYY') }}
+                            </a>
+                        @endforeach --}}
 
-
+                        @foreach ($blogCategorias as $blogC)
+                            <a href="/blog/0?fecha={{ date('m', strtotime($blogC->mes)) }}-{{ $blogC->year }}"
+                                class="text-text14 md:text-text18 hover:text-textOrange md:duration-500 capitalize 
+                            @if (date('n', strtotime($blogC->mes)) == $mesActual && $blogC->year == $anioActual) {{ 'font-corbel_700 text-text14 md:text-text18 text-textOrange' }}
+                            @else
+                            {{ 'font-corbel_400' }} @endif ">
+                                {{ \Carbon\Carbon::parse($blogC->year . '-' . $blogC->mes)->locale('es')->isoFormat('MMMM YYYY') }}
                             </a>
                         @endforeach
 
