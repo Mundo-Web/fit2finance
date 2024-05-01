@@ -116,7 +116,7 @@
                         <a href="{{ route('publicacion', $postSiguiente) }}"
                             class="text-textOrange flex items-center justify-end gap-2 font-corbel_700 text-text14 xl:text-text18">
                             <div class="after:content-[''] after:block after:w-full after:h-[1px] after:bg-bgOrangeStrong">
-                                <span class="leading-none">Próximos</span>
+                                <span class="leading-none">Próximo</span>
                             </div>
 
                             <div>
