@@ -76,7 +76,7 @@
             </p>
 
             <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
-                <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}" alt="{{ $blog->name_image }}"
+                <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}" alt="{{substr($blog->name_image, strpos($blog->name_image, '_') + 1)}}"
                     class="w-full">
             </div>
 

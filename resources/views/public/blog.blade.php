@@ -77,7 +77,7 @@
                             @foreach ($blogs as $blog)
                                 <div class="flex flex-col gap-5 mb-12 border-b-[1.5px] border-[#DDDDDD] pb-12">
                                     <div class="flex justify-center items-center" data-aos="fade-up" data-aos-offset="150">
-                                        <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}" alt="blog"
+                                        <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}" alt="{{substr($blog->name_image, strpos($blog->name_image, '_') + 1)}}"
                                             class="w-full h-auto" />
                                     </div>
 

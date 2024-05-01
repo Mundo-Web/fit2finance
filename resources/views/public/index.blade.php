@@ -469,7 +469,7 @@
                             <div>
                                 <div class="my-8">
                                     <img src="{{ asset($item->url_image . '/' . $item->name_image) }}"
-                                        alt="outsourcing_financiero" />
+                                        alt="{{substr($item->name_image, strpos($item->name_image, '_') + 1)}}" />
                                 </div>
 
                                 <div class="text-textGray flex flex-col gap-5 w-full">
@@ -565,10 +565,12 @@
                 <div class="swiper-wrapper">
 
                     @foreach ($logos as $logo)
+                    {{$logo->name_image}}
                         <div class="swiper-slide">
                             <div class="flex justify-center items-center">
                                 {{--  <img src="{{ asset('images/img/clever.png') }}" alt="clever"> --}}
-                                <img src="{{ asset($logo->url_image . '/' . $logo->name_image) }}" alt="">
+                                
+                                <img src="{{ asset($logo->url_image . '/' . $logo->name_image) }}"/>
                             </div>
                         </div>
                     @endforeach
@@ -589,7 +591,7 @@
                     @foreach ($benefit as $item)
                         <div class="flex gap-5">
                             <div class="flex justify-end items-start basis-3/12 ">
-                                <img src="{{ asset($item->icono) }}" alt="">
+                                <img src="{{ asset($item->icono) }}" alt="ventajas diferenciales">
                             </div>
                             <div class="text-textGray basis-9/12 flex flex-col gap-2">
                                 <h3 class="font-corbel_700 text-text28 xl:text-text32 leading-none md:leading-tight">
@@ -598,9 +600,6 @@
                                 <div class="font-corbel_400 text-text20 xl:text-text24">
                                     {!! $item->descripcion !!}
                                 </div>
-                                {{-- <p class="font-corbel_400 text-text20 xl:text-text24">
-                                    {!! $item->descripcion !!}
-                                </p> --}}
                             </div>
                         </div>
                     @endforeach
@@ -697,7 +696,7 @@
                                     <div class="flex flex-col gap-5">
                                         <div class="flex justify-center items-center">
                                             <img src="{{ asset($blog->url_image . '/' . $blog->name_image) }}"
-                                                alt="blog" class="w-full">
+                                                alt="{{substr($blog->name_image, strpos($blog->name_image, '_') + 1)}}" class="w-full">
 
                                         </div>
                                         <h2
