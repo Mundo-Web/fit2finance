@@ -359,7 +359,6 @@ class IndexController extends Controller
         }
     }
     private function envioCorreo($data){
-        dump($data);
          
         
         $name = $data['full_name'];
