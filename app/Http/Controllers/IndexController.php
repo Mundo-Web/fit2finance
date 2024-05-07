@@ -364,7 +364,7 @@ class IndexController extends Controller
          
         
         $name = $data['full_name'];
-        $mail = EmailConfig::config();
+        $mail = EmailConfig::config($name);
         try {
             $mail->addAddress($data['email']);
             $mail->Body = '
@@ -486,6 +486,7 @@ class IndexController extends Controller
                     <tr>
                       <td>
                         <a
+                          target="_blank"
                           href="https://www.fit2-finance.com/"
                           style="
                             text-decoration: none;
@@ -502,7 +503,7 @@ class IndexController extends Controller
                           "
                         >
                           <span>Visita nuestra web</span>
-                          <img src=".https://fit2finance.mundoweb.pe/mailing/flecha.png" style="width: 30px; height: 30px" />
+                          <img src="https://fit2finance.mundoweb.pe/mailing/flecha.png" style="width: 22px; height: 15px" />
                         </a>
                       </td>
                     </tr>
