@@ -456,7 +456,7 @@ class IndexController extends Controller
                   font-weight: bold;
                 "
               >
-                !Gracias
+                ¡Gracias
                 <span style="color: #ffffff">por escribirnos!</span>
               </p>
             </td>
