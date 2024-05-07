@@ -8,7 +8,7 @@ class EmailConfig
 {
     static  function config($name): PHPMailer
     {
-        dump($name);
+        
         $mail = new PHPMailer(true);
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
