@@ -360,7 +360,7 @@
               </h2>
             </div>
             <div class="flex flex-col md:flex-row gap-5 w-full">
-              <a href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
+              <a target="_blank" href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
                 class="bg-bgOrangeStrong py-3 md:py-2 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-auto justify-center items-center hover:bg-orange-500 md:duration-500">
                 <span> Cotizar </span>
                 <div>
@@ -484,7 +484,7 @@
                 </div>
               </div>
               <div>
-                <a href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
+                <a target="_blank" href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
                   class="text-textOrange font-corbel_700 text-text24 xl:text-text28 flex justify-end items-center gap-2 underline">
                   <span>Saber más </span>
                   <div>
@@ -632,7 +632,7 @@
           </div>
 
           <div class="w-full md:w-auto">
-            <a href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
+            <a target="_blank" href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
               class="bg-bgOrangeStrong py-4 px-10 font-corbel_700 text-textWhite text-text18 xl:text-text22 flex gap-2 w-full justify-center items-center hover:bg-orange-500 md:duration-500">
               <span> Cotizar </span>
               <div>

@@ -172,7 +172,7 @@
     <div class="flex justify-end relative">
 
       <div class="fixed bottom-[40px] right-[40px] z-[100]">
-        <a href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
+        <a target="_blank" href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}"
           class="">
 
           <img src="{{ asset('images/svg/WhatsApp_header.svg') }}" alt="whatsapp"

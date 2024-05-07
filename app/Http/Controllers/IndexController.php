@@ -334,6 +334,8 @@ class IndexController extends Controller
         //Del modelo
         //'full_name', 'email', 'phone', 'message', 'status', 'is_read'
 
+        $data = $request->all();
+        $data['full_name'] = $request->full_name;
         try {
             $reglasValidacion = [
                 /*  'full_name' => 'required|string|max:255', */
@@ -350,8 +352,8 @@ class IndexController extends Controller
             ];
 
             $request->validate($reglasValidacion, $mensajes);
-            $formlanding = Message::create($request->all());
-            $this->envioCorreo($request->all());
+            $formlanding = Message::create($data);
+            $this->envioCorreo($formlanding);
 
             return response()->json(['message' => 'Mensaje enviado con exito']);
         } catch (\Throwable $th) {
@@ -367,166 +369,153 @@ class IndexController extends Controller
             $mail->addAddress($data['email']);
             $mail->Body = '
             <html lang="en">
-                <head>
-                    <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>Mundo web</title>
-                    <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                    <link
-                        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-                        rel="stylesheet"
-                    />
-                    <style>
-                        * {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                        }
-
-                        @font-face {
-                            font-family: grotesk;
-                            src: url(../../public/fonts/PPRightGroteskCompactMedium.woff);
-                            font-weight: normal;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <main>
-                        <table
-                            style="
-                                width: 600px;
-                                margin: 0 auto;
-                                text-align: center;
-                                background-image: url(https://mundoweb.pe/mail/Fondo.png);
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                background-size: cover;
-                            "
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Mundo web</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com" />
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+              <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                rel="stylesheet"
+              />
+              <style>
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+              </style>
+            </head>
+            <body>
+              <main>
+                <table
+                  style="
+                    width: 600px;
+                    margin: 0 auto;
+                    text-align: center;
+                    background-image: url(https://fit2finance.mundoweb.pe/mailing/Fondo_600px.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                  "
+                >
+                  <thead>
+                    <tr>
+                      <th
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+                          align-items: center;
+                          margin: 40px;
+                        "
+                      >
+                        <img src="https://fit2finance.mundoweb.pe/mailing/Logo P.png" alt="mundo web" />
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            color: #ffffff;
+                            font-weight: 500;
+                            font-size: 18px;
+                            text-align: center;
+                            width: 500px;
+                            margin: 0 auto;
+                            padding: 20px 0;
+                            font-family: Montserrat, sans-serif;
+                          "
                         >
-                            <thead>
-                                <tr>
-                                    <th
-                                        style="
-                                            display: flex;
-                                            flex-direction: row;
-                                            justify-content: center;
-                                            align-items: center;
-                                            margin: 100px;
-                                        "
-                                    >
-                                        <img src="https://mundoweb.pe/mail/Frame_14466.png" alt="mundo web" />
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="
-                                            color: #050a41;
-                                            font-weight: 500;
-                                            font-size: 18px;
-                                            text-align: center;
-                                            width: 500px;
-                                            margin: 0 auto;
-                                            padding: 20px 0;
-                                            font-family: Montserrat, sans-serif;
-                                        "
-                                        >
-                                             <span style="display:block">Hola </span>
-                                            
-                                            
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="
-                                                color: #e15a29;
-                                                font-size: 40px;
-                                                line-height: 20px;
-                                                font-family: grotesk;
-                                            "
-                                        >
-                                             <span style="display:block">' . $name . ' </span>
-                                            
-                                            
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="
-                                                color: #e15a29;
-                                                font-size: 40px;
-                                                line-height: 70px;
-                                                font-family: grotesk;
-                                            "
-                                        >
-                                            !Gracias
-                                            <span style="color: #050a41"
-                                                >por escribirnos! 🚀</span
-                                            >
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p
-                                            style="
-                                                color: #050a41;
-                                                font-weight: 500;
-                                                font-size: 18px;
-                                                text-align: center;
-                                                width: 500px;
-                                                margin: 0 auto;
-                                                padding: 20px 0;
-                                                font-family: Montserrat, sans-serif;
-                                            "
-                                        >
-                                        
-                                            En breve nuestra ejecutiva comercial se estará comunicando contigo.
-                                        </p>
-                                    </td>
-                                </tr>
-            <tr>
-            <td>
-                <a href="https://mundoweb.pe/" style="
-                    text-decoration: none;
-                    background-color: #e15a29;
-                    color: white;
-                    border-radius: 40px;
-                    padding: 12px 20px;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                    font-weight: 600;
-                    font-family: Montserrat, sans-serif;
-                ">
-                    <span>Haz que tu negocio despegue</span>
-                    <img  src="https://mundoweb.pe/mail/buttonmailing.png" style="
-                        width: 20px;
-                        margin-left: 15px;
-                        height: 20px;
-                    " />
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: right; padding-right: 30px;">
-                <img src="https://mundoweb.pe/mail/10_rgb.png" alt="mundo web" style="width: 80%; margin-top: 100px" />
-            </td>
-        </tr>
-            </tbody>
-            </table>
-            </main>
+                          <span style="display: block">Hola </span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            color: #e38533;
+                            font-size: 40px;
+                            line-height: 20px;
+                            font-family: Montserrat, sans-serif;
+                          "
+                        >
+                          <span style="display: block">' . $name . ' </span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            color: #e38533;
+                            font-size: 40px;
+                            line-height: 70px;
+                            font-family: Montserrat, sans-serif;
+                            font-weight: bold;
+                          "
+                        >
+                          !Gracias
+                          <span style="color: #ffffff">por escribirnos!</span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            color: #ffffff;
+                            font-weight: 500;
+                            font-size: 18px;
+                            text-align: center;
+                            width: 500px;
+                            margin: 0 auto;
+                            padding: 20px 0;
+                            font-family: Montserrat, sans-serif;
+                          "
+                        >
+                          En breve nuestra ejecutiva comercial se estará comunicando
+                          contigo.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://www.fit2-finance.com/"
+                          style="
+                            text-decoration: none;
+                            background-color: #e38533;
+                            color: white;
+                            padding: 12px 16px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            font-weight: 600;
+                            font-family: Montserrat, sans-serif;
+                            font-size: 16px;
+                          "
+                        >
+                          <span>Visita nuestra web</span>
+                          <img src=".https://fit2finance.mundoweb.pe/mailing/flecha.png" style="width: 30px; height: 30px" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: right; padding-right: 30px">
+                        <img src="foto-banner.png" alt="mundo web" style="width: 80%" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </main>
             </body>
-
-            </html>
+          </html>          
             ';
             $mail->isHTML(true);
             $mail->send();
