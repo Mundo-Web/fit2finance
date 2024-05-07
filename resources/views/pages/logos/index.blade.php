@@ -77,7 +77,7 @@
         responsive: true
       });
 
-      $(".btn_delete").on("click", function(e) {
+      $('#tabladatos').on('click', '.btn_delete', function(e) {
         e.preventDefault()
 
         let id = $(this).attr('data-idService');
