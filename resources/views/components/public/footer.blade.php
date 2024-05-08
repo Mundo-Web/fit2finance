@@ -136,18 +136,26 @@
         <div class="flex flex-col gap-4">
           <p class="font-corbel_400 text-[12px] xl:text-text16">Síguenos en:</p>
           <div class="flex gap-5 items-center">
-            <a target="_blank" href="https://{{ $generales->instagram }}">
-              <img src="{{ asset('images/svg/insta.svg') }}" alt="instagram">
 
-            </a>
-            <a target="_blank" href="https://{{ $generales->facebook }}">
-              <img src="{{ asset('images/svg/face.svg') }}" alt="facebook">
+            @if ($generales->instagram != null)
+              <a target="_blank" href="https://{{ $generales->instagram }}">
+                <img src="{{ asset('images/svg/insta.svg') }}" alt="instagram">
+              </a>
+            @endif
 
-            </a>
+            @if ($generales->facebook != null)
+              <a target="_blank" href="https://{{ $generales->facebook }}">
+                <img src="{{ asset('images/svg/face.svg') }}" alt="facebook">
+              </a>
+            @endif
+
+            @if ($generales->linkedin != null)
             <a target="_blank" href="https://{{ $generales->linkedin }}">
               <img src="{{ asset('images/svg/linkedin.svg') }}" alt="linkedin">
 
             </a>
+            @endif
+            
             <a target="_blank"
               href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}">
               <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="whatsapp">
