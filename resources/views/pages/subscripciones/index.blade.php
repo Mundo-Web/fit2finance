@@ -16,8 +16,8 @@
               <tr>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Telefono</th>
-
+                {{-- <th>Telefono</th> --}}
+                <th>Acción</th>
 
               </tr>
             </thead>
@@ -30,8 +30,15 @@
 
                   </td>
                   <td>{{ $item->email }}</td>
-                  <td>{{ $item->phone }}</td>
-
+                  {{-- <td>{{ $item->phone }}</td> --}}
+                  <td>
+                    <form action=" " method="POST">
+                      @csrf
+                      <a data-idService='{{ $item->id }}' class="btn_delete bg-red-600 p-2 rounded text-white"><i
+                          class="fa-regular fa-trash-can "></i></a>
+                      
+                    </form>
+                  </td>
 
                 </tr>
               @endforeach
@@ -41,8 +48,8 @@
               <tr>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Telefono</th>
-
+                {{-- <th>Telefono</th> --}}
+                <th>Acción</th>
 
               </tr>
             </tfoot>
@@ -103,7 +110,7 @@
         ]
       });
 
-      $(".btn_delete").on("click", function(e) {
+      $('#tabladatos').on('click', '.btn_delete', function(e) {
 
         var id = $(this).attr('data-idService');
         /* console.log(id); */
@@ -121,7 +128,7 @@
           if (result.isConfirmed) {
 
             $.ajax({
-              url: '{{ route('message.deleteMensaje') }}',
+              url: '{{ route('subscripciones.deleteMensaje') }}',
               method: 'POST',
               data: {
                 _token: $('input[name="_token"]').val(),

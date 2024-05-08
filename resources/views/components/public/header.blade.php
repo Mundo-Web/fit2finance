@@ -93,6 +93,7 @@
                           class="focus:outline-none w-full bg-transparent pt-4 pl-4 pb-4 font-corbel_400 text-text18 xl:text-text22 text-white placeholder:text-white placeholder:opacity-35" />
                       </div>
                       <input type="hidden" id="tipo" placeholder="tipo" name="tipo_message" value="Inscripción" />
+                      <input type="hidden" id="services" placeholder="servicio" name="service_product" value="Curso contabilidad para emprendedores" />
                       <div>
                         <button type="submit"
                           class="bg-bgOrangeStrong w-full flex justify-center items-center py-4 gap-2 font-corbel_700 text-[18px] xl:text-text22 hover:bg-orange-500 md:duration-500">
