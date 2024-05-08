@@ -335,6 +335,7 @@
         error: function(error) {
           Swal.close();
           const obj = error.responseJSON.message;
+          
           const keys = Object.keys(error.responseJSON.message);
           let flag = false;
           keys.forEach(key => {
@@ -342,7 +343,7 @@
               const e = obj[key];
               Swal.fire({
                 title: error.message,
-                text: e,
+                text: "Usuario ya existente",
                 icon: "error",
               });
               flag = true; // Marcar como mostrado
