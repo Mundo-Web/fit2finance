@@ -60,6 +60,7 @@ Route::get('/nosotros', [IndexController::class, 'index'] )->name('nosotros');
 Route::get('/servicios', [IndexController::class, 'index'] )->name('servicios');
 
 Route::post('guardarContactos', [IndexController::class, 'guardarContacto'] )->name('guardarContactos');
+Route::post('/subscripciones/guardar', [MessageController::class, 'saveSubscripciones'])->name('subscripciones.guardar') ;
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
@@ -150,7 +151,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
          Route::post('/galerie/borrar', [GalerieController::class, 'borrar'])->name('galerie.borrar');
 
          Route::get('/subscripciones', [MessageController::class, 'showSubscripciones'])->name('subscripciones') ;
-         Route::post('/subscripciones/guardar', [MessageController::class, 'saveSubscripciones'])->name('subscripciones.guardar') ;
+        
 
          /* Route::post('/subscripciones/deleteMensaje', [MessageController::class, 'deleteMensaje'])->name('subscripciones.deleteMensaje') ; */
 
