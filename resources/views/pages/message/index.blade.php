@@ -76,7 +76,7 @@
         ordering: false
       });
 
-      $(".btn_delete").on("click", function(e) {
+      $('#tabladatos').on('click', '.btn_delete', function(e) {
 
         var id = $(this).attr('data-idService');
         /* console.log(id); */
