@@ -150,12 +150,12 @@
             @endif
 
             @if ($generales->linkedin != null)
-            <a target="_blank" href="https://{{ $generales->linkedin }}">
-              <img src="{{ asset('images/svg/linkedin.svg') }}" alt="linkedin">
+              <a target="_blank" href="https://{{ $generales->linkedin }}">
+                <img src="{{ asset('images/svg/linkedin.svg') }}" alt="linkedin">
 
-            </a>
+              </a>
             @endif
-            
+
             <a target="_blank"
               href="https://api.whatsapp.com/send?phone={{ $generales->whatsapp }}&text={{ $generales->mensaje_whatsapp }}">
               <img src="{{ asset('images/svg/whatsapp.svg') }}" alt="whatsapp">
@@ -192,7 +192,7 @@
               <input type="email" id="emailFooter" placeholder="Dejanos tu email" required name="email"
                 class="border-none focus:outline-none h-full w-full bg-white py-4 px-10 text-textGray text-text18 xl:text-text22" />
 
-              <input type="hidden" id="nameFooter" required name="full_name" value="usuario suscrito" />
+              <input type="hidden" id="nameFooter" required name="full_name" value="Usuario suscrito" />
 
               <input type="hidden" id="tipo" placeholder="tipo" name="tipo_message" value="Inscripción" />
             </div>
