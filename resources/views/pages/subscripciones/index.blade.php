@@ -17,7 +17,7 @@
                 <th>Nombre</th>
                 <th>Correo</th>
                 {{-- <th>Telefono</th> --}}
-                <th>Acción</th>
+                {{-- <th>Acción</th> --}}
 
               </tr>
             </thead>
@@ -31,14 +31,14 @@
                   </td>
                   <td>{{ $item->email }}</td>
                   {{-- <td>{{ $item->phone }}</td> --}}
-                  <td>
+                  {{-- <td>
                     <form action=" " method="POST">
                       @csrf
                       <a data-idService='{{ $item->id }}' class="btn_delete bg-red-600 p-2 rounded text-white"><i
                           class="fa-regular fa-trash-can "></i></a>
                       
                     </form>
-                  </td>
+                  </td> --}}
 
                 </tr>
               @endforeach
@@ -49,7 +49,7 @@
                 <th>Nombre</th>
                 <th>Correo</th>
                 {{-- <th>Telefono</th> --}}
-                <th>Acción</th>
+                {{-- <th>Acción</th> --}}
 
               </tr>
             </tfoot>
@@ -110,48 +110,7 @@
         ]
       });
 
-      $('#tabladatos').on('click', '.btn_delete', function(e) {
-
-        var id = $(this).attr('data-idService');
-        /* console.log(id); */
-
-        Swal.fire({
-          title: "Seguro que deseas eliminar?",
-          text: "Vas a eliminar un servicio",
-          icon: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Si, borrar!",
-          cancelButtonText: "Cancelar"
-        }).then((result) => {
-          if (result.isConfirmed) {
-
-            $.ajax({
-              url: '{{ route('subscripciones.deleteMensaje') }}',
-              method: 'POST',
-              data: {
-                _token: $('input[name="_token"]').val(),
-                id: id,
-
-              }
-
-            }).done(function(res) {
-
-              Swal.fire({
-                title: res.message,
-                icon: "success"
-              });
-
-              location.reload();
-
-            })
-
-
-          }
-        });
-
-      });
+      
     })
   </script>
 

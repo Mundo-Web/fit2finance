@@ -13,6 +13,5 @@ class NewsletterSubscriber extends Model
         'nombre',
         'email',
         'phone',
-        'active'
     ];
 }
