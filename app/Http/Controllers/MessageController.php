@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMessageRequest;
 use App\Http\Requests\UpdateMessageRequest;
 use App\Models\Message;
+use App\Models\NewsletterSubscriber;
 use Illuminate\Http\Request;
 
 
@@ -16,7 +17,7 @@ class MessageController extends Controller
     public function index()
     {
         //
-        $mensajes = Message::where('status', '=', 1)->get();
+        $mensajes = Message::where('status', '=', 1)->orderBy('created_at','desc')->get();
         return view('pages.message.index', compact('mensajes'));
     
         
@@ -106,5 +107,25 @@ class MessageController extends Controller
     public function destroy(Message $message)
     {
         //
+    }
+
+    public function showSubscripciones(){
+        $subscripciones = NewsletterSubscriber::all();
+
+        return view('pages.subscripciones.index', compact('subscripciones'));
+
+    }
+    public function saveSubscripciones(Request $request){
+        
+        $data = $request->all() ; 
+        $data['nombre'] = $data['full_name']; 
+        NewsletterSubscriber::create($data);
+
+        $indexController = new IndexController();
+        $indexController->envioCorreo($data);
+
+
+        return response()->json(['message'=> 'Subscrito Correctamente']);
+
     }
 }

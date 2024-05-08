@@ -149,6 +149,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
          Route::post('/galerie/updateVisible', [GalerieController::class, 'updateVisible'])->name('galerie.updateVisible');
          Route::post('/galerie/borrar', [GalerieController::class, 'borrar'])->name('galerie.borrar');
 
+         Route::get('/subscripciones', [MessageController::class, 'showSubscripciones'])->name('subscripciones') ;
+         Route::post('/subscripciones/guardar', [MessageController::class, 'saveSubscripciones'])->name('subscripciones.guardar') ;
 
 
         

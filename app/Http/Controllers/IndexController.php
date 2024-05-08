@@ -360,7 +360,7 @@ class IndexController extends Controller
             return response()->json(['message' => 'Mensaje erroneo' . $th], 400);
         }
     }
-    private function envioCorreo($data){
+    public function envioCorreo($data){
          
         
         $name = $data['full_name'];

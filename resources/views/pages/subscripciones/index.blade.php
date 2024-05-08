@@ -4,7 +4,7 @@
     <div
       class="col-span-full xl:col-span-8 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
       <header class="px-5 py-4 border-b border-slate-100 dark:border-slate-700">
-        <h2 class="font-semibold text-slate-800 dark:text-slate-100 text-2xl tracking-tight">Mis Mensajes</h2>
+        <h2 class="font-semibold text-slate-800 dark:text-slate-100 text-2xl tracking-tight">Subscripciones</h2>
       </header>
       <div class="p-3">
 
@@ -16,39 +16,23 @@
               <tr>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Teléfono</th>
-                <th>Tipo</th>
-                <th>Servicio</th>
-                <th>Acción</th>
+                <th>Telefono</th>
+
+
               </tr>
             </thead>
             <tbody>
 
-              @foreach ($mensajes as $item)
+              @foreach ($subscripciones as $item)
                 <tr>
                   <td>
-                    @if ($item->is_read == '0')
-                      <a href="{{ route('mensajes.show', $item->id) }}"><span class="mr-4"><i
-                            class="fa-regular fa-envelope"></i></span><span
-                          class="font-bold">{{ $item->full_name }}</span></a>
-                    @else
-                      <a href="{{ route('mensajes.show', $item->id) }}"><span class="mr-4"><i
-                            class="fa-regular fa-envelope-open"></i></span><span>{{ $item->full_name }}</span></a>
-                    @endif
+                    {{ $item->nombre }}
 
                   </td>
                   <td>{{ $item->email }}</td>
                   <td>{{ $item->phone }}</td>
-                  <td>{{ $item->tipo_message }}</td>
-                  <td>{{ $item->service_product }}</td>
-                  <td>
-                    <form action=" " method="POST">
-                      @csrf
-                      <a data-idService='{{ $item->id }}' class="btn_delete bg-red-600 p-2 rounded text-white"><i
-                          class="fa-regular fa-trash-can "></i></a>
-                      <!--a href="" class="bg-yellow-400 p-2 rounded text-white mr-6"><i class="fa-regular fa-pen-to-square"></i></a-->
-                    </form>
-                  </td>
+
+
                 </tr>
               @endforeach
 
@@ -57,9 +41,9 @@
               <tr>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Teléfono</th>
-                <th>Tipo</th>
-                <th>Tool</th>
+                <th>Telefono</th>
+
+
               </tr>
             </tfoot>
           </table>
@@ -73,7 +57,50 @@
   <script>
     $('document').ready(function() {
       new DataTable('#tabladatos', {
-        ordering: false
+
+        buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+        layout: {
+          topStart: 'buttons'
+        },
+        language: {
+          "lengthMenu": "Mostrar _MENU_ registros",
+          "zeroRecords": "No se encontraron resultados",
+          "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+          "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+          "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+          "sSearch": "Buscar:",
+          "sProcessing": "Procesando...",
+        },
+        buttons: [{
+            extend: 'excelHtml5',
+            text: '<i class="fas fa-file-excel"></i> ',
+            titleAttr: 'Exportar a Excel',
+            className: 'btn btn-success',
+          },
+          {
+            extend: 'pdfHtml5',
+            text: '<i class="fas fa-file-pdf"></i> ',
+            titleAttr: 'Exportar a PDF',
+          },
+          {
+            extend: 'csvHtml5',
+            text: '<i class="fas fa-file-csv"></i> ',
+            titleAttr: 'Imprimir',
+            className: 'btn btn-info',
+          },
+          {
+            extend: 'print',
+            text: '<i class="fa fa-print"></i> ',
+            titleAttr: 'Imprimir',
+            className: 'btn btn-info',
+          },
+          {
+            extend: 'copy',
+            text: '<i class="fas fa-copy"></i> ',
+            titleAttr: 'Copiar',
+            className: 'btn btn-success',
+          },
+        ]
       });
 
       $(".btn_delete").on("click", function(e) {
