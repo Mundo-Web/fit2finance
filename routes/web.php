@@ -153,6 +153,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
          Route::get('/subscripciones', [MessageController::class, 'showSubscripciones'])->name('subscripciones') ;
         
 
+         /* Route::post('/subscripciones/deleteMensaje', [MessageController::class, 'deleteMensaje'])->name('subscripciones.deleteMensaje') ; */
+
 
         
          Route::fallback(function() {

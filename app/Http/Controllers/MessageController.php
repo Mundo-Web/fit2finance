@@ -22,6 +22,20 @@ class MessageController extends Controller
     
         
     }
+ 
+    /* public function deleteMensaje(Request $request)
+    {
+       
+        $id = $request->id;
+   
+        $subs = NewsletterSubscriber::findOrfail($id);
+    
+        $subs->active = false;
+ 
+        $subs->save();
+
+        return response()->json(['message' => 'Servicio eliminado.']);
+    }  */  
 
     /**
      * Show the form for creating a new resource.
@@ -110,8 +124,8 @@ class MessageController extends Controller
     }
 
     public function showSubscripciones(){
-        $subscripciones = NewsletterSubscriber::all();
-
+        $subscripciones = NewsletterSubscriber::orderBy('created_at','desc')->get();;
+        
         return view('pages.subscripciones.index', compact('subscripciones'));
 
     }
