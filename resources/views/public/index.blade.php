@@ -413,12 +413,12 @@
           </div>
           <div class="swiper-slide py-5 px-5 lg:px-10">
             <div class="flex flex-col gap-3 text-center">
-              <p class="font-corbel_700 text-text72 leading-none">%99</p>
+              <p class="font-corbel_700 text-text72 leading-none">99%</p>
               <h2 class="font-corbel_700 text-[20px] lg:text-text24">
                 Retención de Clientes
               </h2>
               <p class="font-corbel_400 text-text18 xl:text-text20">
-                El 99% de nuestros clientes continúan trabajando con nosotros
+                El <span>99%</span> de nuestros clientes continúan trabajando con nosotros
                 cada año.
               </p>
             </div>
@@ -615,7 +615,7 @@
           Odoo, la plataforma de gestión empresarial más avanzada. A través de
           esta alianza, ofrecemos soluciones integrales que optimizan tus
           procesos contables y potencian el crecimiento de tu empresa.
-          Descubre cómo nuestra asociación con Sumatek yudará a tu compañía a conseguir el éxito que esperas.
+          Descubre cómo nuestra asociación con Sumatek ayudará a tu compañía a conseguir el éxito que esperas.
         </p>
       </div>
     </section>
