@@ -103,7 +103,7 @@
       responsive: true
     });
 
-    $(".btn_swithc").on("change", function() {
+    $('#tabladatos').on('change', '.btn_swithc', function() {
 
       console.log('swithc')
 
@@ -143,14 +143,14 @@
       })
     });
 
-    $(".btn_delete").on("click", function(e) {
+    $('#tabladatos').on('click', '.btn_delete', function(e) {
       e.preventDefault()
 
       let id = $(this).attr('data-idService');
 
       Swal.fire({
         title: "Seguro que deseas eliminar?",
-        text: "Vas a eliminar un Logo",
+        text: "Vas a eliminar un registro",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
