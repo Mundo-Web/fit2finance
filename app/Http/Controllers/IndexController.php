@@ -394,7 +394,7 @@ class IndexController extends Controller
           width: 600px;
           margin: 0 auto;
           text-align: center;
-          background-image: url(https://fit2finance.mundoweb.pe/mailing/Fondo_600px.png);
+          background-image: url(https://fit2-finance.com/mailing/Fondo_600px.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -406,7 +406,7 @@ class IndexController extends Controller
             style="text-align: center; padding-top: 50px"
             >
               <img
-                src="https://fit2finance.mundoweb.pe/mailing/Logo.png"
+                src="https://fit2-finance.com/mailing/Logo.png"
                 alt="mundo web"
               />
             </th>
@@ -501,7 +501,7 @@ class IndexController extends Controller
               >
                 <span>Visita nuestra web</span>
                 <img
-                  src="https://fit2finance.mundoweb.pe/mailing/flecha.png"
+                  src="https://fit2-finance.com/mailing/flecha.png"
                   style="width: 30px; height: 18px; padding-left: 5px;"
                 />
               </a>
@@ -510,7 +510,7 @@ class IndexController extends Controller
           <tr>
             <td style="text-align: right; padding-right: 30px">
               <img
-                src="https://fit2finance.mundoweb.pe/mailing/foto-banner.png"
+                src="https://fit2-finance.com/mailing/foto-banner.png"
                 alt="mundo web"
                 style="width: 80%"
               />
